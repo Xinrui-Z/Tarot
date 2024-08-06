@@ -1,0 +1,18 @@
+{
+    "id": "z-notice",
+    "displayName": "z-notice 消息通知",
+    "version": "1.0.2",
+    "description": "消息通知组件，可自动收起消息弹窗。类似于Mac消息通知。",
+    "keywords": [
+        "消息",
+        "即时提醒",
+        "uni-app",
+        "ui"
+    ],
+    "dcloudext": {
+        "category": [
+            "前端组件",
+            "通用组件"
+        ]
+    }
+}

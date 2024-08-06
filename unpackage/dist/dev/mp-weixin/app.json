@@ -1,0 +1,71 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/start",
+    "pages/mine/mine",
+    "pages/index/pay",
+    "pages/index/account/preson_info/preson_info",
+    "pages/index/load",
+    "pages/index/account/account",
+    "pages/menu/menu",
+    "pages/take-foods/take-foods",
+    "pages/pay/pay",
+    "pages/remark/remark",
+    "pages/packages/index",
+    "pages/packages/detail",
+    "pages/balance/balance",
+    "pages/login/login",
+    "pages/address/address",
+    "pages/address/add",
+    "pages/integrals/integrals",
+    "pages/attendance/attendance",
+    "pages/orders/orders",
+    "pages/orders/detail",
+    "pages/mine/member-code",
+    "pages/coupons/coupons",
+    "pages/mine/userinfo",
+    "pages/integrals/flow",
+    "pages/integrals/detail",
+    "pages/review/review",
+    "pages/activities/invite",
+    "pages/services/services",
+    "pages/invoice/invoice",
+    "pages/services/help-center",
+    "pages/giftcard/giftcard"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#8a8a8a",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/start",
+        "text": "探索",
+        "iconPath": "static/images/tabbar/tansuo.png",
+        "selectedIconPath": "static/images/tabbar/shouye_sel.png"
+      },
+      {
+        "pagePath": "pages/index/pay",
+        "text": "疗愈",
+        "iconPath": "static/images/tabbar/liaoyu.png",
+        "selectedIconPath": "static/images/tabbar/liaoyu_sel.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "static/images/tabbar/wode.png",
+        "selectedIconPath": "static/images/tabbar/wode_sel.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

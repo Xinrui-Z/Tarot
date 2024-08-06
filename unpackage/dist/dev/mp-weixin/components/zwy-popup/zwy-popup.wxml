@@ -1,0 +1,1 @@
+<view data-event-opts="{{[['touchmove',[['',['$event']]]]]}}" hidden="{{!(ishide)}}" catchtouchmove="__e" class="data-v-9e07ed08"><view class="mask data-v-9e07ed08" style="{{(maskStyle)}}"></view><view class="tip data-v-9e07ed08" style="{{(tipStyle)}}"><slot></slot></view></view>

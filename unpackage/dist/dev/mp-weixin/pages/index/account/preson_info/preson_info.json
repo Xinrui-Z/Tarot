@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "preson_info",
+  "usingComponents": {
+    "uni-icons": "/components/uni-icons/uni-icons"
+  }
+}

@@ -1,0 +1,311 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "超智AI塔罗牌测试"
+			}
+		},
+		{
+			"path": "pages/index/start",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}
+	    ,{
+            "path" : "pages/index/pay",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+		,{
+			"path":"pages/index/account/preson_info/preson_info",
+			"style":{
+				"navigationBarTitleText":"preson_info"
+			}
+		}
+        ,{
+            "path" : "pages/index/load",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        },
+		{
+			"path": "pages/index/account/account",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "pages/menu/menu",
+			"style": {
+				"navigationBarTitleText": "奈雪の茶",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+		}, {
+			"path": "pages/take-foods/take-foods",
+			"style": {
+				"navigationBarTitleText": "奈雪の茶",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+		}
+	    ,{
+            "path" : "pages/pay/pay",
+            "style" : {
+				"navigationBarTitleText": "奈雪の茶",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+        }
+        ,{
+            "path" : "pages/remark/remark",
+            "style" : {
+				"navigationBarTitleText": "奈雪の茶",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+        }
+        ,{
+            "path" : "pages/packages/index",
+            "style" : {
+				"navigationBarTitleText": "券包商品",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff",
+				"enablePullDownRefresh": true
+			}
+        }
+        ,{
+            "path" : "pages/packages/detail",
+            "style" : {
+				"navigationBarTitleText": "购买劵包",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff",
+				"enablePullDownRefresh": true
+			}
+        }
+        ,{
+            "path" : "pages/balance/balance",
+            "style" : {
+				"navigationBarTitleText": "会员储值",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+        }
+        ,{
+            "path" : "pages/login/login",
+            "style" : {
+				"navigationBarTitleText": "登录",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+        }
+        ,{
+            "path" : "pages/address/address",
+            "style" : {
+				"navigationBarTitleText": "我的地址",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+        }
+        ,{
+            "path" : "pages/address/add",
+            "style" : {
+				"navigationBarTitleText": "奈雪の茶",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+        }
+        ,{
+            "path" : "pages/integrals/integrals",
+            "style" : {
+				"navigationStyle":"custom",
+				"onReachBottomDistance": 50
+			}
+        }
+        ,{
+            "path" : "pages/attendance/attendance",
+            "style" : {
+				"navigationStyle":"custom"
+			}
+        }
+        ,{
+            "path" : "pages/orders/orders",
+            "style" : {
+				"navigationBarTitleText": "历史订单",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 50
+			}
+        }
+        ,{
+            "path" : "pages/orders/detail",
+            "style" : {
+				"navigationBarTitleText": "订单详情",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+        }
+        ,{
+            "path" : "pages/mine/member-code",
+            "style" : {
+				"navigationBarTitleText": "会员码",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+        }
+        ,{
+            "path" : "pages/coupons/coupons",
+            "style" : {
+				"navigationBarTitleText": "我的卡券",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+        }
+        ,{
+            "path" : "pages/mine/userinfo",
+            "style" : {
+				"navigationBarTitleText": "用户信息",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+        },
+		{
+		    "path" : "pages/integrals/flow",
+		    "style" : {
+				"navigationBarTitleText": "积分明细",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+		},
+		{
+		    "path" : "pages/integrals/detail",
+		    "style" : {
+				"navigationBarTitleText": "兑换详情",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+		}
+        ,{
+            "path" : "pages/review/review",
+            "style" : {
+				"navigationBarTitleText": "奈雪の茶",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+        }
+        ,{
+            "path" : "pages/activities/invite",
+            "style" : {
+				"navigationBarTitleText": "奈雪の茶",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+        }
+        ,{
+            "path" : "pages/services/services",
+            "style" : {
+				"navigationBarTitleText": "奈雪の茶",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+        }
+        ,{
+            "path" : "pages/invoice/invoice",
+            "style" : {
+				"navigationBarTitleText": "奈雪の茶",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+        }
+        ,{
+            "path" : "pages/services/help-center",
+            "style" : {
+				"navigationBarTitleText": "帮助中心",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+        }
+        ,{
+            "path" : "pages/giftcard/giftcard",
+            "style" : {
+				"navigationBarTitleText": "礼品卡列表",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff",
+				"disableScroll": true
+			}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	// "condition": { //模式配置，仅开发期间生效
+	//     "current": 1, //当前激活的模式（list 的索引项）
+	//     "list": [{
+	//             "name": "index", //模式名称
+	//             "path": "pages/index/account/account", //启动页面，必选
+	//             "query": "interval=4000&autoplay=false" //启动参数，在页面的onLoad函数里面得到。
+	//         },
+	//         {
+	//             "name": "register",
+	//             "path": "pages/index/register/register"
+	//         },
+	// 		{
+	// 			"name":"account",
+	// 			"path":"pages/index/account/account"
+	// 		},
+	// 		{
+	// 			"name":"preson_info",
+	// 			"path":"pages/index/account/preson_info/preson_info"
+	// 		},
+	// 		{
+	// 			"name": "my",
+	// 			"path": "pages/mine/mine"
+	// 		}
+	//     ]
+	// },	
+	"tabBar": {
+		"color":"#bfbfbf",
+		"selectedColor":"#8a8a8a",
+		"borderStyle":"black",
+		"backgroundColor":"#ffffff",
+		"position":"bottom",
+		"list": [
+			{
+				"pagePath": "pages/index/start",
+				"text": "探索",
+				"iconPath": "static/images/tabbar/tansuo.png",
+				"selectedIconPath": "static/images/tabbar/shouye_sel.png"
+			},
+			{
+				"pagePath": "pages/index/pay",
+				"text": "疗愈",
+				"iconPath": "static/images/tabbar/liaoyu.png",
+				"selectedIconPath": "static/images/tabbar/liaoyu_sel.png"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"text": "我的",
+				"iconPath": "static/images/tabbar/wode.png",
+				"selectedIconPath": "static/images/tabbar/wode_sel.png"
+			}
+		]
+	},
+	"uniIdRouter": {}
+}

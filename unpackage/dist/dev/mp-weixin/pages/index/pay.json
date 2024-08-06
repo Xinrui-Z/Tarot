@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "zwy-popup": "/components/zwy-popup/zwy-popup"
+  }
+}
