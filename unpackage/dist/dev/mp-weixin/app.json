@@ -3,35 +3,21 @@
     "pages/index/index",
     "pages/index/start",
     "pages/mine/mine",
-    "pages/index/pay",
     "pages/index/account/preson_info/preson_info",
     "pages/index/load",
     "pages/index/account/account",
     "pages/menu/menu",
-    "pages/take-foods/take-foods",
-    "pages/pay/pay",
-    "pages/remark/remark",
-    "pages/packages/index",
-    "pages/packages/detail",
     "pages/balance/balance",
     "pages/login/login",
-    "pages/address/address",
-    "pages/address/add",
     "pages/integrals/integrals",
     "pages/attendance/attendance",
     "pages/orders/orders",
     "pages/orders/detail",
-    "pages/mine/member-code",
-    "pages/coupons/coupons",
     "pages/mine/userinfo",
     "pages/integrals/flow",
     "pages/integrals/detail",
     "pages/review/review",
-    "pages/activities/invite",
-    "pages/services/services",
-    "pages/invoice/invoice",
-    "pages/services/help-center",
-    "pages/giftcard/giftcard"
+    "pages/activities/invite"
   ],
   "subPackages": [],
   "window": {
@@ -49,12 +35,18 @@
     "list": [
       {
         "pagePath": "pages/index/start",
-        "text": "探索",
-        "iconPath": "static/images/tabbar/tansuo.png",
+        "text": "首页",
+        "iconPath": "static/images/tabbar/shouye.png",
         "selectedIconPath": "static/images/tabbar/shouye_sel.png"
       },
       {
-        "pagePath": "pages/index/pay",
+        "pagePath": "pages/menu/menu",
+        "text": "探索",
+        "iconPath": "static/images/tabbar/tansuo.png",
+        "selectedIconPath": "static/images/tabbar/tansuo_sel.png"
+      },
+      {
+        "pagePath": "pages/balance/balance",
         "text": "疗愈",
         "iconPath": "static/images/tabbar/liaoyu.png",
         "selectedIconPath": "static/images/tabbar/liaoyu_sel.png"

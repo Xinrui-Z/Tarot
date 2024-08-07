@@ -39,10 +39,6 @@
 						<image src="/static/images/mine/srtq.png"></image>
 						<view>生日特权</view>
 					</view>
-					<view class="grid">
-						<image src="/static/images/mine/nxbz.png"></image>
-						<view>奈雪宝藏</view>
-					</view>
 				</view>
 				<view class="font-size-base text-color-primary">会员权益说明</view>
 			</view>

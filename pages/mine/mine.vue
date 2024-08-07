@@ -2,10 +2,6 @@
 	<view class="container">
 		<view class="position-relative">
 			<image src="/static/images/bg/mine_bg.jpg" class="bg"></image>
-<!-- 			<button type="default" size="mini" class="hym-btn" @tap="memberCode">
-				<image src="/static/images/mine/hym.png"></image>
-				<text>会员码</text>
-			</button> -->
 		</view>
 		
 		<view style="padding: 0 30rpx;">
@@ -41,25 +37,25 @@
 				</view>
 				<!-- user grid begin -->
 				<view class="w-100 d-flex align-items-center just-content-center">
-					<view class="user-grid" @tap="coupons">
+					<view class="user-grid" >
 						<view class="value font-size-extra-lg font-weight-bold text-color-base">
 							{{  isLogin ? member.couponNum : '***' }}
 						</view>
 						<view class="font-size-sm text-color-assist">我的积分</view>
 					</view>
-					<view class="user-grid" @tap="integrals">
+					<view class="user-grid">
 						<view class="value font-size-extra-lg font-weight-bold text-color-base">
 							{{  isLogin ? member.pointNum : '***' }}
 						</view>
 						<view class="font-size-sm text-color-assist">卡牌师</view>
 					</view>
-					<view class="user-grid" @tap="balance">
+					<view class="user-grid" >
 						<view class="value font-size-extra-lg font-weight-bold text-color-base">
 							{{  isLogin ? member.balance : '***' }}
 						</view>
 						<view class="font-size-sm text-color-assist">星座学者</view>
 					</view>
-					<view class="user-grid" @tap="giftCards">
+					<view class="user-grid">
 						<view class="value font-size-extra-lg font-weight-bold text-color-base">
 							{{  isLogin ? member.giftBalance : '***' }}
 						</view>
@@ -96,7 +92,7 @@
 			</view>
 			<!-- level benefit box end -->
 			<!-- banner begin -->
-			<image src="/static/images/mine/inv.jpg" class="banner" mode="widthFix"></image>
+			<image src="/static/images/mine/inv.jpg" class="banner" mode="widthFix" @tap="invite"></image>
 			<!-- bennaer end -->
 		</view>
 		<!-- service box begin -->
@@ -116,7 +112,7 @@
 					<view>送TA心愿</view>
 					<image :src="newIcon" class="new-badage"></image>
 				</view>
-				<view class="grid" @tap="orders">
+				<view class="grid" @tap="userinfo">
 					<view class="image">
 						<image src="/static/images/mine/wdzl.png"></image>
 					</view>
@@ -140,13 +136,13 @@
 					</view>
 					<view>意见反馈</view>
 				</view>
-				<view class="grid" @tap="addresses">
+				<view class="grid">
 					<view class="image">
 						<image src="/static/images/mine/hd.png"></image>
 					</view>
 					<view>活动兑换码</view>
 				</view>
-				<view class="grid" @tap="services">
+				<view class="grid" >
 					<view class="image">
 						<image src="/static/images/mine/tyg.png"></image>
 					</view>
@@ -154,12 +150,7 @@
 				</view>
 			</view>
 		</view>
-		<!-- service box end -->
-		<!-- tips begin -->
-<!-- 		<view class="d-flex just-content-center align-items-center text-color-assist" style="padding: 30rpx 0; font-size: 22rpx;">
-			会员卡适用于奈雪的茶和奈雪酒屋指定范围
-		</view> -->
-		<!-- tisps end -->
+
 	</view>
 </template>
 
@@ -188,42 +179,6 @@
 					url: '/pages/login/login',
 				})
 			},
-			packages() {
-				if(!this.isLogin) {
-					this.login()
-					return
-				}
-				uni.navigateTo({
-					url: '/pages/packages/index'
-				})
-			},
-			balance() {
-				if(!this.isLogin) {
-					this.login()
-					return
-				}
-				uni.navigateTo({
-					url: '/pages/balance/balance'
-				})
-			},
-			addresses() {
-				if(!this.isLogin) {
-					this.login()
-					return
-				}
-				uni.navigateTo({
-					url: '/pages/address/address'
-				})
-			},
-			integrals() {
-				if(!this.isLogin) {
-					this.login()
-					return
-				}
-				uni.navigateTo({
-					url: '/pages/integrals/integrals'
-				})
-			},
 			attendance() {
 				if(!this.isLogin) {
 					this.login()
@@ -233,31 +188,22 @@
 					url: '/pages/attendance/attendance'
 				})
 			},
-			orders() {
+			invite(){
 				if(!this.isLogin) {
 					this.login()
 					return
 				}
 				uni.navigateTo({
-					url: '/pages/orders/orders'
+					url: '/pages/activities/invite'
 				})
 			},
-			memberCode() {
+			userinfo() {
 				if(!this.isLogin) {
 					this.login()
 					return
 				}
 				uni.navigateTo({
-					url: '/pages/mine/member-code'
-				})
-			},
-			coupons() {
-				if(!this.isLogin) {
-					this.login()
-					return
-				}
-				uni.navigateTo({
-					url: '/pages/coupons/coupons'
+					url: '/pages/mine/userinfo.vue'
 				})
 			},
 			userinfo() {
@@ -267,20 +213,6 @@
 				}
 				uni.navigateTo({
 					url: '/pages/mine/userinfo'
-				})
-			},
-			services() {
-				uni.navigateTo({
-					url: '/pages/services/services'
-				})
-			},
-			giftCards() {
-				if(!this.isLogin) {
-					this.login()
-					return
-				}
-				uni.navigateTo({
-					url: '/pages/giftcard/giftcard'
 				})
 			}
 		}

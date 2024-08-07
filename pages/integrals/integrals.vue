@@ -12,9 +12,6 @@
 						<view class="iconfont iconarrow-right line-height-100"></view>
 					</view>
 				</view>
-				<view class="right">
-					兑换记录
-				</view>
 			</view>
 		</view>
 		<view style="padding: 0 30rpx;">
@@ -26,40 +23,6 @@
 					<view class="font-size-base text-color-primary" style="margin-top: 20rpx;">查看签到日历</view>
 				</view>
 			</view>
-			
-			<view class="banner">
-				<image src="https://images.qmai.cn/s23107/2020/04/30/aed6cdb1db4712f87e.png" mode="widthFix"></image>
-			</view>
-			<!-- 积分商品列表 begin -->
-			<view clas="d-flex flex-column" v-for="(items, cate) in pointsMall" :key="cate">
-				<view class="d-flex justify-content-between align-items-center mb-30">
-					<view class="font-size-lg text-color-base">{{ cate }}</view>
-					<image src="/static/images/navigator.png" style="width: 40rpx; height: 40rpx;"></image>
-				</view>
-				<view class="d-flex flex-wrap justify-content-between">
-					<block v-for="(item, key) in items" :key="key">
-						<view class="d-flex bg-white flex-column align-items-stretch point-box" @tap="detail(cate, item.id)">
-							<image :src="item.img.length ? item.img[0] : '/static/images/integrals/ticket.png'" class="w-100" mode="widthFix"></image>
-							<view class="d-flex flex-column overflow-hidden">
-								<view class="font-size-lg text-color-base text-truncate font-weight-bold" style="margin-bottom: 10rpx;">{{ item.goods_name }}</view>
-								<view class="d-flex align-items-center">
-									<view class="d-flex align-items-baseline">
-										<view class="font-size-base text-color-primary mr-10">{{ item.points_price }}</view>
-										<view class="font-size-sm text-color-assist">积分</view>
-									</view>
-									<view v-if="item.amount > 0" class="d-flex align-items-center font-size-sm text-color-assist" style="margin: 0 10rpx;">+</view>
-									<view  v-if="item.amount > 0"class="d-flex align-items-baseline">
-										<view class="font-size-base text-color-primary mr-10">{{ parseFloat(item.amount) }}</view>
-										<view class="font-size-sm text-color-assist">元</view>
-									</view>
-								</view>
-								<view class="font-size-sm text-color-assist">剩余{{ item.goods_stock }}件</view>
-							</view>
-						</view>						
-					</block>
-				</view>
-			</view>
-			<!-- 积分商品列表 end -->
 		</view>
 	</view>
 </template>

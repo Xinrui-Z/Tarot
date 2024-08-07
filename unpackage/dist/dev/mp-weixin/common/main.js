@@ -16,20 +16,23 @@ var _typeof2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/hel
 __webpack_require__(/*! uni-pages */ 26);
 var _App = _interopRequireDefault(__webpack_require__(/*! ./App */ 27));
 var _api = _interopRequireDefault(__webpack_require__(/*! ./api */ 33));
-var _util = _interopRequireDefault(__webpack_require__(/*! ./common/util */ 49));
-var _store = _interopRequireDefault(__webpack_require__(/*! ./store */ 50));
+var _util = _interopRequireDefault(__webpack_require__(/*! ./common/util */ 48));
+var _store = _interopRequireDefault(__webpack_require__(/*! ./store */ 49));
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 25));
-var _utils = _interopRequireDefault(__webpack_require__(/*! ./common/js/utils */ 55));
-var _ad = _interopRequireDefault(__webpack_require__(/*! ./common/js/ad */ 57));
-var _jsMd = _interopRequireDefault(__webpack_require__(/*! js-md5 */ 58));
-var _share = _interopRequireDefault(__webpack_require__(/*! @/common/mixins/share.js */ 63));
-var _index = _interopRequireDefault(__webpack_require__(/*! @/components/uniapp-zaudio/index.js */ 64));
+var _utils = _interopRequireDefault(__webpack_require__(/*! ./common/js/utils */ 54));
+var _ad = _interopRequireDefault(__webpack_require__(/*! ./common/js/ad */ 56));
+var _jsMd = _interopRequireDefault(__webpack_require__(/*! js-md5 */ 57));
+var _share = _interopRequireDefault(__webpack_require__(/*! @/common/mixins/share.js */ 62));
+var _index = _interopRequireDefault(__webpack_require__(/*! @/components/uniapp-zaudio/index.js */ 63));
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 // @ts-ignore
 wx.__webpack_require_UNI_MP_PLUGIN__ = __webpack_require__;
 _vue.default.config.productionTip = false;
 _App.default.mpType = 'app';
+_vue.default.prototype.$store = _store.default;
+_vue.default.prototype.$api = _api.default;
+_vue.default.prototype.$util = _util.default;
 try {
   var isPromise = function isPromise(obj) {
     return !!obj && ((0, _typeof2.default)(obj) === "object" || typeof obj === "function") && typeof obj.then === "function";
@@ -68,7 +71,7 @@ _vue.default.prototype.adUtils = _ad.default;
 _vue.default.prototype.md5 = _jsMd.default;
 
 // 应用配置
-var app_info = __webpack_require__(/*! @/static/app_info.js */ 56);
+var app_info = __webpack_require__(/*! @/static/app_info.js */ 55);
 _vue.default.prototype.appInfo = app_info;
 _vue.default.config.productionTip = false;
 

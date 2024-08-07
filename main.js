@@ -8,6 +8,10 @@ import Vue from 'vue'
 Vue.config.productionTip = false
 App.mpType = 'app'
 
+Vue.prototype.$store = store
+Vue.prototype.$api = api
+Vue.prototype.$util = util
+
 try {
   function isPromise(obj) {
     return (

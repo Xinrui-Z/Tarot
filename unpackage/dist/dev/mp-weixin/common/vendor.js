@@ -1,6 +1,6 @@
-(global["webpackJsonp"] = global["webpackJsonp"] || []).push([["common/vendor"],{
-
-/***/ 1:
+(global["webpackJsonp"] = global["webpackJsonp"] || []).push([["common/vendor"],[
+/* 0 */,
+/* 1 */
 /*!*********************************************************!*\
   !*** ./node_modules/@dcloudio/uni-mp-weixin/dist/wx.js ***!
   \*********************************************************/
@@ -43,197 +43,7 @@ var _default = target[key];
 exports.default = _default;
 
 /***/ }),
-
-/***/ 10:
-/*!****************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/nonIterableRest.js ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _nonIterableRest() {
-  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-}
-module.exports = _nonIterableRest, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
-/***/ 11:
-/*!***************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/defineProperty.js ***!
-  \***************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var toPropertyKey = __webpack_require__(/*! ./toPropertyKey.js */ 12);
-function _defineProperty(obj, key, value) {
-  key = toPropertyKey(key);
-  if (key in obj) {
-    Object.defineProperty(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-  return obj;
-}
-module.exports = _defineProperty, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
-/***/ 12:
-/*!**************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/toPropertyKey.js ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var _typeof = __webpack_require__(/*! ./typeof.js */ 13)["default"];
-var toPrimitive = __webpack_require__(/*! ./toPrimitive.js */ 14);
-function toPropertyKey(t) {
-  var i = toPrimitive(t, "string");
-  return "symbol" == _typeof(i) ? i : i + "";
-}
-module.exports = toPropertyKey, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
-/***/ 13:
-/*!*******************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/typeof.js ***!
-  \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _typeof(o) {
-  "@babel/helpers - typeof";
-
-  return (module.exports = _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) {
-    return typeof o;
-  } : function (o) {
-    return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o;
-  }, module.exports.__esModule = true, module.exports["default"] = module.exports), _typeof(o);
-}
-module.exports = _typeof, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
-/***/ 14:
-/*!************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/toPrimitive.js ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var _typeof = __webpack_require__(/*! ./typeof.js */ 13)["default"];
-function toPrimitive(t, r) {
-  if ("object" != _typeof(t) || !t) return t;
-  var e = t[Symbol.toPrimitive];
-  if (void 0 !== e) {
-    var i = e.call(t, r || "default");
-    if ("object" != _typeof(i)) return i;
-    throw new TypeError("@@toPrimitive must return a primitive value.");
-  }
-  return ("string" === r ? String : Number)(t);
-}
-module.exports = toPrimitive, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
-/***/ 15:
-/*!**********************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/construct.js ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var setPrototypeOf = __webpack_require__(/*! ./setPrototypeOf.js */ 16);
-var isNativeReflectConstruct = __webpack_require__(/*! ./isNativeReflectConstruct.js */ 17);
-function _construct(t, e, r) {
-  if (isNativeReflectConstruct()) return Reflect.construct.apply(null, arguments);
-  var o = [null];
-  o.push.apply(o, e);
-  var p = new (t.bind.apply(t, o))();
-  return r && setPrototypeOf(p, r.prototype), p;
-}
-module.exports = _construct, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
-/***/ 16:
-/*!***************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/setPrototypeOf.js ***!
-  \***************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _setPrototypeOf(o, p) {
-  module.exports = _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) {
-    o.__proto__ = p;
-    return o;
-  }, module.exports.__esModule = true, module.exports["default"] = module.exports;
-  return _setPrototypeOf(o, p);
-}
-module.exports = _setPrototypeOf, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
-/***/ 17:
-/*!*************************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/isNativeReflectConstruct.js ***!
-  \*************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _isNativeReflectConstruct() {
-  try {
-    var t = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {}));
-  } catch (t) {}
-  return (module.exports = _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-    return !!t;
-  }, module.exports.__esModule = true, module.exports["default"] = module.exports)();
-}
-module.exports = _isNativeReflectConstruct, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
-/***/ 18:
-/*!******************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/toConsumableArray.js ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var arrayWithoutHoles = __webpack_require__(/*! ./arrayWithoutHoles.js */ 19);
-var iterableToArray = __webpack_require__(/*! ./iterableToArray.js */ 20);
-var unsupportedIterableToArray = __webpack_require__(/*! ./unsupportedIterableToArray.js */ 8);
-var nonIterableSpread = __webpack_require__(/*! ./nonIterableSpread.js */ 21);
-function _toConsumableArray(arr) {
-  return arrayWithoutHoles(arr) || iterableToArray(arr) || unsupportedIterableToArray(arr) || nonIterableSpread();
-}
-module.exports = _toConsumableArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
-/***/ 19:
-/*!******************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var arrayLikeToArray = __webpack_require__(/*! ./arrayLikeToArray.js */ 9);
-function _arrayWithoutHoles(arr) {
-  if (Array.isArray(arr)) return arrayLikeToArray(arr);
-}
-module.exports = _arrayWithoutHoles, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
-/***/ 2:
+/* 2 */
 /*!************************************************************!*\
   !*** ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js ***!
   \************************************************************/
@@ -2640,8 +2450,336 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/wx.js */ 1)["default"], __webpack_require__(/*! ./../../../webpack/buildin/global.js */ 3)))
 
 /***/ }),
+/* 3 */
+/*!***********************************!*\
+  !*** (webpack)/buildin/global.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-/***/ 20:
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || new Function("return this")();
+} catch (e) {
+	// This works if the window reference is available
+	if (typeof window === "object") g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+
+/***/ }),
+/* 4 */
+/*!**********************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/interopRequireDefault.js ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : {
+    "default": obj
+  };
+}
+module.exports = _interopRequireDefault, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+/* 5 */
+/*!**************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/slicedToArray.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var arrayWithHoles = __webpack_require__(/*! ./arrayWithHoles.js */ 6);
+var iterableToArrayLimit = __webpack_require__(/*! ./iterableToArrayLimit.js */ 7);
+var unsupportedIterableToArray = __webpack_require__(/*! ./unsupportedIterableToArray.js */ 8);
+var nonIterableRest = __webpack_require__(/*! ./nonIterableRest.js */ 10);
+function _slicedToArray(arr, i) {
+  return arrayWithHoles(arr) || iterableToArrayLimit(arr, i) || unsupportedIterableToArray(arr, i) || nonIterableRest();
+}
+module.exports = _slicedToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+/* 6 */
+/*!***************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/arrayWithHoles.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _arrayWithHoles(arr) {
+  if (Array.isArray(arr)) return arr;
+}
+module.exports = _arrayWithHoles, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+/* 7 */
+/*!*********************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/iterableToArrayLimit.js ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _iterableToArrayLimit(r, l) {
+  var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"];
+  if (null != t) {
+    var e,
+      n,
+      i,
+      u,
+      a = [],
+      f = !0,
+      o = !1;
+    try {
+      if (i = (t = t.call(r)).next, 0 === l) {
+        if (Object(t) !== t) return;
+        f = !1;
+      } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0) {
+        ;
+      }
+    } catch (r) {
+      o = !0, n = r;
+    } finally {
+      try {
+        if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return;
+      } finally {
+        if (o) throw n;
+      }
+    }
+    return a;
+  }
+}
+module.exports = _iterableToArrayLimit, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+/* 8 */
+/*!***************************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var arrayLikeToArray = __webpack_require__(/*! ./arrayLikeToArray.js */ 9);
+function _unsupportedIterableToArray(o, minLen) {
+  if (!o) return;
+  if (typeof o === "string") return arrayLikeToArray(o, minLen);
+  var n = Object.prototype.toString.call(o).slice(8, -1);
+  if (n === "Object" && o.constructor) n = o.constructor.name;
+  if (n === "Map" || n === "Set") return Array.from(o);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return arrayLikeToArray(o, minLen);
+}
+module.exports = _unsupportedIterableToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+/* 9 */
+/*!*****************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/arrayLikeToArray.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _arrayLikeToArray(arr, len) {
+  if (len == null || len > arr.length) len = arr.length;
+  for (var i = 0, arr2 = new Array(len); i < len; i++) {
+    arr2[i] = arr[i];
+  }
+  return arr2;
+}
+module.exports = _arrayLikeToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+/* 10 */
+/*!****************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/nonIterableRest.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _nonIterableRest() {
+  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+module.exports = _nonIterableRest, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+/* 11 */
+/*!***************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/defineProperty.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var toPropertyKey = __webpack_require__(/*! ./toPropertyKey.js */ 12);
+function _defineProperty(obj, key, value) {
+  key = toPropertyKey(key);
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+  return obj;
+}
+module.exports = _defineProperty, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+/* 12 */
+/*!**************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/toPropertyKey.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _typeof = __webpack_require__(/*! ./typeof.js */ 13)["default"];
+var toPrimitive = __webpack_require__(/*! ./toPrimitive.js */ 14);
+function toPropertyKey(t) {
+  var i = toPrimitive(t, "string");
+  return "symbol" == _typeof(i) ? i : i + "";
+}
+module.exports = toPropertyKey, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+/* 13 */
+/*!*******************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/typeof.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _typeof(o) {
+  "@babel/helpers - typeof";
+
+  return (module.exports = _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) {
+    return typeof o;
+  } : function (o) {
+    return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o;
+  }, module.exports.__esModule = true, module.exports["default"] = module.exports), _typeof(o);
+}
+module.exports = _typeof, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+/* 14 */
+/*!************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/toPrimitive.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _typeof = __webpack_require__(/*! ./typeof.js */ 13)["default"];
+function toPrimitive(t, r) {
+  if ("object" != _typeof(t) || !t) return t;
+  var e = t[Symbol.toPrimitive];
+  if (void 0 !== e) {
+    var i = e.call(t, r || "default");
+    if ("object" != _typeof(i)) return i;
+    throw new TypeError("@@toPrimitive must return a primitive value.");
+  }
+  return ("string" === r ? String : Number)(t);
+}
+module.exports = toPrimitive, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+/* 15 */
+/*!**********************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/construct.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var setPrototypeOf = __webpack_require__(/*! ./setPrototypeOf.js */ 16);
+var isNativeReflectConstruct = __webpack_require__(/*! ./isNativeReflectConstruct.js */ 17);
+function _construct(t, e, r) {
+  if (isNativeReflectConstruct()) return Reflect.construct.apply(null, arguments);
+  var o = [null];
+  o.push.apply(o, e);
+  var p = new (t.bind.apply(t, o))();
+  return r && setPrototypeOf(p, r.prototype), p;
+}
+module.exports = _construct, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+/* 16 */
+/*!***************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/setPrototypeOf.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _setPrototypeOf(o, p) {
+  module.exports = _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  }, module.exports.__esModule = true, module.exports["default"] = module.exports;
+  return _setPrototypeOf(o, p);
+}
+module.exports = _setPrototypeOf, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+/* 17 */
+/*!*************************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/isNativeReflectConstruct.js ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _isNativeReflectConstruct() {
+  try {
+    var t = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {}));
+  } catch (t) {}
+  return (module.exports = _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+    return !!t;
+  }, module.exports.__esModule = true, module.exports["default"] = module.exports)();
+}
+module.exports = _isNativeReflectConstruct, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+/* 18 */
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/toConsumableArray.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var arrayWithoutHoles = __webpack_require__(/*! ./arrayWithoutHoles.js */ 19);
+var iterableToArray = __webpack_require__(/*! ./iterableToArray.js */ 20);
+var unsupportedIterableToArray = __webpack_require__(/*! ./unsupportedIterableToArray.js */ 8);
+var nonIterableSpread = __webpack_require__(/*! ./nonIterableSpread.js */ 21);
+function _toConsumableArray(arr) {
+  return arrayWithoutHoles(arr) || iterableToArray(arr) || unsupportedIterableToArray(arr) || nonIterableSpread();
+}
+module.exports = _toConsumableArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+/* 19 */
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var arrayLikeToArray = __webpack_require__(/*! ./arrayLikeToArray.js */ 9);
+function _arrayWithoutHoles(arr) {
+  if (Array.isArray(arr)) return arrayLikeToArray(arr);
+}
+module.exports = _arrayWithoutHoles, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+/* 20 */
 /*!****************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/iterableToArray.js ***!
   \****************************************************************/
@@ -2654,8 +2792,7 @@ function _iterableToArray(iter) {
 module.exports = _iterableToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
-
-/***/ 21:
+/* 21 */
 /*!******************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/nonIterableSpread.js ***!
   \******************************************************************/
@@ -2668,8 +2805,7 @@ function _nonIterableSpread() {
 module.exports = _nonIterableSpread, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
-
-/***/ 22:
+/* 22 */
 /*!*************************************************************!*\
   !*** ./node_modules/@dcloudio/uni-i18n/dist/uni-i18n.es.js ***!
   \*************************************************************/
@@ -3205,8 +3341,7 @@ function resolveLocaleChain(locale) {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"], __webpack_require__(/*! ./../../../webpack/buildin/global.js */ 3)))
 
 /***/ }),
-
-/***/ 23:
+/* 23 */
 /*!***************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/classCallCheck.js ***!
   \***************************************************************/
@@ -3221,8 +3356,7 @@ function _classCallCheck(instance, Constructor) {
 module.exports = _classCallCheck, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
-
-/***/ 24:
+/* 24 */
 /*!************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/createClass.js ***!
   \************************************************************/
@@ -3250,972 +3384,7 @@ function _createClass(Constructor, protoProps, staticProps) {
 module.exports = _createClass, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
-
-/***/ 245:
-/*!***********************************************************************************!*\
-  !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/common/uqrcode.js ***!
-  \***********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-//---------------------------------------------------------------------
-// github https://github.com/Sansnn/uQRCode
-//---------------------------------------------------------------------
-
-var uQRCode = {};
-(function () {
-  //---------------------------------------------------------------------
-  // QRCode for JavaScript
-  //
-  // Copyright (c) 2009 Kazuhiko Arase
-  //
-  // URL: http://www.d-project.com/
-  //
-  // Licensed under the MIT license:
-  //   http://www.opensource.org/licenses/mit-license.php
-  //
-  // The word "QR Code" is registered trademark of 
-  // DENSO WAVE INCORPORATED
-  //   http://www.denso-wave.com/qrcode/faqpatent-e.html
-  //
-  //---------------------------------------------------------------------
-
-  //---------------------------------------------------------------------
-  // QR8bitByte
-  //---------------------------------------------------------------------
-
-  function QR8bitByte(data) {
-    this.mode = QRMode.MODE_8BIT_BYTE;
-    this.data = data;
-  }
-  QR8bitByte.prototype = {
-    getLength: function getLength(buffer) {
-      return this.data.length;
-    },
-    write: function write(buffer) {
-      for (var i = 0; i < this.data.length; i++) {
-        // not JIS ...
-        buffer.put(this.data.charCodeAt(i), 8);
-      }
-    }
-  };
-
-  //---------------------------------------------------------------------
-  // QRCode
-  //---------------------------------------------------------------------
-
-  function QRCode(typeNumber, errorCorrectLevel) {
-    this.typeNumber = typeNumber;
-    this.errorCorrectLevel = errorCorrectLevel;
-    this.modules = null;
-    this.moduleCount = 0;
-    this.dataCache = null;
-    this.dataList = new Array();
-  }
-  QRCode.prototype = {
-    addData: function addData(data) {
-      var newData = new QR8bitByte(data);
-      this.dataList.push(newData);
-      this.dataCache = null;
-    },
-    isDark: function isDark(row, col) {
-      if (row < 0 || this.moduleCount <= row || col < 0 || this.moduleCount <= col) {
-        throw new Error(row + "," + col);
-      }
-      return this.modules[row][col];
-    },
-    getModuleCount: function getModuleCount() {
-      return this.moduleCount;
-    },
-    make: function make() {
-      // Calculate automatically typeNumber if provided is < 1
-      if (this.typeNumber < 1) {
-        var typeNumber = 1;
-        for (typeNumber = 1; typeNumber < 40; typeNumber++) {
-          var rsBlocks = QRRSBlock.getRSBlocks(typeNumber, this.errorCorrectLevel);
-          var buffer = new QRBitBuffer();
-          var totalDataCount = 0;
-          for (var i = 0; i < rsBlocks.length; i++) {
-            totalDataCount += rsBlocks[i].dataCount;
-          }
-          for (var i = 0; i < this.dataList.length; i++) {
-            var data = this.dataList[i];
-            buffer.put(data.mode, 4);
-            buffer.put(data.getLength(), QRUtil.getLengthInBits(data.mode, typeNumber));
-            data.write(buffer);
-          }
-          if (buffer.getLengthInBits() <= totalDataCount * 8) break;
-        }
-        this.typeNumber = typeNumber;
-      }
-      this.makeImpl(false, this.getBestMaskPattern());
-    },
-    makeImpl: function makeImpl(test, maskPattern) {
-      this.moduleCount = this.typeNumber * 4 + 17;
-      this.modules = new Array(this.moduleCount);
-      for (var row = 0; row < this.moduleCount; row++) {
-        this.modules[row] = new Array(this.moduleCount);
-        for (var col = 0; col < this.moduleCount; col++) {
-          this.modules[row][col] = null; //(col + row) % 3;
-        }
-      }
-
-      this.setupPositionProbePattern(0, 0);
-      this.setupPositionProbePattern(this.moduleCount - 7, 0);
-      this.setupPositionProbePattern(0, this.moduleCount - 7);
-      this.setupPositionAdjustPattern();
-      this.setupTimingPattern();
-      this.setupTypeInfo(test, maskPattern);
-      if (this.typeNumber >= 7) {
-        this.setupTypeNumber(test);
-      }
-      if (this.dataCache == null) {
-        this.dataCache = QRCode.createData(this.typeNumber, this.errorCorrectLevel, this.dataList);
-      }
-      this.mapData(this.dataCache, maskPattern);
-    },
-    setupPositionProbePattern: function setupPositionProbePattern(row, col) {
-      for (var r = -1; r <= 7; r++) {
-        if (row + r <= -1 || this.moduleCount <= row + r) continue;
-        for (var c = -1; c <= 7; c++) {
-          if (col + c <= -1 || this.moduleCount <= col + c) continue;
-          if (0 <= r && r <= 6 && (c == 0 || c == 6) || 0 <= c && c <= 6 && (r == 0 || r == 6) || 2 <= r && r <= 4 && 2 <= c && c <= 4) {
-            this.modules[row + r][col + c] = true;
-          } else {
-            this.modules[row + r][col + c] = false;
-          }
-        }
-      }
-    },
-    getBestMaskPattern: function getBestMaskPattern() {
-      var minLostPoint = 0;
-      var pattern = 0;
-      for (var i = 0; i < 8; i++) {
-        this.makeImpl(true, i);
-        var lostPoint = QRUtil.getLostPoint(this);
-        if (i == 0 || minLostPoint > lostPoint) {
-          minLostPoint = lostPoint;
-          pattern = i;
-        }
-      }
-      return pattern;
-    },
-    createMovieClip: function createMovieClip(target_mc, instance_name, depth) {
-      var qr_mc = target_mc.createEmptyMovieClip(instance_name, depth);
-      var cs = 1;
-      this.make();
-      for (var row = 0; row < this.modules.length; row++) {
-        var y = row * cs;
-        for (var col = 0; col < this.modules[row].length; col++) {
-          var x = col * cs;
-          var dark = this.modules[row][col];
-          if (dark) {
-            qr_mc.beginFill(0, 100);
-            qr_mc.moveTo(x, y);
-            qr_mc.lineTo(x + cs, y);
-            qr_mc.lineTo(x + cs, y + cs);
-            qr_mc.lineTo(x, y + cs);
-            qr_mc.endFill();
-          }
-        }
-      }
-      return qr_mc;
-    },
-    setupTimingPattern: function setupTimingPattern() {
-      for (var r = 8; r < this.moduleCount - 8; r++) {
-        if (this.modules[r][6] != null) {
-          continue;
-        }
-        this.modules[r][6] = r % 2 == 0;
-      }
-      for (var c = 8; c < this.moduleCount - 8; c++) {
-        if (this.modules[6][c] != null) {
-          continue;
-        }
-        this.modules[6][c] = c % 2 == 0;
-      }
-    },
-    setupPositionAdjustPattern: function setupPositionAdjustPattern() {
-      var pos = QRUtil.getPatternPosition(this.typeNumber);
-      for (var i = 0; i < pos.length; i++) {
-        for (var j = 0; j < pos.length; j++) {
-          var row = pos[i];
-          var col = pos[j];
-          if (this.modules[row][col] != null) {
-            continue;
-          }
-          for (var r = -2; r <= 2; r++) {
-            for (var c = -2; c <= 2; c++) {
-              if (r == -2 || r == 2 || c == -2 || c == 2 || r == 0 && c == 0) {
-                this.modules[row + r][col + c] = true;
-              } else {
-                this.modules[row + r][col + c] = false;
-              }
-            }
-          }
-        }
-      }
-    },
-    setupTypeNumber: function setupTypeNumber(test) {
-      var bits = QRUtil.getBCHTypeNumber(this.typeNumber);
-      for (var i = 0; i < 18; i++) {
-        var mod = !test && (bits >> i & 1) == 1;
-        this.modules[Math.floor(i / 3)][i % 3 + this.moduleCount - 8 - 3] = mod;
-      }
-      for (var i = 0; i < 18; i++) {
-        var mod = !test && (bits >> i & 1) == 1;
-        this.modules[i % 3 + this.moduleCount - 8 - 3][Math.floor(i / 3)] = mod;
-      }
-    },
-    setupTypeInfo: function setupTypeInfo(test, maskPattern) {
-      var data = this.errorCorrectLevel << 3 | maskPattern;
-      var bits = QRUtil.getBCHTypeInfo(data);
-
-      // vertical		
-      for (var i = 0; i < 15; i++) {
-        var mod = !test && (bits >> i & 1) == 1;
-        if (i < 6) {
-          this.modules[i][8] = mod;
-        } else if (i < 8) {
-          this.modules[i + 1][8] = mod;
-        } else {
-          this.modules[this.moduleCount - 15 + i][8] = mod;
-        }
-      }
-
-      // horizontal
-      for (var i = 0; i < 15; i++) {
-        var mod = !test && (bits >> i & 1) == 1;
-        if (i < 8) {
-          this.modules[8][this.moduleCount - i - 1] = mod;
-        } else if (i < 9) {
-          this.modules[8][15 - i - 1 + 1] = mod;
-        } else {
-          this.modules[8][15 - i - 1] = mod;
-        }
-      }
-
-      // fixed module
-      this.modules[this.moduleCount - 8][8] = !test;
-    },
-    mapData: function mapData(data, maskPattern) {
-      var inc = -1;
-      var row = this.moduleCount - 1;
-      var bitIndex = 7;
-      var byteIndex = 0;
-      for (var col = this.moduleCount - 1; col > 0; col -= 2) {
-        if (col == 6) col--;
-        while (true) {
-          for (var c = 0; c < 2; c++) {
-            if (this.modules[row][col - c] == null) {
-              var dark = false;
-              if (byteIndex < data.length) {
-                dark = (data[byteIndex] >>> bitIndex & 1) == 1;
-              }
-              var mask = QRUtil.getMask(maskPattern, row, col - c);
-              if (mask) {
-                dark = !dark;
-              }
-              this.modules[row][col - c] = dark;
-              bitIndex--;
-              if (bitIndex == -1) {
-                byteIndex++;
-                bitIndex = 7;
-              }
-            }
-          }
-          row += inc;
-          if (row < 0 || this.moduleCount <= row) {
-            row -= inc;
-            inc = -inc;
-            break;
-          }
-        }
-      }
-    }
-  };
-  QRCode.PAD0 = 0xEC;
-  QRCode.PAD1 = 0x11;
-  QRCode.createData = function (typeNumber, errorCorrectLevel, dataList) {
-    var rsBlocks = QRRSBlock.getRSBlocks(typeNumber, errorCorrectLevel);
-    var buffer = new QRBitBuffer();
-    for (var i = 0; i < dataList.length; i++) {
-      var data = dataList[i];
-      buffer.put(data.mode, 4);
-      buffer.put(data.getLength(), QRUtil.getLengthInBits(data.mode, typeNumber));
-      data.write(buffer);
-    }
-
-    // calc num max data.
-    var totalDataCount = 0;
-    for (var i = 0; i < rsBlocks.length; i++) {
-      totalDataCount += rsBlocks[i].dataCount;
-    }
-    if (buffer.getLengthInBits() > totalDataCount * 8) {
-      throw new Error("code length overflow. (" + buffer.getLengthInBits() + ">" + totalDataCount * 8 + ")");
-    }
-
-    // end code
-    if (buffer.getLengthInBits() + 4 <= totalDataCount * 8) {
-      buffer.put(0, 4);
-    }
-
-    // padding
-    while (buffer.getLengthInBits() % 8 != 0) {
-      buffer.putBit(false);
-    }
-
-    // padding
-    while (true) {
-      if (buffer.getLengthInBits() >= totalDataCount * 8) {
-        break;
-      }
-      buffer.put(QRCode.PAD0, 8);
-      if (buffer.getLengthInBits() >= totalDataCount * 8) {
-        break;
-      }
-      buffer.put(QRCode.PAD1, 8);
-    }
-    return QRCode.createBytes(buffer, rsBlocks);
-  };
-  QRCode.createBytes = function (buffer, rsBlocks) {
-    var offset = 0;
-    var maxDcCount = 0;
-    var maxEcCount = 0;
-    var dcdata = new Array(rsBlocks.length);
-    var ecdata = new Array(rsBlocks.length);
-    for (var r = 0; r < rsBlocks.length; r++) {
-      var dcCount = rsBlocks[r].dataCount;
-      var ecCount = rsBlocks[r].totalCount - dcCount;
-      maxDcCount = Math.max(maxDcCount, dcCount);
-      maxEcCount = Math.max(maxEcCount, ecCount);
-      dcdata[r] = new Array(dcCount);
-      for (var i = 0; i < dcdata[r].length; i++) {
-        dcdata[r][i] = 0xff & buffer.buffer[i + offset];
-      }
-      offset += dcCount;
-      var rsPoly = QRUtil.getErrorCorrectPolynomial(ecCount);
-      var rawPoly = new QRPolynomial(dcdata[r], rsPoly.getLength() - 1);
-      var modPoly = rawPoly.mod(rsPoly);
-      ecdata[r] = new Array(rsPoly.getLength() - 1);
-      for (var i = 0; i < ecdata[r].length; i++) {
-        var modIndex = i + modPoly.getLength() - ecdata[r].length;
-        ecdata[r][i] = modIndex >= 0 ? modPoly.get(modIndex) : 0;
-      }
-    }
-    var totalCodeCount = 0;
-    for (var i = 0; i < rsBlocks.length; i++) {
-      totalCodeCount += rsBlocks[i].totalCount;
-    }
-    var data = new Array(totalCodeCount);
-    var index = 0;
-    for (var i = 0; i < maxDcCount; i++) {
-      for (var r = 0; r < rsBlocks.length; r++) {
-        if (i < dcdata[r].length) {
-          data[index++] = dcdata[r][i];
-        }
-      }
-    }
-    for (var i = 0; i < maxEcCount; i++) {
-      for (var r = 0; r < rsBlocks.length; r++) {
-        if (i < ecdata[r].length) {
-          data[index++] = ecdata[r][i];
-        }
-      }
-    }
-    return data;
-  };
-
-  //---------------------------------------------------------------------
-  // QRMode
-  //---------------------------------------------------------------------
-
-  var QRMode = {
-    MODE_NUMBER: 1 << 0,
-    MODE_ALPHA_NUM: 1 << 1,
-    MODE_8BIT_BYTE: 1 << 2,
-    MODE_KANJI: 1 << 3
-  };
-
-  //---------------------------------------------------------------------
-  // QRErrorCorrectLevel
-  //---------------------------------------------------------------------
-
-  var QRErrorCorrectLevel = {
-    L: 1,
-    M: 0,
-    Q: 3,
-    H: 2
-  };
-
-  //---------------------------------------------------------------------
-  // QRMaskPattern
-  //---------------------------------------------------------------------
-
-  var QRMaskPattern = {
-    PATTERN000: 0,
-    PATTERN001: 1,
-    PATTERN010: 2,
-    PATTERN011: 3,
-    PATTERN100: 4,
-    PATTERN101: 5,
-    PATTERN110: 6,
-    PATTERN111: 7
-  };
-
-  //---------------------------------------------------------------------
-  // QRUtil
-  //---------------------------------------------------------------------
-
-  var QRUtil = {
-    PATTERN_POSITION_TABLE: [[], [6, 18], [6, 22], [6, 26], [6, 30], [6, 34], [6, 22, 38], [6, 24, 42], [6, 26, 46], [6, 28, 50], [6, 30, 54], [6, 32, 58], [6, 34, 62], [6, 26, 46, 66], [6, 26, 48, 70], [6, 26, 50, 74], [6, 30, 54, 78], [6, 30, 56, 82], [6, 30, 58, 86], [6, 34, 62, 90], [6, 28, 50, 72, 94], [6, 26, 50, 74, 98], [6, 30, 54, 78, 102], [6, 28, 54, 80, 106], [6, 32, 58, 84, 110], [6, 30, 58, 86, 114], [6, 34, 62, 90, 118], [6, 26, 50, 74, 98, 122], [6, 30, 54, 78, 102, 126], [6, 26, 52, 78, 104, 130], [6, 30, 56, 82, 108, 134], [6, 34, 60, 86, 112, 138], [6, 30, 58, 86, 114, 142], [6, 34, 62, 90, 118, 146], [6, 30, 54, 78, 102, 126, 150], [6, 24, 50, 76, 102, 128, 154], [6, 28, 54, 80, 106, 132, 158], [6, 32, 58, 84, 110, 136, 162], [6, 26, 54, 82, 110, 138, 166], [6, 30, 58, 86, 114, 142, 170]],
-    G15: 1 << 10 | 1 << 8 | 1 << 5 | 1 << 4 | 1 << 2 | 1 << 1 | 1 << 0,
-    G18: 1 << 12 | 1 << 11 | 1 << 10 | 1 << 9 | 1 << 8 | 1 << 5 | 1 << 2 | 1 << 0,
-    G15_MASK: 1 << 14 | 1 << 12 | 1 << 10 | 1 << 4 | 1 << 1,
-    getBCHTypeInfo: function getBCHTypeInfo(data) {
-      var d = data << 10;
-      while (QRUtil.getBCHDigit(d) - QRUtil.getBCHDigit(QRUtil.G15) >= 0) {
-        d ^= QRUtil.G15 << QRUtil.getBCHDigit(d) - QRUtil.getBCHDigit(QRUtil.G15);
-      }
-      return (data << 10 | d) ^ QRUtil.G15_MASK;
-    },
-    getBCHTypeNumber: function getBCHTypeNumber(data) {
-      var d = data << 12;
-      while (QRUtil.getBCHDigit(d) - QRUtil.getBCHDigit(QRUtil.G18) >= 0) {
-        d ^= QRUtil.G18 << QRUtil.getBCHDigit(d) - QRUtil.getBCHDigit(QRUtil.G18);
-      }
-      return data << 12 | d;
-    },
-    getBCHDigit: function getBCHDigit(data) {
-      var digit = 0;
-      while (data != 0) {
-        digit++;
-        data >>>= 1;
-      }
-      return digit;
-    },
-    getPatternPosition: function getPatternPosition(typeNumber) {
-      return QRUtil.PATTERN_POSITION_TABLE[typeNumber - 1];
-    },
-    getMask: function getMask(maskPattern, i, j) {
-      switch (maskPattern) {
-        case QRMaskPattern.PATTERN000:
-          return (i + j) % 2 == 0;
-        case QRMaskPattern.PATTERN001:
-          return i % 2 == 0;
-        case QRMaskPattern.PATTERN010:
-          return j % 3 == 0;
-        case QRMaskPattern.PATTERN011:
-          return (i + j) % 3 == 0;
-        case QRMaskPattern.PATTERN100:
-          return (Math.floor(i / 2) + Math.floor(j / 3)) % 2 == 0;
-        case QRMaskPattern.PATTERN101:
-          return i * j % 2 + i * j % 3 == 0;
-        case QRMaskPattern.PATTERN110:
-          return (i * j % 2 + i * j % 3) % 2 == 0;
-        case QRMaskPattern.PATTERN111:
-          return (i * j % 3 + (i + j) % 2) % 2 == 0;
-        default:
-          throw new Error("bad maskPattern:" + maskPattern);
-      }
-    },
-    getErrorCorrectPolynomial: function getErrorCorrectPolynomial(errorCorrectLength) {
-      var a = new QRPolynomial([1], 0);
-      for (var i = 0; i < errorCorrectLength; i++) {
-        a = a.multiply(new QRPolynomial([1, QRMath.gexp(i)], 0));
-      }
-      return a;
-    },
-    getLengthInBits: function getLengthInBits(mode, type) {
-      if (1 <= type && type < 10) {
-        // 1 - 9
-
-        switch (mode) {
-          case QRMode.MODE_NUMBER:
-            return 10;
-          case QRMode.MODE_ALPHA_NUM:
-            return 9;
-          case QRMode.MODE_8BIT_BYTE:
-            return 8;
-          case QRMode.MODE_KANJI:
-            return 8;
-          default:
-            throw new Error("mode:" + mode);
-        }
-      } else if (type < 27) {
-        // 10 - 26
-
-        switch (mode) {
-          case QRMode.MODE_NUMBER:
-            return 12;
-          case QRMode.MODE_ALPHA_NUM:
-            return 11;
-          case QRMode.MODE_8BIT_BYTE:
-            return 16;
-          case QRMode.MODE_KANJI:
-            return 10;
-          default:
-            throw new Error("mode:" + mode);
-        }
-      } else if (type < 41) {
-        // 27 - 40
-
-        switch (mode) {
-          case QRMode.MODE_NUMBER:
-            return 14;
-          case QRMode.MODE_ALPHA_NUM:
-            return 13;
-          case QRMode.MODE_8BIT_BYTE:
-            return 16;
-          case QRMode.MODE_KANJI:
-            return 12;
-          default:
-            throw new Error("mode:" + mode);
-        }
-      } else {
-        throw new Error("type:" + type);
-      }
-    },
-    getLostPoint: function getLostPoint(qrCode) {
-      var moduleCount = qrCode.getModuleCount();
-      var lostPoint = 0;
-
-      // LEVEL1
-
-      for (var row = 0; row < moduleCount; row++) {
-        for (var col = 0; col < moduleCount; col++) {
-          var sameCount = 0;
-          var dark = qrCode.isDark(row, col);
-          for (var r = -1; r <= 1; r++) {
-            if (row + r < 0 || moduleCount <= row + r) {
-              continue;
-            }
-            for (var c = -1; c <= 1; c++) {
-              if (col + c < 0 || moduleCount <= col + c) {
-                continue;
-              }
-              if (r == 0 && c == 0) {
-                continue;
-              }
-              if (dark == qrCode.isDark(row + r, col + c)) {
-                sameCount++;
-              }
-            }
-          }
-          if (sameCount > 5) {
-            lostPoint += 3 + sameCount - 5;
-          }
-        }
-      }
-
-      // LEVEL2
-
-      for (var row = 0; row < moduleCount - 1; row++) {
-        for (var col = 0; col < moduleCount - 1; col++) {
-          var count = 0;
-          if (qrCode.isDark(row, col)) count++;
-          if (qrCode.isDark(row + 1, col)) count++;
-          if (qrCode.isDark(row, col + 1)) count++;
-          if (qrCode.isDark(row + 1, col + 1)) count++;
-          if (count == 0 || count == 4) {
-            lostPoint += 3;
-          }
-        }
-      }
-
-      // LEVEL3
-
-      for (var row = 0; row < moduleCount; row++) {
-        for (var col = 0; col < moduleCount - 6; col++) {
-          if (qrCode.isDark(row, col) && !qrCode.isDark(row, col + 1) && qrCode.isDark(row, col + 2) && qrCode.isDark(row, col + 3) && qrCode.isDark(row, col + 4) && !qrCode.isDark(row, col + 5) && qrCode.isDark(row, col + 6)) {
-            lostPoint += 40;
-          }
-        }
-      }
-      for (var col = 0; col < moduleCount; col++) {
-        for (var row = 0; row < moduleCount - 6; row++) {
-          if (qrCode.isDark(row, col) && !qrCode.isDark(row + 1, col) && qrCode.isDark(row + 2, col) && qrCode.isDark(row + 3, col) && qrCode.isDark(row + 4, col) && !qrCode.isDark(row + 5, col) && qrCode.isDark(row + 6, col)) {
-            lostPoint += 40;
-          }
-        }
-      }
-
-      // LEVEL4
-
-      var darkCount = 0;
-      for (var col = 0; col < moduleCount; col++) {
-        for (var row = 0; row < moduleCount; row++) {
-          if (qrCode.isDark(row, col)) {
-            darkCount++;
-          }
-        }
-      }
-      var ratio = Math.abs(100 * darkCount / moduleCount / moduleCount - 50) / 5;
-      lostPoint += ratio * 10;
-      return lostPoint;
-    }
-  };
-
-  //---------------------------------------------------------------------
-  // QRMath
-  //---------------------------------------------------------------------
-
-  var QRMath = {
-    glog: function glog(n) {
-      if (n < 1) {
-        throw new Error("glog(" + n + ")");
-      }
-      return QRMath.LOG_TABLE[n];
-    },
-    gexp: function gexp(n) {
-      while (n < 0) {
-        n += 255;
-      }
-      while (n >= 256) {
-        n -= 255;
-      }
-      return QRMath.EXP_TABLE[n];
-    },
-    EXP_TABLE: new Array(256),
-    LOG_TABLE: new Array(256)
-  };
-  for (var i = 0; i < 8; i++) {
-    QRMath.EXP_TABLE[i] = 1 << i;
-  }
-  for (var i = 8; i < 256; i++) {
-    QRMath.EXP_TABLE[i] = QRMath.EXP_TABLE[i - 4] ^ QRMath.EXP_TABLE[i - 5] ^ QRMath.EXP_TABLE[i - 6] ^ QRMath.EXP_TABLE[i - 8];
-  }
-  for (var i = 0; i < 255; i++) {
-    QRMath.LOG_TABLE[QRMath.EXP_TABLE[i]] = i;
-  }
-
-  //---------------------------------------------------------------------
-  // QRPolynomial
-  //---------------------------------------------------------------------
-
-  function QRPolynomial(num, shift) {
-    if (num.length == undefined) {
-      throw new Error(num.length + "/" + shift);
-    }
-    var offset = 0;
-    while (offset < num.length && num[offset] == 0) {
-      offset++;
-    }
-    this.num = new Array(num.length - offset + shift);
-    for (var i = 0; i < num.length - offset; i++) {
-      this.num[i] = num[i + offset];
-    }
-  }
-  QRPolynomial.prototype = {
-    get: function get(index) {
-      return this.num[index];
-    },
-    getLength: function getLength() {
-      return this.num.length;
-    },
-    multiply: function multiply(e) {
-      var num = new Array(this.getLength() + e.getLength() - 1);
-      for (var i = 0; i < this.getLength(); i++) {
-        for (var j = 0; j < e.getLength(); j++) {
-          num[i + j] ^= QRMath.gexp(QRMath.glog(this.get(i)) + QRMath.glog(e.get(j)));
-        }
-      }
-      return new QRPolynomial(num, 0);
-    },
-    mod: function mod(e) {
-      if (this.getLength() - e.getLength() < 0) {
-        return this;
-      }
-      var ratio = QRMath.glog(this.get(0)) - QRMath.glog(e.get(0));
-      var num = new Array(this.getLength());
-      for (var i = 0; i < this.getLength(); i++) {
-        num[i] = this.get(i);
-      }
-      for (var i = 0; i < e.getLength(); i++) {
-        num[i] ^= QRMath.gexp(QRMath.glog(e.get(i)) + ratio);
-      }
-
-      // recursive call
-      return new QRPolynomial(num, 0).mod(e);
-    }
-  };
-
-  //---------------------------------------------------------------------
-  // QRRSBlock
-  //---------------------------------------------------------------------
-
-  function QRRSBlock(totalCount, dataCount) {
-    this.totalCount = totalCount;
-    this.dataCount = dataCount;
-  }
-  QRRSBlock.RS_BLOCK_TABLE = [
-  // L
-  // M
-  // Q
-  // H
-
-  // 1
-  [1, 26, 19], [1, 26, 16], [1, 26, 13], [1, 26, 9],
-  // 2
-  [1, 44, 34], [1, 44, 28], [1, 44, 22], [1, 44, 16],
-  // 3
-  [1, 70, 55], [1, 70, 44], [2, 35, 17], [2, 35, 13],
-  // 4		
-  [1, 100, 80], [2, 50, 32], [2, 50, 24], [4, 25, 9],
-  // 5
-  [1, 134, 108], [2, 67, 43], [2, 33, 15, 2, 34, 16], [2, 33, 11, 2, 34, 12],
-  // 6
-  [2, 86, 68], [4, 43, 27], [4, 43, 19], [4, 43, 15],
-  // 7		
-  [2, 98, 78], [4, 49, 31], [2, 32, 14, 4, 33, 15], [4, 39, 13, 1, 40, 14],
-  // 8
-  [2, 121, 97], [2, 60, 38, 2, 61, 39], [4, 40, 18, 2, 41, 19], [4, 40, 14, 2, 41, 15],
-  // 9
-  [2, 146, 116], [3, 58, 36, 2, 59, 37], [4, 36, 16, 4, 37, 17], [4, 36, 12, 4, 37, 13],
-  // 10		
-  [2, 86, 68, 2, 87, 69], [4, 69, 43, 1, 70, 44], [6, 43, 19, 2, 44, 20], [6, 43, 15, 2, 44, 16],
-  // 11
-  [4, 101, 81], [1, 80, 50, 4, 81, 51], [4, 50, 22, 4, 51, 23], [3, 36, 12, 8, 37, 13],
-  // 12
-  [2, 116, 92, 2, 117, 93], [6, 58, 36, 2, 59, 37], [4, 46, 20, 6, 47, 21], [7, 42, 14, 4, 43, 15],
-  // 13
-  [4, 133, 107], [8, 59, 37, 1, 60, 38], [8, 44, 20, 4, 45, 21], [12, 33, 11, 4, 34, 12],
-  // 14
-  [3, 145, 115, 1, 146, 116], [4, 64, 40, 5, 65, 41], [11, 36, 16, 5, 37, 17], [11, 36, 12, 5, 37, 13],
-  // 15
-  [5, 109, 87, 1, 110, 88], [5, 65, 41, 5, 66, 42], [5, 54, 24, 7, 55, 25], [11, 36, 12],
-  // 16
-  [5, 122, 98, 1, 123, 99], [7, 73, 45, 3, 74, 46], [15, 43, 19, 2, 44, 20], [3, 45, 15, 13, 46, 16],
-  // 17
-  [1, 135, 107, 5, 136, 108], [10, 74, 46, 1, 75, 47], [1, 50, 22, 15, 51, 23], [2, 42, 14, 17, 43, 15],
-  // 18
-  [5, 150, 120, 1, 151, 121], [9, 69, 43, 4, 70, 44], [17, 50, 22, 1, 51, 23], [2, 42, 14, 19, 43, 15],
-  // 19
-  [3, 141, 113, 4, 142, 114], [3, 70, 44, 11, 71, 45], [17, 47, 21, 4, 48, 22], [9, 39, 13, 16, 40, 14],
-  // 20
-  [3, 135, 107, 5, 136, 108], [3, 67, 41, 13, 68, 42], [15, 54, 24, 5, 55, 25], [15, 43, 15, 10, 44, 16],
-  // 21
-  [4, 144, 116, 4, 145, 117], [17, 68, 42], [17, 50, 22, 6, 51, 23], [19, 46, 16, 6, 47, 17],
-  // 22
-  [2, 139, 111, 7, 140, 112], [17, 74, 46], [7, 54, 24, 16, 55, 25], [34, 37, 13],
-  // 23
-  [4, 151, 121, 5, 152, 122], [4, 75, 47, 14, 76, 48], [11, 54, 24, 14, 55, 25], [16, 45, 15, 14, 46, 16],
-  // 24
-  [6, 147, 117, 4, 148, 118], [6, 73, 45, 14, 74, 46], [11, 54, 24, 16, 55, 25], [30, 46, 16, 2, 47, 17],
-  // 25
-  [8, 132, 106, 4, 133, 107], [8, 75, 47, 13, 76, 48], [7, 54, 24, 22, 55, 25], [22, 45, 15, 13, 46, 16],
-  // 26
-  [10, 142, 114, 2, 143, 115], [19, 74, 46, 4, 75, 47], [28, 50, 22, 6, 51, 23], [33, 46, 16, 4, 47, 17],
-  // 27
-  [8, 152, 122, 4, 153, 123], [22, 73, 45, 3, 74, 46], [8, 53, 23, 26, 54, 24], [12, 45, 15, 28, 46, 16],
-  // 28
-  [3, 147, 117, 10, 148, 118], [3, 73, 45, 23, 74, 46], [4, 54, 24, 31, 55, 25], [11, 45, 15, 31, 46, 16],
-  // 29
-  [7, 146, 116, 7, 147, 117], [21, 73, 45, 7, 74, 46], [1, 53, 23, 37, 54, 24], [19, 45, 15, 26, 46, 16],
-  // 30
-  [5, 145, 115, 10, 146, 116], [19, 75, 47, 10, 76, 48], [15, 54, 24, 25, 55, 25], [23, 45, 15, 25, 46, 16],
-  // 31
-  [13, 145, 115, 3, 146, 116], [2, 74, 46, 29, 75, 47], [42, 54, 24, 1, 55, 25], [23, 45, 15, 28, 46, 16],
-  // 32
-  [17, 145, 115], [10, 74, 46, 23, 75, 47], [10, 54, 24, 35, 55, 25], [19, 45, 15, 35, 46, 16],
-  // 33
-  [17, 145, 115, 1, 146, 116], [14, 74, 46, 21, 75, 47], [29, 54, 24, 19, 55, 25], [11, 45, 15, 46, 46, 16],
-  // 34
-  [13, 145, 115, 6, 146, 116], [14, 74, 46, 23, 75, 47], [44, 54, 24, 7, 55, 25], [59, 46, 16, 1, 47, 17],
-  // 35
-  [12, 151, 121, 7, 152, 122], [12, 75, 47, 26, 76, 48], [39, 54, 24, 14, 55, 25], [22, 45, 15, 41, 46, 16],
-  // 36
-  [6, 151, 121, 14, 152, 122], [6, 75, 47, 34, 76, 48], [46, 54, 24, 10, 55, 25], [2, 45, 15, 64, 46, 16],
-  // 37
-  [17, 152, 122, 4, 153, 123], [29, 74, 46, 14, 75, 47], [49, 54, 24, 10, 55, 25], [24, 45, 15, 46, 46, 16],
-  // 38
-  [4, 152, 122, 18, 153, 123], [13, 74, 46, 32, 75, 47], [48, 54, 24, 14, 55, 25], [42, 45, 15, 32, 46, 16],
-  // 39
-  [20, 147, 117, 4, 148, 118], [40, 75, 47, 7, 76, 48], [43, 54, 24, 22, 55, 25], [10, 45, 15, 67, 46, 16],
-  // 40
-  [19, 148, 118, 6, 149, 119], [18, 75, 47, 31, 76, 48], [34, 54, 24, 34, 55, 25], [20, 45, 15, 61, 46, 16]];
-  QRRSBlock.getRSBlocks = function (typeNumber, errorCorrectLevel) {
-    var rsBlock = QRRSBlock.getRsBlockTable(typeNumber, errorCorrectLevel);
-    if (rsBlock == undefined) {
-      throw new Error("bad rs block @ typeNumber:" + typeNumber + "/errorCorrectLevel:" + errorCorrectLevel);
-    }
-    var length = rsBlock.length / 3;
-    var list = new Array();
-    for (var i = 0; i < length; i++) {
-      var count = rsBlock[i * 3 + 0];
-      var totalCount = rsBlock[i * 3 + 1];
-      var dataCount = rsBlock[i * 3 + 2];
-      for (var j = 0; j < count; j++) {
-        list.push(new QRRSBlock(totalCount, dataCount));
-      }
-    }
-    return list;
-  };
-  QRRSBlock.getRsBlockTable = function (typeNumber, errorCorrectLevel) {
-    switch (errorCorrectLevel) {
-      case QRErrorCorrectLevel.L:
-        return QRRSBlock.RS_BLOCK_TABLE[(typeNumber - 1) * 4 + 0];
-      case QRErrorCorrectLevel.M:
-        return QRRSBlock.RS_BLOCK_TABLE[(typeNumber - 1) * 4 + 1];
-      case QRErrorCorrectLevel.Q:
-        return QRRSBlock.RS_BLOCK_TABLE[(typeNumber - 1) * 4 + 2];
-      case QRErrorCorrectLevel.H:
-        return QRRSBlock.RS_BLOCK_TABLE[(typeNumber - 1) * 4 + 3];
-      default:
-        return undefined;
-    }
-  };
-
-  //---------------------------------------------------------------------
-  // QRBitBuffer
-  //---------------------------------------------------------------------
-
-  function QRBitBuffer() {
-    this.buffer = new Array();
-    this.length = 0;
-  }
-  QRBitBuffer.prototype = {
-    get: function get(index) {
-      var bufIndex = Math.floor(index / 8);
-      return (this.buffer[bufIndex] >>> 7 - index % 8 & 1) == 1;
-    },
-    put: function put(num, length) {
-      for (var i = 0; i < length; i++) {
-        this.putBit((num >>> length - i - 1 & 1) == 1);
-      }
-    },
-    getLengthInBits: function getLengthInBits() {
-      return this.length;
-    },
-    putBit: function putBit(bit) {
-      var bufIndex = Math.floor(this.length / 8);
-      if (this.buffer.length <= bufIndex) {
-        this.buffer.push(0);
-      }
-      if (bit) {
-        this.buffer[bufIndex] |= 0x80 >>> this.length % 8;
-      }
-      this.length++;
-    }
-  };
-
-  //---------------------------------------------------------------------
-  // Support Chinese
-  //---------------------------------------------------------------------
-  function utf16To8(text) {
-    var result = '';
-    var c;
-    for (var i = 0; i < text.length; i++) {
-      c = text.charCodeAt(i);
-      if (c >= 0x0001 && c <= 0x007F) {
-        result += text.charAt(i);
-      } else if (c > 0x07FF) {
-        result += String.fromCharCode(0xE0 | c >> 12 & 0x0F);
-        result += String.fromCharCode(0x80 | c >> 6 & 0x3F);
-        result += String.fromCharCode(0x80 | c >> 0 & 0x3F);
-      } else {
-        result += String.fromCharCode(0xC0 | c >> 6 & 0x1F);
-        result += String.fromCharCode(0x80 | c >> 0 & 0x3F);
-      }
-    }
-    return result;
-  }
-  uQRCode = {
-    defaults: {
-      size: 258,
-      margin: 0,
-      backgroundColor: '#ffffff',
-      foregroundColor: '#000000',
-      fileType: 'png',
-      // 'jpg', 'png'
-      correctLevel: 3,
-      typeNumber: -1
-    },
-    make: function make(options) {
-      var defaultOptions = {
-        canvasId: options.canvasId,
-        componentInstance: options.componentInstance,
-        text: options.text,
-        size: this.defaults.size,
-        margin: this.defaults.margin,
-        backgroundColor: this.defaults.backgroundColor,
-        foregroundColor: this.defaults.foregroundColor,
-        fileType: this.defaults.fileType,
-        correctLevel: this.defaults.correctLevel,
-        typeNumber: this.defaults.typeNumber
-      };
-      if (options) {
-        for (var i in options) {
-          defaultOptions[i] = options[i];
-        }
-      }
-      options = defaultOptions;
-      if (!options.canvasId) {
-        console.error('uQRCode: Please set canvasId!');
-        return;
-      }
-      function createCanvas() {
-        var qrcode = new QRCode(options.typeNumber, options.correctLevel);
-        qrcode.addData(utf16To8(options.text));
-        qrcode.make();
-        var ctx = uni.createCanvasContext(options.canvasId, options.componentInstance);
-        ctx.setFillStyle(options.backgroundColor);
-        ctx.fillRect(0, 0, options.size, options.size);
-        var tileW = (options.size - options.margin * 2) / qrcode.getModuleCount();
-        var tileH = tileW;
-        for (var row = 0; row < qrcode.getModuleCount(); row++) {
-          for (var col = 0; col < qrcode.getModuleCount(); col++) {
-            var style = qrcode.isDark(row, col) ? options.foregroundColor : options.backgroundColor;
-            ctx.setFillStyle(style);
-            var x = Math.round(col * tileW) + options.margin;
-            var y = Math.round(row * tileH) + options.margin;
-            var w = Math.ceil((col + 1) * tileW) - Math.floor(col * tileW);
-            var h = Math.ceil((row + 1) * tileW) - Math.floor(row * tileW);
-            ctx.fillRect(x, y, w, h);
-          }
-        }
-        setTimeout(function () {
-          ctx.draw(false, function () {
-            setTimeout(function () {
-              uni.canvasToTempFilePath({
-                canvasId: options.canvasId,
-                fileType: options.fileType,
-                width: options.size,
-                height: options.size,
-                destWidth: options.size,
-                destHeight: options.size,
-                success: function success(res) {
-                  options.success && options.success(res.tempFilePath);
-                },
-                fail: function fail(error) {
-                  options.fail && options.fail(error);
-                },
-                complete: function complete(res) {
-                  options.complete && options.complete(res);
-                }
-              }, options.componentInstance);
-            }, options.text.length + 100);
-          });
-        }, 150);
-      }
-      createCanvas();
-    }
-  };
-})();
-var _default = uQRCode;
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-
-/***/ 25:
+/* 25 */
 /*!******************************************************************************************!*\
   !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js ***!
   \******************************************************************************************/
@@ -10296,8 +9465,7 @@ internalMixin(Vue);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../webpack/buildin/global.js */ 3)))
 
 /***/ }),
-
-/***/ 26:
+/* 26 */
 /*!****************************************************************************!*\
   !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/pages.json ***!
   \****************************************************************************/
@@ -10307,193 +9475,12 @@ internalMixin(Vue);
 
 
 /***/ }),
-
-/***/ 270:
-/*!************************************************************************************!*\
-  !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/api/points-flow.js ***!
-  \************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = [{
-  "happenedDate": "2020-05-11",
-  "sourceType": 5,
-  "sellerName": "奈雪の茶",
-  "changeNum": 1,
-  "changeType": 1,
-  "reason": "积分签到奖励",
-  "createdAt": "2020-05-11 00:17:47",
-  "id": 1
-}, {
-  "happenedDate": "2020-05-10",
-  "sourceType": 5,
-  "sellerName": "奈雪の茶",
-  "changeNum": 1,
-  "changeType": 1,
-  "reason": "积分签到奖励",
-  "createdAt": "2020-05-10 22:23:36",
-  "id": 2
-}, {
-  "happenedDate": "2020-05-09",
-  "sourceType": 5,
-  "sellerName": "奈雪の茶",
-  "changeNum": 1,
-  "changeType": 1,
-  "reason": "积分签到奖励",
-  "createdAt": "2020-05-09 02:14:24",
-  "id": 3
-}, {
-  "happenedDate": "2020-05-08",
-  "sourceType": 1,
-  "sellerName": "奈雪の茶",
-  "changeNum": 50,
-  "changeType": 1,
-  "reason": "消费增加",
-  "createdAt": "2020-05-08 19:25:40",
-  "id": 4
-}, {
-  "happenedDate": "2020-05-08",
-  "sourceType": 5,
-  "sellerName": "奈雪の茶",
-  "changeNum": 1,
-  "changeType": 1,
-  "reason": "积分签到奖励",
-  "createdAt": "2020-05-08 18:43:14",
-  "id": 5
-}, {
-  "happenedDate": "2020-05-07",
-  "sourceType": 5,
-  "sellerName": "奈雪の茶",
-  "changeNum": 1,
-  "changeType": 1,
-  "reason": "积分签到奖励",
-  "createdAt": "2020-05-07 16:25:46",
-  "id": 6
-}, {
-  "happenedDate": "2020-05-06",
-  "sourceType": 5,
-  "sellerName": "奈雪の茶",
-  "changeNum": 1,
-  "changeType": 1,
-  "reason": "积分签到奖励",
-  "createdAt": "2020-05-06 10:38:42",
-  "id": 7
-}, {
-  "happenedDate": "2020-05-05",
-  "sourceType": 1,
-  "sellerName": "奈雪の茶",
-  "changeNum": 73,
-  "changeType": 1,
-  "reason": "消费增加",
-  "createdAt": "2020-05-05 20:42:47",
-  "id": 8
-}, {
-  "happenedDate": "2020-05-03",
-  "sourceType": 5,
-  "sellerName": "奈雪の茶",
-  "changeNum": 1,
-  "changeType": 1,
-  "reason": "积分签到奖励",
-  "createdAt": "2020-05-03 19:37:12",
-  "id": 9
-}, {
-  "happenedDate": "2020-05-02",
-  "sourceType": 5,
-  "sellerName": "奈雪の茶",
-  "changeNum": 1,
-  "changeType": 1,
-  "reason": "积分签到奖励",
-  "createdAt": "2020-05-02 03:30:42",
-  "id": 10
-}, {
-  "happenedDate": "2020-04-25",
-  "sourceType": 1,
-  "sellerName": "奈雪の茶",
-  "changeNum": 43,
-  "changeType": 1,
-  "reason": "消费增加",
-  "createdAt": "2020-04-25 20:48:26",
-  "id": 11
-}, {
-  "happenedDate": "2020-04-25",
-  "sourceType": 5,
-  "sellerName": "奈雪の茶",
-  "changeNum": 1,
-  "changeType": 1,
-  "reason": "积分签到奖励",
-  "createdAt": "2020-04-25 02:46:36",
-  "id": 12
-}, {
-  "happenedDate": "2020-04-24",
-  "sourceType": 1,
-  "sellerName": "奈雪の茶",
-  "changeNum": 57,
-  "changeType": 1,
-  "reason": "消费增加",
-  "createdAt": "2020-04-24 20:23:45",
-  "id": 13
-}, {
-  "happenedDate": "2020-04-18",
-  "sourceType": 1,
-  "sellerName": "奈雪の茶",
-  "changeNum": 56,
-  "changeType": 1,
-  "reason": "消费增加",
-  "createdAt": "2020-04-18 20:20:08",
-  "id": 14
-}, {
-  "happenedDate": "2020-04-10",
-  "sourceType": 1,
-  "sellerName": "奈雪の茶",
-  "changeNum": 33,
-  "changeType": 1,
-  "reason": "消费增加",
-  "createdAt": "2020-04-10 20:40:44",
-  "id": 15
-}];
-exports.default = _default;
-
-/***/ }),
-
-/***/ 3:
-/*!***********************************!*\
-  !*** (webpack)/buildin/global.js ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-var g;
-
-// This works in non-strict mode
-g = (function() {
-	return this;
-})();
-
-try {
-	// This works if eval is allowed (see CSP)
-	g = g || new Function("return this")();
-} catch (e) {
-	// This works if the window reference is available
-	if (typeof window === "object") g = window;
-}
-
-// g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
-
-module.exports = g;
-
-
-/***/ }),
-
-/***/ 32:
+/* 27 */,
+/* 28 */,
+/* 29 */,
+/* 30 */,
+/* 31 */,
+/* 32 */
 /*!**********************************************************************************************************!*\
   !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/runtime/componentNormalizer.js ***!
   \**********************************************************************************************************/
@@ -10624,8 +9611,7 @@ function normalizeComponent (
 
 
 /***/ }),
-
-/***/ 33:
+/* 33 */
 /*!******************************************************************************!*\
   !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/api/index.js ***!
   \******************************************************************************/
@@ -10654,7 +9640,6 @@ var _attendanceList = _interopRequireDefault(__webpack_require__(/*! ./attendanc
 var _todayAttendance = _interopRequireDefault(__webpack_require__(/*! ./today-attendance */ 45));
 var _orders = _interopRequireDefault(__webpack_require__(/*! ./orders */ 46));
 var _customerCoupons = _interopRequireDefault(__webpack_require__(/*! ./customer-coupons */ 47));
-var _giftCards = _interopRequireDefault(__webpack_require__(/*! ./gift-cards */ 48));
 var json = {
   packages: _packages.default,
   store: _store.default,
@@ -10669,8 +9654,7 @@ var json = {
   attendanceList: _attendanceList.default,
   todayAttendance: _todayAttendance.default,
   orders: _orders.default,
-  customerCoupons: _customerCoupons.default,
-  giftCards: _giftCards.default
+  customerCoupons: _customerCoupons.default
 };
 var _default = function _default(name) {
   return new Promise(function (resolve) {
@@ -10680,8 +9664,7 @@ var _default = function _default(name) {
 exports.default = _default;
 
 /***/ }),
-
-/***/ 34:
+/* 34 */
 /*!*********************************************************************************!*\
   !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/api/packages.js ***!
   \*********************************************************************************/
@@ -13090,122 +12073,7 @@ var _default = [{
 exports.default = _default;
 
 /***/ }),
-
-/***/ 341:
-/*!***********************************************************************************************!*\
-  !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/components/uni-icons/icons.js ***!
-  \***********************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  'contact': "\uE100",
-  'person': "\uE101",
-  'personadd': "\uE102",
-  'contact-filled': "\uE130",
-  'person-filled': "\uE131",
-  'personadd-filled': "\uE132",
-  'phone': "\uE200",
-  'email': "\uE201",
-  'chatbubble': "\uE202",
-  'chatboxes': "\uE203",
-  'phone-filled': "\uE230",
-  'email-filled': "\uE231",
-  'chatbubble-filled': "\uE232",
-  'chatboxes-filled': "\uE233",
-  'weibo': "\uE260",
-  'weixin': "\uE261",
-  'pengyouquan': "\uE262",
-  'chat': "\uE263",
-  'qq': "\uE264",
-  'videocam': "\uE300",
-  'camera': "\uE301",
-  'mic': "\uE302",
-  'location': "\uE303",
-  'mic-filled': "\uE332",
-  'speech': "\uE332",
-  'location-filled': "\uE333",
-  'micoff': "\uE360",
-  'image': "\uE363",
-  'map': "\uE364",
-  'compose': "\uE400",
-  'trash': "\uE401",
-  'upload': "\uE402",
-  'download': "\uE403",
-  'close': "\uE404",
-  'redo': "\uE405",
-  'undo': "\uE406",
-  'refresh': "\uE407",
-  'star': "\uE408",
-  'plus': "\uE409",
-  'minus': "\uE410",
-  'circle': "\uE411",
-  'checkbox': "\uE411",
-  'close-filled': "\uE434",
-  'clear': "\uE434",
-  'refresh-filled': "\uE437",
-  'star-filled': "\uE438",
-  'plus-filled': "\uE439",
-  'minus-filled': "\uE440",
-  'circle-filled': "\uE441",
-  'checkbox-filled': "\uE442",
-  'closeempty': "\uE460",
-  'refreshempty': "\uE461",
-  'reload': "\uE462",
-  'starhalf': "\uE463",
-  'spinner': "\uE464",
-  'spinner-cycle': "\uE465",
-  'search': "\uE466",
-  'plusempty': "\uE468",
-  'forward': "\uE470",
-  'back': "\uE471",
-  'left-nav': "\uE471",
-  'checkmarkempty': "\uE472",
-  'home': "\uE500",
-  'navigate': "\uE501",
-  'gear': "\uE502",
-  'paperplane': "\uE503",
-  'info': "\uE504",
-  'help': "\uE505",
-  'locked': "\uE506",
-  'more': "\uE507",
-  'flag': "\uE508",
-  'home-filled': "\uE530",
-  'gear-filled': "\uE532",
-  'info-filled': "\uE534",
-  'help-filled': "\uE535",
-  'more-filled': "\uE537",
-  'settings': "\uE560",
-  'list': "\uE562",
-  'bars': "\uE563",
-  'loop': "\uE565",
-  'paperclip': "\uE567",
-  'eye': "\uE568",
-  'arrowup': "\uE580",
-  'arrowdown': "\uE581",
-  'arrowleft': "\uE582",
-  'arrowright': "\uE583",
-  'arrowthinup': "\uE584",
-  'arrowthindown': "\uE585",
-  'arrowthinleft': "\uE586",
-  'arrowthinright': "\uE587",
-  'pulldown': "\uE588",
-  'closefill': "\uE589",
-  'sound': "\uE590",
-  'scan': "\uE612"
-};
-exports.default = _default;
-
-/***/ }),
-
-/***/ 35:
+/* 35 */
 /*!******************************************************************************!*\
   !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/api/store.js ***!
   \******************************************************************************/
@@ -13267,8 +12135,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-
-/***/ 36:
+/* 36 */
 /*!******************************************************************************!*\
   !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/api/goods.js ***!
   \******************************************************************************/
@@ -13278,15 +12145,56 @@ exports.default = _default;
 "use strict";
 
 
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 4);
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11));
+var _ref;
 var _default = [{
   "sort": 1,
   "icon": "",
   "id": 6905,
   "goods_list": [{
+    "sell_time_status": 0,
+    "id": 24516,
+    "pack_cost": "0.00",
+    "sales": 1278,
+    "cover_img": "",
+    "property": [],
+    "is_sell": true,
+    "goods_type": 1,
+    "entity": [{
+      "spec_id": "",
+      "trade_mark": "1212000070",
+      "id": "5d79de67251ea00e",
+      "stock": "10485.00",
+      "spec_text": [],
+      "spec": [],
+      "image": "s23107/2020/04/29/4a62ee45dd527609ed.jpg",
+      "num": 1,
+      "price": 18,
+      "membership_price": 0
+    }],
+    "stall_code": "",
+    "sort": 3,
+    "price": 18,
+    "unit": "件",
+    "imageArr": ["https://img-shop.qmimg.cn/s23107/2020/04/29/4a62ee45dd527609ed.jpg?imageView2/2/w/600/h/600"],
+    "membership_price": 0,
+    "use_property": 0,
+    "unit_type": 0,
+    "min_buy_num": 0,
+    "specs": [],
+    "content": "酥软口感,进口奶油搭配特制巧克力内馅",
+    "use_spec": false,
+    "stock": "10485.00",
+    "type": 1,
+    "is_label": 0,
+    "name": "三排阵",
+    "images": "https://img-shop.qmimg.cn/s23107/2020/04/29/4a62ee45dd527609ed.jpg?imageView2/2/w/400/h/400"
+  }, {
     "sell_time_status": 0,
     "id": 65825,
     "is_sell": true,
@@ -13328,7 +12236,7 @@ var _default = [{
     "name": "奈雪早餐",
     "images": "https://img-shop.qmimg.cn/s23107/2020/04/19/fda6dd99c83af02353.jpg?imageView2/2/w/400/h/400"
   }],
-  "name": "奈雪早餐",
+  "name": "初阶排阵",
   "is_show_backstage": 0
 }, {
   "sort": 2,
@@ -13370,9 +12278,9 @@ var _default = [{
     "stock": "10485.00",
     "type": 1,
     "is_label": 0,
-    "name": "脏脏王",
+    "name": "三排阵",
     "images": "https://img-shop.qmimg.cn/s23107/2020/04/29/4a62ee45dd527609ed.jpg?imageView2/2/w/400/h/400"
-  }, {
+  }, (_ref = {
     "sell_time_status": 0,
     "id": 24517,
     "pack_cost": "0.00",
@@ -13392,176 +12300,20 @@ var _default = [{
       "num": 1,
       "price": 18,
       "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 4,
-    "price": 18,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2020/04/29/99daa7b20061efab10.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "精选北川半兵卫抹茶粉和秘制红豆泥",
-    "use_spec": false,
-    "stock": "10308.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "抹茶王",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/29/99daa7b20061efab10.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 68339,
-    "pack_cost": "0.00",
-    "sales": 44429,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 190,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5EA54C3D0E4279185",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5EA54C3D0E9682750",
-        "value": "去冰"
-      }],
-      "name": "温度",
-      "desc": null
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5EA54C3D0F2A37322",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5EA54C3D0F70A1000",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5EA54C3D0FAFE7320",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": null
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010010025",
-      "id": "72cf1279c0a422ce",
-      "stock": "9999817.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/04/26/559a075d81060b23c7.jpg",
-      "num": 1,
-      "price": 30,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 0,
-    "price": 30,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2020/04/26/559a075d81060b23c7.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "饱满大颗的新鲜杨梅,满杯手工去核,搭配茉莉初雪茶底,清爽多汁",
-    "use_spec": false,
-    "stock": "9999817.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气杨梅",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/26/559a075d81060b23c7.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 68345,
-    "pack_cost": "0.00",
-    "sales": 16322,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 190,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5EA55088766CC7824",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5EA5508876F271659",
-        "value": "去冰"
-      }],
-      "name": "温度",
-      "desc": null
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5EA55088776843559",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5EA5508877A528469",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5EA5508877E5A6908",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": null
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010010043",
-      "id": "c7c6f8fd34040338",
-      "stock": "999950.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/04/26/ea8fc439fddf2f62e3.jpg",
-      "num": 1,
-      "price": 32,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 2,
-    "price": 32,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2020/04/26/ea8fc439fddf2f62e3.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "霸气杨梅和酸奶的首次搭配,甘甜可口",
-    "use_spec": false,
+    }]
+  }, (0, _defineProperty2.default)(_ref, "is_sell", true), (0, _defineProperty2.default)(_ref, "goods_type", 2), (0, _defineProperty2.default)(_ref, "entity", [{
+    "spec_id": "",
+    "trade_mark": "1010010043",
+    "id": "c7c6f8fd34040338",
     "stock": "999950.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气酸奶杨梅",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/26/ea8fc439fddf2f62e3.jpg?imageView2/2/w/400/h/400"
-  }],
-  "name": "新品推荐",
+    "spec_text": [],
+    "spec": [],
+    "image": "s23107/2020/04/26/ea8fc439fddf2f62e3.jpg",
+    "num": 1,
+    "price": 32,
+    "membership_price": 0
+  }]), (0, _defineProperty2.default)(_ref, "stall_code", ""), (0, _defineProperty2.default)(_ref, "sort", 2), (0, _defineProperty2.default)(_ref, "price", 32), (0, _defineProperty2.default)(_ref, "unit", "件"), (0, _defineProperty2.default)(_ref, "imageArr", ["https://img-shop.qmimg.cn/s23107/2020/04/26/ea8fc439fddf2f62e3.jpg?imageView2/2/w/600/h/600"]), (0, _defineProperty2.default)(_ref, "membership_price", 0), (0, _defineProperty2.default)(_ref, "use_property", 1), (0, _defineProperty2.default)(_ref, "unit_type", 0), (0, _defineProperty2.default)(_ref, "min_buy_num", 0), (0, _defineProperty2.default)(_ref, "specs", []), (0, _defineProperty2.default)(_ref, "content", "霸气杨梅和酸奶的首次搭配,甘甜可口"), (0, _defineProperty2.default)(_ref, "use_spec", false), (0, _defineProperty2.default)(_ref, "stock", "999950.00"), (0, _defineProperty2.default)(_ref, "type", 1), (0, _defineProperty2.default)(_ref, "is_label", 0), (0, _defineProperty2.default)(_ref, "name", "霸气酸奶杨梅"), (0, _defineProperty2.default)(_ref, "images", "https://img-shop.qmimg.cn/s23107/2020/04/26/ea8fc439fddf2f62e3.jpg?imageView2/2/w/400/h/400"), _ref)],
+  "name": "高阶排阵",
   "is_show_backstage": 0
 }, {
   "sort": 3,
@@ -13662,242 +12414,6 @@ var _default = [{
     "goods_type": 2,
     "entity": [{
       "spec_id": "",
-      "trade_mark": "1010010000",
-      "id": "097aad038aeeb0ea",
-      "stock": "998101.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/26/2a4b2697bec6f7e502.jpg",
-      "num": 1,
-      "price": 25,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 2,
-    "price": 25,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/04/26/2a4b2697bec6f7e502.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "奈雪明星产品。优选进口新奇士橙，搭配严选茉莉毛尖茶底，橙意满满。",
-    "use_spec": false,
-    "stock": "998101.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气橙子",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/2a4b2697bec6f7e502.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 31532,
-    "pack_cost": "0.00",
-    "sales": 5104,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1218,
-        "code": "Z5D612C34C8EF06658",
-        "value": "标准(芝士)"
-      }, {
-        "is_default": 0,
-        "id": 1166,
-        "code": "Z5D612C34C93705460",
-        "value": "芝士换酸奶"
-      }],
-      "name": "配料",
-      "id": 347
-    }, {
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5EA8DBDA4371C5994",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 1164,
-        "code": "Z5EA8DBDA43C415239",
-        "value": "冰沙"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5EA8DBDA4404E3515",
-        "value": "去冰"
-      }],
-      "name": "温度",
-      "id": 190
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD78286916115856",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD78286919682277",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD7828691CB89112",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳"
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010050008",
-      "id": "f8114313a48c5c4a",
-      "stock": "1000314.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/03/19/a3ee1fa72435259a73.jpg",
-      "num": 1,
-      "price": 28,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 4,
-    "price": 28,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2020/03/19/a3ee1fa72435259a73.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "精选优质巨峰葡萄、手工去皮去籽、加入带兰桂花香，经中度焙火的金观音茶中，搭配轻盈香甜芝士奶盖",
-    "use_spec": false,
-    "stock": "1000314.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气芝士葡萄",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/03/19/a3ee1fa72435259a73.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 16808,
-    "pack_cost": "0.00",
-    "sales": 115495,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000024",
-      "id": "2e89b669b329c292",
-      "stock": "10704.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/28/94d8440ab7b4fed802.jpg",
-      "num": 1,
-      "price": 20,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 5,
-    "price": 20,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/04/28/94d8440ab7b4fed802.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "大大的一根魔法棒，加入淡奶油和进口酵母，配上经典的草莓鲜果。好看的外表和经典的口味造就的一款奈雪明星产品。",
-    "use_spec": false,
-    "stock": "10704.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "草莓魔法棒",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/28/94d8440ab7b4fed802.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 31424,
-    "pack_cost": "0.00",
-    "sales": 125010,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1218,
-        "code": "Z5D5BA2BB31A145049",
-        "value": "标准(芝士)"
-      }, {
-        "is_default": 0,
-        "id": 1166,
-        "code": "Z5D5BA2BB320FA8410",
-        "value": "芝士换酸奶"
-      }],
-      "name": "配料",
-      "id": 347
-    }, {
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 0,
-        "id": 582,
-        "code": "Z5E5E2BC316DD78061",
-        "value": "标准冰"
-      }, {
-        "is_default": 1,
-        "id": 1164,
-        "code": "Z5E5E2BC316A215600",
-        "value": "冰沙"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2BC3171CA8287",
-        "value": "去冰"
-      }, {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E5E2BC317A175989",
-        "value": "热"
-      }, {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2BC317F896724",
-        "value": "温"
-      }],
-      "name": "温度",
-      "id": 190
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD785286B9689681",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD785286BCF74540",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD785286C0687027",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳"
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
       "trade_mark": "1010050003",
       "id": "ee375ed5ae7f77eb",
       "stock": "1002053.00",
@@ -13926,5881 +12442,13 @@ var _default = [{
     "name": "霸气芝士草莓",
     "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/1cb88e6cd2fbcefb2a.jpg?imageView2/2/w/400/h/400"
   }],
-  "name": "招牌热卖",
-  "is_show_backstage": 0
-}, {
-  "sort": 8,
-  "icon": "https://img-shop.qmimg.cn/s23107/2019/04/28/bfeae4de9de15a0f88.png?imageView2/0/w/200/h/200",
-  "id": 2522,
-  "goods_list": [{
-    "sell_time_status": 0,
-    "id": 31826,
-    "pack_cost": "0.00",
-    "sales": 70462,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000017",
-      "id": "2e3f40b8f6decb2a",
-      "stock": "1000498.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/28/be484557ff7cfa4dba.jpg",
-      "num": 1,
-      "price": 28,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 2,
-    "price": 28,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/04/28/be484557ff7cfa4dba.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "马来西亚D24榴莲王果肉+芒果干，爆浆的榴莲馅，这款是榴莲控的最爱。",
-    "use_spec": false,
-    "stock": "1000498.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气榴莲王",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/28/be484557ff7cfa4dba.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 31544,
-    "pack_cost": "0.00",
-    "sales": 46215,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000018",
-      "id": "08a87a5ad6fa8648",
-      "stock": "100413.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/28/6e4829e475329d4836.jpg",
-      "num": 1,
-      "price": 20,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 2,
-    "price": 20,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/04/28/6e4829e475329d4836.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "粉嫩的面包体加入了火龙果果泥，颜值和健康的共存，满满的香浓芝士内陷搭配柔软有嚼劲的软欧包，葡萄干的加缀增添丰富有层次的口感，让你一试喜欢。",
-    "use_spec": false,
-    "stock": "100413.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "蜜蜜芝士火龙果",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/28/6e4829e475329d4836.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 27016,
-    "pack_cost": "0.00",
-    "sales": 169990,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000093",
-      "id": "85ab649f81d89e90",
-      "stock": "1000106.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/10/11/e2035bc2f7003ad0e9.jpg",
-      "num": 1,
-      "price": 16,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 3,
-    "price": 16,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/10/11/e2035bc2f7003ad0e9.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "紫薯醇香包裹蜜润红豆，麻薯带来超长拉丝惊喜",
-    "use_spec": false,
-    "stock": "1000106.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "紫薯嘟嘟",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/10/11/e2035bc2f7003ad0e9.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 27014,
-    "pack_cost": "0.00",
-    "sales": 255254,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000090",
-      "id": "7220777710a535e7",
-      "stock": "1000217.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/10/11/3cf65a33efba914504.jpg",
-      "num": 1,
-      "price": 16,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 3,
-    "price": 16,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/10/11/3cf65a33efba914504.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "咸香蛋黄浓郁细腻注入经典芋泥甜咸风味正适宜",
-    "use_spec": false,
-    "stock": "1000217.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "咸蛋黄嘟嘟",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/10/11/3cf65a33efba914504.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 27009,
-    "pack_cost": "0.00",
-    "sales": 199446,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000092",
-      "id": "82b0391c9f3e987f",
-      "stock": "1000126.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/10/11/0093e8ec087a074edf.jpg",
-      "num": 1,
-      "price": 16,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 3,
-    "price": 16,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/10/11/0093e8ec087a074edf.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "爆浆南瓜泥清甜不腻，麻薯Q弹有活力",
-    "use_spec": false,
-    "stock": "1000126.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "南瓜嘟嘟",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/10/11/0093e8ec087a074edf.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 27008,
-    "pack_cost": "0.00",
-    "sales": 158438,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000091",
-      "id": "186191c7af8a25e2",
-      "stock": "1000209.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/10/11/21bad4be51837450a8.jpg",
-      "num": 1,
-      "price": 16,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 3,
-    "price": 16,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/10/11/21bad4be51837450a8.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "抹茶卡仕达表皮包裹着软糯红豆和绵密芋泥，拉丝麻薯糯唧唧",
-    "use_spec": false,
-    "stock": "1000209.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "红豆嘟嘟",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/10/11/21bad4be51837450a8.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 24516,
-    "pack_cost": "0.00",
-    "sales": 1278,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000070",
-      "id": "5d79de67251ea00e",
-      "stock": "10485.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/04/29/4a62ee45dd527609ed.jpg",
-      "num": 1,
-      "price": 18,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 3,
-    "price": 18,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2020/04/29/4a62ee45dd527609ed.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "酥软口感,进口奶油搭配特制巧克力内馅",
-    "use_spec": false,
-    "stock": "10485.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "脏脏王",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/29/4a62ee45dd527609ed.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 24517,
-    "pack_cost": "0.00",
-    "sales": 1228,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000071",
-      "id": "2b3f1ea3ecabd22e",
-      "stock": "10308.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/04/29/99daa7b20061efab10.jpg",
-      "num": 1,
-      "price": 18,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 4,
-    "price": 18,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2020/04/29/99daa7b20061efab10.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "精选北川半兵卫抹茶粉和秘制红豆泥",
-    "use_spec": false,
-    "stock": "10308.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "抹茶王",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/29/99daa7b20061efab10.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 31834,
-    "pack_cost": "0.00",
-    "sales": 94527,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000003",
-      "id": "c8d9d2828e1ff531",
-      "stock": "1000108.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/28/d8e4330c48ae58c7da.jpg",
-      "num": 1,
-      "price": 15,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 7,
-    "price": 15,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/04/28/d8e4330c48ae58c7da.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "梅菜扣肉咸香接地气，摊成薄薄饼状增大烘焙面积，撒上香烤的芝麻粒，特色风味独树一帜。",
-    "use_spec": false,
-    "stock": "1000108.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "梅菜肉肉",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/28/d8e4330c48ae58c7da.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 31824,
-    "pack_cost": "0.00",
-    "sales": 143535,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000034",
-      "id": "8996e12e46d28663",
-      "stock": "10000237.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/05/05/30f0463b8b644e8417.jpg",
-      "num": 1,
-      "price": 18,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 8,
-    "price": 18,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/05/05/30f0463b8b644e8417.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "柔软的表皮加上天然新鲜凤梨颗粒与安佳乳酪调制的凤梨果肉馅，每一口都酸甜可口，顺滑满足。",
-    "use_spec": false,
-    "stock": "10000237.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "芝士金凤梨",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/05/05/30f0463b8b644e8417.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 31820,
-    "pack_cost": "0.00",
-    "sales": 123089,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000022",
-      "id": "e06d86e3db130723",
-      "stock": "10000198.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/28/8b123558614b56993d.jpg",
-      "num": 1,
-      "price": 14,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 9,
-    "price": 14,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/04/28/8b123558614b56993d.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "柔软的欧包里藏着一整根脆皮肠，满口都是肉感，一口咸味一口浓郁奶味。",
-    "use_spec": false,
-    "stock": "10000198.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "德式腊肠犬",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/28/8b123558614b56993d.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 31816,
-    "pack_cost": "0.00",
-    "sales": 223377,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000006",
-      "id": "d10644f99c0313a4",
-      "stock": "1000215.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/28/fc9ef3ae0338ad7b3a.jpg",
-      "num": 1,
-      "price": 29,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 10,
-    "price": 29,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/04/28/fc9ef3ae0338ad7b3a.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "霸气的外表下包含着软绵甜蜜的榴莲果肉内陷。200度的烘烤热情，以及100分钟以上的制作工艺，这款纯手工软欧包给你大大的甜蜜和满足。",
-    "use_spec": false,
-    "stock": "1000215.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "一颗大榴莲",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/28/fc9ef3ae0338ad7b3a.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 31814,
-    "pack_cost": "0.00",
-    "sales": 184270,
-    "cover_img": "https://img-shop.qmimg.cn/s23107/2019/12/07/0476864cd0b7fd9bc4.jpg?imageView2/2/w/400/h/400",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000038",
-      "id": "0c3cea3467da2817",
-      "stock": "1000207.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/12/07/f0bc53b12b13f1df8d.jpg",
-      "num": 1,
-      "price": 23,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 11,
-    "price": 23,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/12/07/f0bc53b12b13f1df8d.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "切碎的奶酪粒和香芋粒，味道清新，散发着奶酪和芋头的香气。奈雪非常独特的一款软欧包。",
-    "use_spec": false,
-    "stock": "1000207.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "奶酪芋头山",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/12/07/f0bc53b12b13f1df8d.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 16852,
-    "pack_cost": "0.00",
-    "sales": 225651,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000026",
-      "id": "8e46d28edac152bd",
-      "stock": "10435.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/28/417eae192c1dc8b9ab.jpg",
-      "num": 1,
-      "price": 18,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 99,
-    "price": 18,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/04/28/417eae192c1dc8b9ab.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "菠菜汁入面团，咸香肉松甜脆玉米粒，咸口松软",
-    "use_spec": false,
-    "stock": "10435.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "菠菜肉骨头",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/28/417eae192c1dc8b9ab.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 17137,
-    "pack_cost": "0.00",
-    "sales": 232976,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000027",
-      "id": "a43a6d40cef6f162",
-      "stock": "10506.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/05/05/9979fa487e2c3e2636.jpg",
-      "num": 1,
-      "price": 15,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 4,
-    "price": 15,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/05/05/9979fa487e2c3e2636.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "香甜浓郁的巧克力奶油与巧克力软欧包，夹着香脆的奥利奥饼干，一口又一口，停不下来。",
-    "use_spec": false,
-    "stock": "10506.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "奥利奥魔法棒",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/05/05/9979fa487e2c3e2636.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 17145,
-    "pack_cost": "0.00",
-    "sales": 173762,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000040",
-      "id": "0f90fb60826f6fe0",
-      "stock": "10332.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/05/05/a1202933e01235285a.jpg",
-      "num": 1,
-      "price": 20,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 5,
-    "price": 20,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/05/05/a1202933e01235285a.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "奈雪招牌软欧包魔法棒家族之一，满满的新鲜水果看的见，软欧包有淡淡的胡萝卜味，芒果香味十分浓郁。",
-    "use_spec": false,
-    "stock": "10332.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "芒果魔法棒",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/05/05/a1202933e01235285a.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 16808,
-    "pack_cost": "0.00",
-    "sales": 115495,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000024",
-      "id": "2e89b669b329c292",
-      "stock": "10704.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/28/94d8440ab7b4fed802.jpg",
-      "num": 1,
-      "price": 20,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 5,
-    "price": 20,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/04/28/94d8440ab7b4fed802.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "大大的一根魔法棒，加入淡奶油和进口酵母，配上经典的草莓鲜果。好看的外表和经典的口味造就的一款奈雪明星产品。",
-    "use_spec": false,
-    "stock": "10704.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "草莓魔法棒",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/28/94d8440ab7b4fed802.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 17138,
-    "pack_cost": "0.00",
-    "sales": 123169,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000012",
-      "id": "c9bda650c3a9cb7f",
-      "stock": "10138.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/05/05/cc722e14ae7c7973d9.jpg",
-      "num": 1,
-      "price": 15,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 99,
-    "price": 15,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/05/05/cc722e14ae7c7973d9.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "摩卡味熊宝宝脸蛋，熊宝宝耳朵都有Q弹的金珠珠",
-    "use_spec": false,
-    "stock": "10138.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "奈雪熊宝宝",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/05/05/cc722e14ae7c7973d9.jpg?imageView2/2/w/400/h/400"
-  }],
-  "name": "软欧包",
-  "is_show_backstage": 0
-}, {
-  "sort": 9,
-  "icon": "https://img-shop.qmimg.cn/s23107/2019/04/28/bfeae4de9de15a0f88.png?imageView2/0/w/200/h/200",
-  "id": 6510,
-  "goods_list": [{
-    "sell_time_status": 0,
-    "id": 57165,
-    "pack_cost": "0.00",
-    "sales": 9436,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000104",
-      "id": "c860d6ad9cba0575",
-      "stock": "999999947.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/03/19/08b868c6270203c344.jpg",
-      "num": 1,
-      "price": 16,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 2,
-    "price": 16,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2020/03/19/08b868c6270203c344.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "无水工艺制作、只添加鸡蛋和牛奶，面包香味浓郁，口感细腻柔韧、嚼劲十足",
-    "use_spec": false,
-    "stock": "999999947.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "原味吐司",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/03/19/08b868c6270203c344.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 57167,
-    "pack_cost": "0.00",
-    "sales": 4746,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000106",
-      "id": "d8820703d3bce4d1",
-      "stock": "99999977.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/03/19/a7e10078ca8d48789f.jpg",
-      "num": 1,
-      "price": 23,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 3,
-    "price": 23,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2020/03/19/a7e10078ca8d48789f.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "酥软外皮、自制香草风味卡仕达、颗粒饱满的柔软红豆，豆香四溢",
-    "use_spec": false,
-    "stock": "99999977.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "红豆千层吐司",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/03/19/a7e10078ca8d48789f.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 57166,
-    "pack_cost": "0.00",
-    "sales": 9967,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000105",
-      "id": "8ddfb6a43f25f987",
-      "stock": "99999922.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/03/19/576288b90223ac24ae.jpg",
-      "num": 1,
-      "price": 22,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 3,
-    "price": 22,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2020/03/19/576288b90223ac24ae.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "进口面粉揉制的面团，咸香四溢的肉松搭配自制Q弹麻薯",
-    "use_spec": false,
-    "stock": "99999922.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "肉松麻薯吐司",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/03/19/576288b90223ac24ae.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 25006,
-    "pack_cost": "0.00",
-    "sales": 12229,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212010005",
-      "id": "fb4c7cf07b1d29cb",
-      "stock": "10102.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/06/13/a74abd2b454461e7ed.jpg",
-      "num": 1,
-      "price": 9,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 1,
-    "price": 9,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/06/13/a74abd2b454461e7ed.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "多种草莓元素汇集，打造专属咩咩包的粉红暴击；以草莓果酱特调淡奶油内馅，享受口腔里肆意的爆浆感，表面撒层酸甜草莓粉搭配草莓干颗粒与草莓巧克力薄层，果香萦绕，充满甜美气息。",
-    "use_spec": false,
-    "stock": "10102.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "草莓咩咩",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/06/13/a74abd2b454461e7ed.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 25003,
-    "pack_cost": "0.00",
-    "sales": 11608,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212010004",
-      "id": "87302f460fa9d0f9",
-      "stock": "10065.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/06/13/836219fa1162d1ab9c.jpg",
-      "num": 1,
-      "price": 9,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 1,
-    "price": 9,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/06/13/836219fa1162d1ab9c.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "小羊角里加入巧克力味淡奶油内馅，表面撒层馥郁可可粉搭配黑巧爆谷米与黑巧克力薄层，多重巧克力风味，一口即享。",
-    "use_spec": false,
-    "stock": "10065.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "巧克力咩咩",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/06/13/836219fa1162d1ab9c.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 25001,
-    "pack_cost": "0.00",
-    "sales": 10548,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212010003",
-      "id": "531b6d578cc1c18e",
-      "stock": "10079.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/06/13/82804b3b87b2b57c44.jpg",
-      "num": 1,
-      "price": 9,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 1,
-    "price": 9,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/06/13/82804b3b87b2b57c44.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "香浓抹茶，特调淡奶油内馅，并轻洒在表面一层薄薄的白巧克力上，成就颜值、内涵、口感的三重惊艳，抹茶控必入。",
-    "use_spec": false,
-    "stock": "10079.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "抹茶咩咩",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/06/13/82804b3b87b2b57c44.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 25000,
-    "pack_cost": "0.00",
-    "sales": 6233,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212010000",
-      "id": "106c52ad2a01ffba",
-      "stock": "10085.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/06/13/a3baf71549f038325d.jpg",
-      "num": 1,
-      "price": 9,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 1,
-    "price": 9,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/06/13/a3baf71549f038325d.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "可爱玲珑的羊角个头，层层酥脆，一口咬下，卡士达淡奶油内馅爆浆感十足,表皮肉松海苔，带来更鲜脆风味",
-    "use_spec": false,
-    "stock": "10085.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "肉松咩咩",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/06/13/a3baf71549f038325d.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 68452,
-    "pack_cost": "0.00",
-    "sales": 741,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212020002",
-      "id": "5efabb63696f2515",
-      "stock": "99998.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/04/27/98f9e17936370f5c6e.jpg",
-      "num": 1,
-      "price": 10,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 99,
-    "price": 10,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2020/04/27/98f9e17936370f5c6e.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "软酥蛋皮，奶香浓郁，布丁口感，外酥内嫩",
-    "use_spec": false,
-    "stock": "99998.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "经典蛋挞",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/27/98f9e17936370f5c6e.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 25011,
-    "pack_cost": "0.00",
-    "sales": 3268,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1298,
-        "code": "Z5D5FA29D6070D7403",
-        "value": "草莓咩咩"
-      }, {
-        "is_default": 0,
-        "id": 1299,
-        "code": "Z5D5FA29D60DAE4347",
-        "value": "巧克力咩咩"
-      }, {
-        "is_default": 0,
-        "id": 1300,
-        "code": "Z5D5FA29D614794268",
-        "value": "抹茶咩咩"
-      }, {
-        "is_default": 0,
-        "id": 1302,
-        "code": "Z5D5FA29D6221E9709",
-        "value": "肉松咩咩"
-      }],
-      "name": "选择一",
-      "id": 262
-    }, {
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1303,
-        "code": "Z5D5FA29D62C482120",
-        "value": "草莓咩咩"
-      }, {
-        "is_default": 0,
-        "id": 1305,
-        "code": "Z5D5FA29D63A198780",
-        "value": "抹茶咩咩"
-      }, {
-        "is_default": 0,
-        "id": 1306,
-        "code": "Z5D5FA29D642F31535",
-        "value": "巧克力咩咩"
-      }, {
-        "is_default": 0,
-        "id": 1308,
-        "code": "Z5D5FA29D6518E8070",
-        "value": "肉松咩咩"
-      }],
-      "name": "选择二",
-      "id": 263
-    }, {
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1309,
-        "code": "Z5D5FA29D65F0C3220",
-        "value": "肉松咩咩"
-      }, {
-        "is_default": 0,
-        "id": 1311,
-        "code": "Z5D5FA29D66BAB8787",
-        "value": "巧克力咩咩"
-      }, {
-        "is_default": 0,
-        "id": 1312,
-        "code": "Z5D5FA29D672AF9110",
-        "value": "草莓咩咩"
-      }, {
-        "is_default": 0,
-        "id": 1313,
-        "code": "Z5D5FA29D6794A2665",
-        "value": "抹茶咩咩"
-      }],
-      "name": "选择三",
-      "id": 366
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "11110015",
-      "id": "2693ad8a72f32fdf",
-      "stock": "100000080.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/06/13/b92a9d35a43e67ceab.jpg",
-      "num": 1,
-      "price": 24,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 99,
-    "price": 24,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/06/13/b92a9d35a43e67ceab.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "#一口酥脆-满口爆浆的咩咩包#来啦！奈雪首次推出咩咩包系列，六个口味荟萃，任选三只即享优惠组合价~层层酥脆，让美味与分享同在~",
-    "use_spec": false,
-    "stock": "100000080.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "咩咩包组合装",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/06/13/b92a9d35a43e67ceab.jpg?imageView2/2/w/400/h/400"
-  }],
-  "name": "手作烘焙",
-  "is_show_backstage": 0
-}, {
-  "sort": 12,
-  "icon": "https://img-shop.qmimg.cn/s23107/2019/04/28/edd969e6c892853667.png?imageView2/0/w/200/h/200",
-  "id": 2497,
-  "goods_list": [{
-    "sell_time_status": 0,
-    "id": 58708,
-    "pack_cost": "0.00",
-    "sales": 11519,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 190,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5E7C5F8A51A546188",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 609,
-        "code": "Z5E7C5F8A51F7E8021",
-        "value": "少冰"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E7C5F8A523892538",
-        "value": "去冰"
-      }, {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E7C5F8A527A67945",
-        "value": "热"
-      }, {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E7C5F8A52B737106",
-        "value": "温"
-      }],
-      "name": "温度",
-      "desc": null
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5E7C5F8A5340E8233",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5E7C5F8A538459155",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 610,
-        "code": "Z5E7C5F8A53C5A7778",
-        "value": "微糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5E7C5F8A540DF9794",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": null
-    }],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010000008",
-      "id": "5117d6934f984ddd",
-      "stock": "999999825.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/03/26/fcece4bb6af2673e37.jpg",
-      "num": 1,
-      "price": 19,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 2,
-    "price": 19,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2020/03/26/fcece4bb6af2673e37.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "精选金观音茶叶，汤色金黄清澈、香气馥郁幽长，搭配奈雪芝士奶盖，回甘醇厚。",
-    "use_spec": false,
-    "stock": "999999825.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "芝士金观音",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/03/26/fcece4bb6af2673e37.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 31558,
-    "pack_cost": "0.00",
-    "sales": 37172,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5E5E2CF50F4767076",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2CF50F8B97969",
-        "value": "去冰"
-      }, {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E5E2CF50FC797077",
-        "value": "热"
-      }, {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2CF51003F7078",
-        "value": "温"
-      }],
-      "name": "温度",
-      "id": 190
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD783C1026547401",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD783C1029E21469",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD783C102D7B3883",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳"
-    }],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010000003",
-      "id": "a2b1def8331cd4c4",
-      "stock": "99999752.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/03/27/369520a40d39e0ac11.jpg",
-      "num": 1,
-      "price": 21,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 3,
-    "price": 21,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2020/03/27/369520a40d39e0ac11.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "热饮为纸杯包装，茉莉花的香气和绿茶的清新融合，汤色清亮",
-    "use_spec": false,
-    "stock": "99999752.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "芝士茉莉初雪",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/03/27/369520a40d39e0ac11.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 31560,
-    "pack_cost": "0.00",
-    "sales": 17293,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5E5E2D16A308C7944",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2D16A34E74683",
-        "value": "去冰"
-      }, {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E5E2D16A38D21680",
-        "value": "热"
-      }, {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2D16A3D2B4114",
-        "value": "温"
-      }],
-      "name": "温度",
-      "id": 190
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD7820B13E2F5968",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD7820B141B57300",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD7820B145611482",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳"
-    }],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010000002",
-      "id": "f213dedd5653800c",
-      "stock": "10000077.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/03/27/bac6a6e8b23fd3b30e.jpg",
-      "num": 1,
-      "price": 22,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 99,
-    "price": 22,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2020/03/27/bac6a6e8b23fd3b30e.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "奈雪定制茶。选用武夷山金骏眉等三种名优红茶调配而成，有独特的烟熏龙眼木香气，搭配轻盈香滑的芝士奶盖，中和淡淡涩口。",
-    "use_spec": false,
-    "stock": "10000077.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "芝士奈雪金色山脉",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/03/27/bac6a6e8b23fd3b30e.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 31557,
-    "pack_cost": "0.00",
-    "sales": 35462,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5E5E2CE34D0EA6729",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2CE34D6612524",
-        "value": "去冰"
-      }, {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E5E2CE34DAE75885",
-        "value": "热"
-      }, {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2CE34F6D97845",
-        "value": "温"
-      }],
-      "name": "温度",
-      "id": 190
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD783375B6983153",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD783375BA6C4391",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD783375BE198735",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳"
-    }],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010000001",
-      "id": "9e63c54d02eec86b",
-      "stock": "10000137.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/03/27/8d4a1edb7c9e2d6554.jpg",
-      "num": 1,
-      "price": 22,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 99,
-    "price": 22,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2020/03/27/8d4a1edb7c9e2d6554.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "奈雪名优茶。荣获2018年台湾冬茶比赛头等奖。茶山沾染的花香气、低温烘焙的醇甜香，入口回甘。搭配轻盈香滑的咸芝士奶盖，中和淡淡涩口。",
-    "use_spec": false,
-    "stock": "10000137.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "芝士奈雪初露",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/03/27/8d4a1edb7c9e2d6554.jpg?imageView2/2/w/400/h/400"
-  }],
-  "name": "芝士茗优茶",
-  "is_show_backstage": 0
-}, {
-  "sort": 14,
-  "icon": "https://img-shop.qmimg.cn/s23107/2019/04/28/33fe4d0f9c3b8b7b97.png?imageView2/0/w/200/h/200",
-  "id": 2500,
-  "goods_list": [{
-    "sell_time_status": 0,
-    "id": 58710,
-    "pack_cost": "0.00",
-    "sales": 6064,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 190,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5E7C60433E1E03482",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 609,
-        "code": "Z5E7C60433E6B51206",
-        "value": "少冰"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E7C60433EAB73816",
-        "value": "去冰"
-      }, {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E7C60433EE769255",
-        "value": "热"
-      }, {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E7C60433F22E8316",
-        "value": "温"
-      }],
-      "name": "温度",
-      "desc": null
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5E7C60433FA1A6064",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5E7C60433FEA91288",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 610,
-        "code": "Z5E7C60434031C3451",
-        "value": "微糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5E7C6043407752183",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": null
-    }],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010030008",
-      "id": "1a5ad9d3d03883ad",
-      "stock": "999999524.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/04/16/a169f730488a724acc.jpg",
-      "num": 1,
-      "price": 13,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 3,
-    "price": 13,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2020/04/16/a169f730488a724acc.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "精选金观音茶叶，汤色金黄清澈、香气馥郁幽长",
-    "use_spec": false,
-    "stock": "999999524.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "金观音",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/16/a169f730488a724acc.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 31431,
-    "pack_cost": "0.00",
-    "sales": 8582,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5E5E2D39B2E2C1515",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2D39B32726459",
-        "value": "去冰"
-      }, {
-        "is_default": 0,
-        "id": 609,
-        "code": "Z5E5E2D39B362B1790",
-        "value": "少冰"
-      }, {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E5E2D39B39E09251",
-        "value": "热"
-      }, {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2D39B3D864768",
-        "value": "温"
-      }],
-      "name": "温度",
-      "id": 190
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD7835D198C73695",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD7835D19C263883",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD7835D19F993256",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳"
-    }],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010030003",
-      "id": "489fc9c35ba35792",
-      "stock": "998479.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/03/27/0491350e8dca665627.jpg",
-      "num": 1,
-      "price": 15,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 4,
-    "price": 15,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2020/03/27/0491350e8dca665627.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "热饮为纸杯包装，茉莉花的香气和绿茶的清新融合，汤色清亮",
-    "use_spec": false,
-    "stock": "998479.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "茉莉初雪",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/03/27/0491350e8dca665627.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 31433,
-    "pack_cost": "0.00",
-    "sales": 2696,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5E5E2D59A10614619",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2D59A15915459",
-        "value": "去冰"
-      }, {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E5E2D59A19D98802",
-        "value": "热"
-      }, {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2D59A1E4D5205",
-        "value": "温"
-      }],
-      "name": "温度",
-      "id": 190
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD7880C6EA1B9131",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD7880C6EDDD5553",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD7880C6F1A92100",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳"
-    }],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010030001",
-      "id": "baa902a28fef5352",
-      "stock": "999794.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/03/27/dfbf560ac141c88213.jpg",
-      "num": 1,
-      "price": 16,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 99,
-    "price": 16,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2020/03/27/dfbf560ac141c88213.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "奈雪定制茶,选用武夷山金骏眉等三种名优红茶调配而成，独特的烟熏龙眼木香气，甘醇韵长回味无穷。",
-    "use_spec": false,
-    "stock": "999794.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "奈雪金色山脉",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/03/27/dfbf560ac141c88213.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 31430,
-    "pack_cost": "0.00",
-    "sales": 4297,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5E5E2D291B76F7651",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2D291BBF32291",
-        "value": "去冰"
-      }, {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E5E2D291BFE24955",
-        "value": "热"
-      }, {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2D291C4752910",
-        "value": "温"
-      }],
-      "name": "温度",
-      "id": 190
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD782A24282D3131",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD782A242C053219",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD782A2430ED6328",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳"
-    }],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010030000",
-      "id": "e86191ffd2a27a25",
-      "stock": "99430.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/03/27/7d0a4993b5926e2bc6.jpg",
-      "num": 1,
-      "price": 16,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 99,
-    "price": 16,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2020/03/27/7d0a4993b5926e2bc6.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "奈雪名优茶。荣获2017年台湾冬茶比赛头等奖。清新的花香气、低温烘焙的醇甜香，入口5秒等待回甘。",
-    "use_spec": false,
-    "stock": "99430.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "奈雪初露",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/03/27/7d0a4993b5926e2bc6.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 16719,
-    "pack_cost": "0.00",
-    "sales": 14868,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "793:3068|794:3063",
-      "trade_mark": "1010020000",
-      "id": "2728bc1fd96b4d6a",
-      "stock": "9914.00",
-      "spec_text": {
-        "温度": "冷",
-        "糖度": "无糖"
-      },
-      "spec": {
-        "793": 3068,
-        "794": 3063
-      },
-      "image": "s23107/2019/04/26/3afbe376457c893497.jpg",
-      "num": 1,
-      "price": 22,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 99,
-    "price": 22,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/04/26/3afbe376457c893497.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [{
-      "values": [{
-        "id": 3068,
-        "image": null,
-        "value": "冷"
-      }],
-      "name": "温度",
-      "id": 793
-    }, {
-      "values": [{
-        "id": 3063,
-        "image": null,
-        "value": "无糖"
-      }],
-      "name": "糖度",
-      "id": 794
-    }],
-    "content": "奈雪名优茶。严选台湾阿里山优质冻顶乌龙茶，低温冷泡8小时，减少咖啡因释放，降低涩味，茶香更甘醇",
-    "use_spec": true,
-    "stock": "9914.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "冻顶乌龙(冷泡茶)",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/3afbe376457c893497.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 16718,
-    "pack_cost": "0.00",
-    "sales": 14692,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "793:3068|794:3063",
-      "trade_mark": "1010020001",
-      "id": "6334b219fa565cc3",
-      "stock": "9888.00",
-      "spec_text": {
-        "温度": "冷",
-        "糖度": "无糖"
-      },
-      "spec": {
-        "793": 3068,
-        "794": 3063
-      },
-      "image": "s23107/2019/04/26/f8e25f045c19df333d.jpg",
-      "num": 1,
-      "price": 22,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 99,
-    "price": 22,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/04/26/f8e25f045c19df333d.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [{
-      "values": [{
-        "id": 3068,
-        "image": null,
-        "value": "冷"
-      }],
-      "name": "温度",
-      "id": 793
-    }, {
-      "values": [{
-        "id": 3063,
-        "image": null,
-        "value": "无糖"
-      }],
-      "name": "糖度",
-      "id": 794
-    }],
-    "content": "来自台湾阿里山的乌龙茶，生长于终年云雾缭绕之地，作为正大名茶的特有品种，甘甜带果胶质口感是其独特魅力。花香气清雅，滋味清醇甘甜",
-    "use_spec": true,
-    "stock": "9888.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "青心乌龙(冷泡茶)",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/f8e25f045c19df333d.jpg?imageView2/2/w/400/h/400"
-  }],
-  "name": "无糖茶铺",
-  "is_show_backstage": 0
-}, {
-  "sort": 15,
-  "icon": "https://img-shop.qmimg.cn/s23107/2019/04/28/6557447a5b85a3bf71.png?imageView2/0/w/200/h/200",
-  "id": 2488,
-  "goods_list": [{
-    "sell_time_status": 0,
-    "id": 31535,
-    "pack_cost": "0.00",
-    "sales": 18309,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5E5E2BE2B23BB3413",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2BE2B27F03307",
-        "value": "去冰"
-      }, {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E5E2BE2B2D002260",
-        "value": "热"
-      }, {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2BE2B30842522",
-        "value": "温"
-      }],
-      "name": "温度",
-      "id": 190
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD78350A14958747",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD78350A18165102",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD78350A1C237554",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳"
-    }],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010090003",
-      "id": "286cf6b1bc6dedbd",
-      "stock": "1000020.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/26/612997e450b52ba186.jpg",
-      "num": 1,
-      "price": 24,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 2,
-    "price": 24,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/04/26/612997e450b52ba186.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "精选阿拉比卡咖啡豆与冻顶乌龙茶结合，质感幼滑不苦涩，入口香醇，推荐热饮更好喝。",
-    "use_spec": false,
-    "stock": "1000020.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "大咖鸳鸯",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/612997e450b52ba186.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 65309,
-    "pack_cost": "0.00",
-    "sales": 439,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 190,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5E952C509B5561077",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E952C509BA997660",
-        "value": "去冰"
-      }, {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E952C509BE6A2251",
-        "value": "热"
-      }],
-      "name": "温度",
-      "desc": null
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 1959,
-        "code": "Z5E952C509C5816724",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": null
-    }],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010090008",
-      "id": "c88ebf2110c0a219",
-      "stock": "9999955.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/04/16/48279ebcd71456ac25.jpg",
-      "num": 1,
-      "price": 19,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 99,
-    "price": 19,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2020/04/16/48279ebcd71456ac25.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "奈雪拿铁",
-    "use_spec": false,
-    "stock": "9999955.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "奈雪拿铁",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/16/48279ebcd71456ac25.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 65307,
-    "pack_cost": "0.00",
-    "sales": 382,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 190,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5E952A913A5C51731",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E952A913ADE83916",
-        "value": "去冰"
-      }, {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E952A913B1955053",
-        "value": "热"
-      }],
-      "name": "温度",
-      "desc": null
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 1959,
-        "code": "Z5E952A913B8711256",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": null
-    }],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010090007",
-      "id": "08a06c749c6f0c91",
-      "stock": "9999965.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/04/16/456b9428f57f11fc93.jpg",
-      "num": 1,
-      "price": 13,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 99,
-    "price": 13,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2020/04/16/456b9428f57f11fc93.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "奈雪美式",
-    "use_spec": false,
-    "stock": "9999965.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "奈雪美式",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/16/456b9428f57f11fc93.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 31534,
-    "pack_cost": "0.00",
-    "sales": 12285,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5D5E3D4D809A35120",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5D5E3D4D80ED58634",
-        "value": "去冰"
-      }],
-      "name": "温度",
-      "id": 190
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD783E4E22621019",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD783E4E26093700",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD783E4E29D68842",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳"
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010090001",
-      "id": "80b1c59b6bf77b0f",
-      "stock": "9999954.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/05/05/2d77f4daaabc3144b2.jpg",
-      "num": 1,
-      "price": 19,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 1,
-    "price": 19,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/05/05/2d77f4daaabc3144b2.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "咖啡与鲜果茶的创新组合，精心挑选拥有更多香甜因子的翡翠柠檬，柠檬的清爽与咖啡的香醇相结合，唇齿留香。",
-    "use_spec": false,
-    "stock": "9999954.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "大咖柠檬",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/05/05/2d77f4daaabc3144b2.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 31429,
-    "pack_cost": "0.00",
-    "sales": 3346,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1219,
-        "code": "Z5DEDBF956E3931146",
-        "value": "标准(冰淇淋+水晶)"
-      }, {
-        "is_default": 0,
-        "id": 1220,
-        "code": "Z5DEDBF956E7728487",
-        "value": "无配料"
-      }, {
-        "is_default": 0,
-        "id": 1257,
-        "code": "Z5DEDBF956EAC25859",
-        "value": "去水晶"
-      }, {
-        "is_default": 0,
-        "id": 2066,
-        "code": "Z5DEDBF956EEC87411",
-        "value": "去冰淇淋"
-      }, {
-        "is_default": 0,
-        "id": 2067,
-        "code": "Z5DEDBF956F2404144",
-        "value": "换香草冰淇淋"
-      }],
-      "name": "配料",
-      "id": 347
-    }, {
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1167,
-        "code": "Z5D676D0DB876D9109",
-        "value": "标准（冰沙）"
-      }],
-      "name": "温度",
-      "id": 190
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD782B18BE101476",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD782B18C1A57165",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD782B18C4EE8451",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳"
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010090005",
-      "id": "10ba24d03b9fc7fe",
-      "stock": "10000147.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/26/776ccac30466e6bd52.jpg",
-      "num": 1,
-      "price": 34,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 99,
-    "price": 34,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/04/26/776ccac30466e6bd52.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "以现萃咖啡融合茉莉绿茶，加入牛油果、椰子冰淇淋及水晶冻。口感细腻，一口能喝到三重味道，金杯华丽亮相，能量满满。",
-    "use_spec": false,
-    "stock": "10000147.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "大咖牛油果",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/776ccac30466e6bd52.jpg?imageView2/2/w/400/h/400"
-  }],
-  "name": "咖啡",
-  "is_show_backstage": 0
-}, {
-  "sort": 18,
-  "icon": "https://img-shop.qmimg.cn/s23107/2019/04/28/6557447a5b85a3bf71.png?imageView2/0/w/200/h/200",
-  "id": 4365,
-  "goods_list": [{
-    "sell_time_status": 0,
-    "id": 38230,
-    "pack_cost": "0.00",
-    "sales": 52072,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1313030018",
-      "id": "2a8c5a1d486e1e82",
-      "stock": "9999999911.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/11/01/bb339b1b5c2f6fdac4.jpg",
-      "num": 1,
-      "price": 2,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 99,
-    "price": 2,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/11/01/bb339b1b5c2f6fdac4.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "可用于2杯饮品打包使用（保温袋会不定期更换插画图片，以门店正在使用的为准）",
-    "use_spec": false,
-    "stock": "9999999911.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "小保温袋",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/11/01/bb339b1b5c2f6fdac4.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 38229,
-    "pack_cost": "0.00",
-    "sales": 16211,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1313030019",
-      "id": "591339726df9791b",
-      "stock": "999999966.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/11/01/9ea7b5249a2f11a1a1.jpg",
-      "num": 1,
-      "price": 4,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 99,
-    "price": 4,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/11/01/9ea7b5249a2f11a1a1.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "可用于4杯饮品打包使用（保温袋会不定期更换插画图片，以门店正在使用的为准）",
-    "use_spec": false,
-    "stock": "999999966.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "大保温袋",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/11/01/9ea7b5249a2f11a1a1.jpg?imageView2/2/w/400/h/400"
-  }],
-  "name": "保温加购",
-  "is_show_backstage": 0
-}, {
-  "sort": 40,
-  "icon": "https://img-shop.qmimg.cn/s23107/2019/04/30/458c5a14fb2f190f96.png?imageView2/0/w/200/h/200",
-  "id": 5658,
-  "goods_list": [{
-    "sell_time_status": 0,
-    "id": 52969,
-    "pack_cost": "0.00",
-    "sales": 27,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "",
-      "id": "1f58bd9127939f42",
-      "stock": "999.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/02/23/28e175507553571969.jpeg",
-      "num": 1,
-      "price": 0,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 99,
-    "price": 0,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2020/02/23/28e175507553571969.jpeg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "推荐使用奈雪点单小程序下单，降低接触频次。",
-    "use_spec": false,
-    "stock": "999.00",
-    "type": 4,
-    "is_label": 0,
-    "name": "在线下单",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/02/23/28e175507553571969.jpeg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 52968,
-    "pack_cost": "0.00",
-    "sales": 69,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "",
-      "id": "ec3ab81ec6c17f95",
-      "stock": "999.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/02/23/17fe4ee12651c84667.jpeg",
-      "num": 1,
-      "price": 0,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 99,
-    "price": 0,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2020/02/23/17fe4ee12651c84667.jpeg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "面包柜内所有面包进行装袋或者装盒陈列售卖。",
-    "use_spec": false,
-    "stock": "999.00",
-    "type": 4,
-    "is_label": 0,
-    "name": "面包装袋",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/02/23/17fe4ee12651c84667.jpeg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 52967,
-    "pack_cost": "0.00",
-    "sales": 77,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "",
-      "id": "b027d6132eff660d",
-      "stock": "999.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/02/23/28e11fa60c3c7b952f.jpeg",
-      "num": 1,
-      "price": 0,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 99,
-    "price": 0,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2020/02/23/28e11fa60c3c7b952f.jpeg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "堂食打包和外卖均提供安心卡，将茶饮制作、面包制作、配餐员以及骑手姓名记录并做好体温测量。做到食品安全可追踪、制作及配送可追踪，请您安心用餐。",
-    "use_spec": false,
-    "stock": "999.00",
-    "type": 4,
-    "is_label": 0,
-    "name": "安心卡片",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/02/23/28e11fa60c3c7b952f.jpeg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 52966,
-    "pack_cost": "0.00",
-    "sales": 66,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "",
-      "id": "7aecf3d9c78a4306",
-      "stock": "999.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/02/23/5761fbd2344ef96307.jpeg",
-      "num": 1,
-      "price": 0,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 99,
-    "price": 0,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2020/02/23/5761fbd2344ef96307.jpeg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "1. 门店伙伴严格执行每小时1次洗手消毒。2. 门店伙伴上岗前进行体温检测。3. 就餐桌椅以及工作台面每小时清洁1次，再用消毒液进行消毒。4. 与食品接触的所有设备、器具、毛巾等严格执行清洁及消毒工作。5. 门店顾客入口处，提供消毒凝胶进行手部消毒。",
-    "use_spec": false,
-    "stock": "999.00",
-    "type": 4,
-    "is_label": 0,
-    "name": "门店防疫",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/02/23/5761fbd2344ef96307.jpeg?imageView2/2/w/400/h/400"
-  }],
-  "name": "共同防疫",
-  "is_show_backstage": 0
-}, {
-  "sort": 41,
-  "icon": "https://img-shop.qmimg.cn/s23107/2019/04/30/458c5a14fb2f190f96.png?imageView2/0/w/200/h/200",
-  "id": 5659,
-  "goods_list": [{
-    "sell_time_status": 0,
-    "id": 52965,
-    "pack_cost": "0.00",
-    "sales": 2,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "",
-      "id": "7acc73c0f76a45b3",
-      "stock": "999.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/02/22/81748e7805a82c0e9d.png",
-      "num": 1,
-      "price": 0,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 99,
-    "price": 0,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2020/02/22/81748e7805a82c0e9d.png?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "即日起，奈雪支持企业团餐订购啦，全程使用无接触配送，让您饮茶食包更安心\n企业团餐50份起送（包含茶饮和欧包），可根据您的需求按时送达指定位置，为了让您可以准时收到餐食，建议您提前一天订购，更多订购详情可添加团餐客服微信咨询（微信号：nx-digital）",
-    "use_spec": false,
-    "stock": "999.00",
-    "type": 4,
-    "is_label": 0,
-    "name": "企业团餐",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/02/22/81748e7805a82c0e9d.png?imageView2/2/w/400/h/400"
-  }],
-  "name": "企业团餐",
-  "is_show_backstage": 0
-}, {
-  "sort": 79,
-  "icon": "",
-  "id": 6806,
-  "goods_list": [{
-    "sell_time_status": 0,
-    "id": 65305,
-    "pack_cost": "0.00",
-    "sales": 213,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212040003",
-      "id": "341052a7d635e243",
-      "stock": "99999985.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/04/16/24d94bd8d1517503e1.jpg",
-      "num": 1,
-      "price": 16,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 99,
-    "price": 16,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2020/04/16/24d94bd8d1517503e1.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "特制的STARFIELD 植物肉、酸黄瓜片、紫甘蓝，沙拉酱",
-    "use_spec": false,
-    "stock": "99999985.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "黑椒植物肉三明治",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/16/24d94bd8d1517503e1.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 65302,
-    "pack_cost": "0.00",
-    "sales": 418,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212040002",
-      "id": "0a6d3607987f3666",
-      "stock": "999999965.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/04/16/20cfe8e412a87e5cbe.jpg",
-      "num": 1,
-      "price": 16,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 99,
-    "price": 16,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2020/04/16/20cfe8e412a87e5cbe.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "厚实秘制精致腿排、新鲜切丝紫甘蓝、淋上香甜的沙拉酱、口感层次分明；",
-    "use_spec": false,
-    "stock": "999999965.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "蜜汁鸡腿肉三明治",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/16/20cfe8e412a87e5cbe.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 65300,
-    "pack_cost": "0.00",
-    "sales": 480,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212040001",
-      "id": "304b27c0e45f3e1c",
-      "stock": "99999967.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/04/16/62f2aa82f406097c6e.jpg",
-      "num": 1,
-      "price": 12,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 99,
-    "price": 12,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2020/04/16/62f2aa82f406097c6e.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "金黄松软吐司片，铺上特制土豆馅、芝士片和鸡蛋，再挤入香甜的沙拉酱；",
-    "use_spec": false,
-    "stock": "99999967.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "土豆芝士蛋三明治",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/16/62f2aa82f406097c6e.jpg?imageView2/2/w/400/h/400"
-  }],
-  "name": "三明治",
-  "is_show_backstage": 0
-}, {
-  "sort": 4,
-  "icon": "https://img-shop.qmimg.cn/s23107/2019/04/28/949ba26d52c601c007.png?imageView2/0/w/200/h/200",
-  "id": 2469,
-  "goods_list": [{
-    "sell_time_status": 0,
-    "id": 31532,
-    "pack_cost": "0.00",
-    "sales": 5104,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1218,
-        "code": "Z5D612C34C8EF06658",
-        "value": "标准(芝士)"
-      }, {
-        "is_default": 0,
-        "id": 1166,
-        "code": "Z5D612C34C93705460",
-        "value": "芝士换酸奶"
-      }],
-      "name": "配料",
-      "id": 347
-    }, {
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5EA8DBDA4371C5994",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 1164,
-        "code": "Z5EA8DBDA43C415239",
-        "value": "冰沙"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5EA8DBDA4404E3515",
-        "value": "去冰"
-      }],
-      "name": "温度",
-      "id": 190
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD78286916115856",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD78286919682277",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD7828691CB89112",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳"
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010050008",
-      "id": "f8114313a48c5c4a",
-      "stock": "1000314.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/03/19/a3ee1fa72435259a73.jpg",
-      "num": 1,
-      "price": 28,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 4,
-    "price": 28,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2020/03/19/a3ee1fa72435259a73.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "精选优质巨峰葡萄、手工去皮去籽、加入带兰桂花香，经中度焙火的金观音茶中，搭配轻盈香甜芝士奶盖",
-    "use_spec": false,
-    "stock": "1000314.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气芝士葡萄",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/03/19/a3ee1fa72435259a73.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 31425,
-    "pack_cost": "0.00",
-    "sales": 166533,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1218,
-        "code": "Z5D5BA41448F494221",
-        "value": "标准(芝士)"
-      }, {
-        "is_default": 0,
-        "id": 1166,
-        "code": "Z5D5BA4144931C2200",
-        "value": "芝士换酸奶"
-      }],
-      "name": "配料",
-      "id": 347
-    }, {
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1164,
-        "code": "Z5D5BA414499AC5454",
-        "value": "冰沙"
-      }, {
-        "is_default": 0,
-        "id": 582,
-        "code": "Z5D5BA41449D321738",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5D5BA4144A0C19680",
-        "value": "去冰"
-      }],
-      "name": "温度",
-      "id": 190
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD78377493B92481",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD783774971F6671",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD7837749AA21326",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳"
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010050001",
-      "id": "be5afa4e3fa70cd7",
-      "stock": "10001214.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/26/a2aad6ced9aa42e2c6.jpg",
-      "num": 1,
-      "price": 29,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 99,
-    "price": 29,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/04/26/a2aad6ced9aa42e2c6.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "奈雪人气产品。选用优质台芒，搭配严选茉莉毛尖茶底，淋上轻盈香滑的芝士奶盖。",
-    "use_spec": false,
-    "stock": "10001214.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气芝士芒果",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/a2aad6ced9aa42e2c6.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 31424,
-    "pack_cost": "0.00",
-    "sales": 125010,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1218,
-        "code": "Z5D5BA2BB31A145049",
-        "value": "标准(芝士)"
-      }, {
-        "is_default": 0,
-        "id": 1166,
-        "code": "Z5D5BA2BB320FA8410",
-        "value": "芝士换酸奶"
-      }],
-      "name": "配料",
-      "id": 347
-    }, {
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 0,
-        "id": 582,
-        "code": "Z5E5E2BC316DD78061",
-        "value": "标准冰"
-      }, {
-        "is_default": 1,
-        "id": 1164,
-        "code": "Z5E5E2BC316A215600",
-        "value": "冰沙"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2BC3171CA8287",
-        "value": "去冰"
-      }, {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E5E2BC317A175989",
-        "value": "热"
-      }, {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2BC317F896724",
-        "value": "温"
-      }],
-      "name": "温度",
-      "id": 190
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD785286B9689681",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD785286BCF74540",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD785286C0687027",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳"
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010050003",
-      "id": "ee375ed5ae7f77eb",
-      "stock": "1002053.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/26/1cb88e6cd2fbcefb2a.jpg",
-      "num": 1,
-      "price": 29,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 99,
-    "price": 29,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/04/26/1cb88e6cd2fbcefb2a.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "奈雪明星产品。选用奈雪自有草莓园新鲜草莓，搭配严选茉莉毛尖茶底，淋上轻盈香滑的芝士奶盖。",
-    "use_spec": false,
-    "stock": "1002053.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气芝士草莓",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/1cb88e6cd2fbcefb2a.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 31531,
-    "pack_cost": "0.00",
-    "sales": 94538,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1218,
-        "code": "Z5D612BDE5B8BE7438",
-        "value": "标准(芝士)"
-      }, {
-        "is_default": 0,
-        "id": 1166,
-        "code": "Z5D612BDE5BEB01741",
-        "value": "芝士换酸奶"
-      }],
-      "name": "配料",
-      "id": 347
-    }, {
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1164,
-        "code": "Z5D5E3AAD448821800",
-        "value": "冰沙"
-      }, {
-        "is_default": 0,
-        "id": 582,
-        "code": "Z5D5E3AAD44E888614",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5D5E3AAD453387851",
-        "value": "去冰"
-      }],
-      "name": "温度",
-      "id": 190
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD78801915838939",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD788019191B8084",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD7880191CD17624",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳"
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010050002",
-      "id": "4a2db30bedfd6604",
-      "stock": "1001167.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/26/e4cace0c07eb44e96f.jpg",
-      "num": 1,
-      "price": 33,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 100,
-    "price": 33,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/04/26/e4cace0c07eb44e96f.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "草莓、蓝莓、树莓，三种莓果混合搭配，与茉莉毛尖一拍即合，清爽甘醇的茶香搭配浓郁果香，几重滋味在口腔里面碰撞，留下余味。",
-    "use_spec": false,
-    "stock": "1001167.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气芝士莓莓莓",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/e4cace0c07eb44e96f.jpg?imageView2/2/w/400/h/400"
-  }],
-  "name": "霸气芝士鲜果茶",
-  "is_show_backstage": 0
-}, {
-  "sort": 5,
-  "icon": "https://img-shop.qmimg.cn/s23107/2019/04/28/d95284dc7e745f8198.png?imageView2/0/w/200/h/200",
-  "id": 2468,
-  "goods_list": [{
-    "sell_time_status": 0,
-    "id": 68339,
-    "pack_cost": "0.00",
-    "sales": 44429,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 190,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5EA54C3D0E4279185",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5EA54C3D0E9682750",
-        "value": "去冰"
-      }],
-      "name": "温度",
-      "desc": null
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5EA54C3D0F2A37322",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5EA54C3D0F70A1000",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5EA54C3D0FAFE7320",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": null
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010010025",
-      "id": "72cf1279c0a422ce",
-      "stock": "9999817.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/04/26/559a075d81060b23c7.jpg",
-      "num": 1,
-      "price": 30,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 0,
-    "price": 30,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2020/04/26/559a075d81060b23c7.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "饱满大颗的新鲜杨梅,满杯手工去核,搭配茉莉初雪茶底,清爽多汁",
-    "use_spec": false,
-    "stock": "9999817.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气杨梅",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/26/559a075d81060b23c7.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 31419,
-    "pack_cost": "0.00",
-    "sales": 63830,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5E5E2B67CF2CD2014",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2B67CF7386076",
-        "value": "去冰"
-      }, {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E5E2B67CFC6C7297",
-        "value": "热"
-      }, {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2B67CFFFC6344",
-        "value": "温"
-      }],
-      "name": "温度",
-      "id": 190
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD78A6BAB6A96008",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD78A6BAB9F81083",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD78A6BABD425411",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳"
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010010006",
-      "id": "7ddf70f3db56c238",
-      "stock": "9999416.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/26/3bef9469d37eac7b06.jpg",
-      "num": 1,
-      "price": 17,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 1,
-    "price": 17,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/04/26/3bef9469d37eac7b06.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "精心挑选拥有更多香甜因子的翡翠柠檬，清爽水灵遇上金色山脉独特的龙眼木香气，更加醇厚。",
-    "use_spec": false,
-    "stock": "9999416.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气黄柠檬",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/3bef9469d37eac7b06.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 68345,
-    "pack_cost": "0.00",
-    "sales": 16322,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 190,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5EA55088766CC7824",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5EA5508876F271659",
-        "value": "去冰"
-      }],
-      "name": "温度",
-      "desc": null
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5EA55088776843559",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5EA5508877A528469",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5EA5508877E5A6908",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": null
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010010043",
-      "id": "c7c6f8fd34040338",
-      "stock": "999950.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/04/26/ea8fc439fddf2f62e3.jpg",
-      "num": 1,
-      "price": 32,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 2,
-    "price": 32,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2020/04/26/ea8fc439fddf2f62e3.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "霸气杨梅和酸奶的首次搭配,甘甜可口",
-    "use_spec": false,
-    "stock": "999950.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气酸奶杨梅",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/26/ea8fc439fddf2f62e3.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 31507,
-    "pack_cost": "0.00",
-    "sales": 199583,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5E5E2B483FA903805",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2B484016A8529",
-        "value": "去冰"
-      }, {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E5E2B48405642832",
-        "value": "热"
-      }, {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2B48409616050",
-        "value": "温"
-      }],
-      "name": "温度",
-      "id": 190
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD789B45391F4495",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD789B453D023182",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD789B4540531795",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳"
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010010000",
-      "id": "097aad038aeeb0ea",
-      "stock": "998101.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/26/2a4b2697bec6f7e502.jpg",
-      "num": 1,
-      "price": 25,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 2,
-    "price": 25,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/04/26/2a4b2697bec6f7e502.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "奈雪明星产品。优选进口新奇士橙，搭配严选茉莉毛尖茶底，橙意满满。",
-    "use_spec": false,
-    "stock": "998101.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气橙子",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/2a4b2697bec6f7e502.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 31420,
-    "pack_cost": "0.00",
-    "sales": 79330,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5E5E2B85F17929383",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2B85F1F1B3653",
-        "value": "去冰"
-      }, {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E5E2B85F22FD7672",
-        "value": "热"
-      }, {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2B85F26FF5081",
-        "value": "温"
-      }],
-      "name": "温度",
-      "id": 190
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD78A4713C675763",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD78A471400C9869",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD78A47143654620",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳"
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010010004",
-      "id": "944078205e237f86",
-      "stock": "9999096.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/26/333b43719bd81f4e00.jpg",
-      "num": 1,
-      "price": 17,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 2,
-    "price": 17,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/04/26/333b43719bd81f4e00.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "茉莉毛尖与绿柠檬的鲜活组合，清新馥郁的茶香跟柠檬的酸度契合，口感纯净清爽至佳",
-    "use_spec": false,
-    "stock": "9999096.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气绿柠檬",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/333b43719bd81f4e00.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 34254,
-    "pack_cost": "0.00",
-    "sales": 44115,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5D833EF2826151137",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5D833EF282A7E7293",
-        "value": "去冰"
-      }],
-      "name": "温度",
-      "id": 190
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD7812AC5BC04098",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD7812AC5FA38677",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD7812AC64CA3721",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳"
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010010013",
-      "id": "39d4a2ea969474ff",
-      "stock": "998178.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/09/19/b188394541d392d995.jpg",
-      "num": 1,
-      "price": 19,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 3,
-    "price": 19,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/09/19/b188394541d392d995.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "选用上等茉莉毛尖茶底，纯手工捣碎的百香果，每口都可以喝到满满果肉，浓郁果香中带些酸涩，加入益力多，中和甜味。",
-    "use_spec": false,
-    "stock": "998178.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气百香多多",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/09/19/b188394541d392d995.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 31421,
-    "pack_cost": "0.00",
-    "sales": 140108,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5E5E2B96160502300",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2B96165206954",
-        "value": "去冰"
-      }, {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E5E2B961691F4378",
-        "value": "热"
-      }, {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2B9616D5F6916",
-        "value": "温"
-      }],
-      "name": "温度",
-      "id": 190
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD78A1C4BBDA9758",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD78A1C4BF943434",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD78A1C4C30F7434",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳"
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010010012",
-      "id": "eeb6099df6c2643b",
-      "stock": "999465.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/26/e467b3c4e665cddc13.jpg",
-      "num": 1,
-      "price": 23,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 4,
-    "price": 23,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/04/26/e467b3c4e665cddc13.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "茉莉毛尖茶底，带有花茶特有的香气，加入鲜榨西柚，果粒饱满。西柚糖分较少，搭配茶底清甜爽口。",
-    "use_spec": false,
-    "stock": "999465.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气西柚",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/e467b3c4e665cddc13.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 31730,
-    "pack_cost": "0.00",
-    "sales": 1805,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 0,
-        "id": 582,
-        "code": "Z5EA8DC2C386039619",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 1164,
-        "code": "Z5EA8DC2C38BE59577",
-        "value": "冰沙"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5EA8DC2C390672147",
-        "value": "去冰"
-      }],
-      "name": "温度",
-      "id": 190
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD7807C553AA1993",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD7807C557CF4823",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD7807C55B668276",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳"
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010010024",
-      "id": "7d95b01dd69ee729",
-      "stock": "999783.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/03/19/630a810c8c7201c112.jpg",
-      "num": 1,
-      "price": 28,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 6,
-    "price": 28,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2020/03/19/630a810c8c7201c112.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "精选优质巨峰葡萄、手工去皮去籽、加入带兰桂花香，经中度焙火的金观音茶中",
-    "use_spec": false,
-    "stock": "999783.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气葡萄",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/03/19/630a810c8c7201c112.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 31508,
-    "pack_cost": "0.00",
-    "sales": 42335,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5D5D4D6F36ABC7392",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5D5D4D6F36F1C6105",
-        "value": "去冰"
-      }],
-      "name": "温度",
-      "id": 190
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD789E36A0574960",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD789E36A5477015",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD789E36A9581059",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳"
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010080001",
-      "id": "ab099692d7651ce7",
-      "stock": "10000130.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/26/af2554d89e755030c3.jpg",
-      "num": 1,
-      "price": 29,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 99,
-    "price": 29,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/04/26/af2554d89e755030c3.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "霸气橙子遇见两株美国益生菌种，助力代谢，促进肠道运动，减少热量吸收。",
-    "use_spec": false,
-    "stock": "10000130.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气燃爆橙子",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/af2554d89e755030c3.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 31423,
-    "pack_cost": "0.00",
-    "sales": 63159,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1164,
-        "code": "Z5D5BA1994227C7642",
-        "value": "冰沙"
-      }, {
-        "is_default": 0,
-        "id": 582,
-        "code": "Z5D5BA199426BD5154",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5D5BA19942A0C6428",
-        "value": "去冰"
-      }],
-      "name": "温度",
-      "id": 190
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD78A9530CD61996",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD78A95310979784",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD78A953141D8332",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳"
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010010002",
-      "id": "01ae17591f05925d",
-      "stock": "10000487.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/26/59b1ee7e3109933ef2.jpg",
-      "num": 1,
-      "price": 29,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 99,
-    "price": 29,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/04/26/59b1ee7e3109933ef2.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "选用优质台芒，满满果肉打碎，搭配严选茉莉毛尖茶底，每一口都有热带芒果的香气。",
-    "use_spec": false,
-    "stock": "10000487.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气芒果",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/59b1ee7e3109933ef2.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 31422,
-    "pack_cost": "0.00",
-    "sales": 22472,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5E9CF8E09B97E7742",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E9CF8E09BDAE9442",
-        "value": "去冰"
-      }, {
-        "is_default": 0,
-        "id": 1164,
-        "code": "Z5E9CF8E09C1031898",
-        "value": "冰沙"
-      }, {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E9CF8E09C46D2981",
-        "value": "热"
-      }, {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E9CF8E09C7A12137",
-        "value": "温"
-      }],
-      "name": "温度",
-      "id": 190
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD78A7B33E9F1462",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD78A7B341F49717",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD78A7B345276190",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳"
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010010008",
-      "id": "4d47173fb5788fa2",
-      "stock": "10000653.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/26/25d058d6ea2617f58e.jpg",
-      "num": 1,
-      "price": 29,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 99,
-    "price": 29,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/04/26/25d058d6ea2617f58e.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "奈雪人气天后，选用奈雪自有草莓园采摘的新鲜草莓，搭配茉莉毛尖茶底，每一口都有草莓在舌尖跳跃，唇齿留香。",
-    "use_spec": false,
-    "stock": "10000653.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气草莓",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/25d058d6ea2617f58e.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 31509,
-    "pack_cost": "0.00",
-    "sales": 48186,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1164,
-        "code": "Z5D5D4DFB60D275726",
-        "value": "冰沙"
-      }, {
-        "is_default": 0,
-        "id": 582,
-        "code": "Z5D5D4DFB6117D4323",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5D5D4DFB615623217",
-        "value": "去冰"
-      }],
-      "name": "温度",
-      "id": 190
-    }, {
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD78A8794EBD5601",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD78A87952955431",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD78A87956405441",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "id": 191
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010010018",
-      "id": "01f781b43f0f9241",
-      "stock": "10000822.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/26/1f666aac7e0e710ff0.jpg",
-      "num": 1,
-      "price": 33,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 100,
-    "price": 33,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/04/26/1f666aac7e0e710ff0.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "草莓、蓝莓、树莓，三种莓果混合搭配，与茉莉毛尖一拍即合，清爽甘醇的茶香搭配浓郁果香，几重滋味在口腔里面碰撞，留下余味。",
-    "use_spec": false,
-    "stock": "10000822.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气莓莓莓",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/1f666aac7e0e710ff0.jpg?imageView2/2/w/400/h/400"
-  }],
-  "name": "霸气鲜果茶",
-  "is_show_backstage": 0
-}, {
-  "sort": 6,
-  "icon": "https://img-shop.qmimg.cn/s23107/2019/06/17/80c1d7b602d4a4a611.png?imageView2/0/w/200/h/200",
-  "id": 2844,
-  "goods_list": [{
-    "sell_time_status": 0,
-    "id": 31428,
-    "pack_cost": "0.00",
-    "sales": 43445,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 347,
-      "values": [{
-        "is_default": 1,
-        "id": 1256,
-        "code": "Z5DEDBF09BB3F13909",
-        "value": "标准"
-      }],
-      "name": "配料",
-      "desc": null
-    }, {
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1167,
-        "code": "Z5D5BAD0461C7A7478",
-        "value": "标准（冰沙）"
-      }],
-      "name": "温度",
-      "id": 190
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD788293E0122727",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD788293E3E37828",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD788293E7C22375",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳"
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010100003",
-      "id": "ff1500e3c4febc75",
-      "stock": "10001379.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/26/4aa065559299892ec2.jpg",
-      "num": 1,
-      "price": 30,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 99,
-    "price": 30,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/04/26/4aa065559299892ec2.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "以霸气芒果打底，加入带椰子果肉的冰淇淋球，冰淇淋加上芒果甜香，每一口都有热带感觉，喝前搅一搅，味道更好。",
-    "use_spec": false,
-    "stock": "10001379.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气冰淇淋芒果",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/4aa065559299892ec2.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 31426,
-    "pack_cost": "0.00",
-    "sales": 53637,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 347,
-      "values": [{
-        "is_default": 1,
-        "id": 1256,
-        "code": "Z5DEDBEDB8A4EB2815",
-        "value": "标准"
-      }],
-      "name": "配料",
-      "desc": null
-    }, {
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1167,
-        "code": "Z5D5BA4B2589C68376",
-        "value": "标准（冰沙）"
-      }],
-      "name": "温度",
-      "id": 190
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD78057D91AC1512",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD78057D959F8584",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD78057D998B1998",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳"
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010100001",
-      "id": "d751af98a431f031",
-      "stock": "10001474.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/26/57edf607a7290a450b.jpg",
-      "num": 1,
-      "price": 30,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 99,
-    "price": 30,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/04/26/57edf607a7290a450b.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "以霸气草莓打底，加入椰子冰淇淋，搅拌后椰乳慢慢与草莓果肉汁、绿茶单宁、茉莉与椰香融合，口感顺滑、芳香纯美",
-    "use_spec": false,
-    "stock": "10001474.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气冰淇淋草莓",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/57edf607a7290a450b.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 31427,
-    "pack_cost": "0.00",
-    "sales": 37083,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1219,
-        "code": "Z5DEDBE065697C1943",
-        "value": "标准(冰淇淋+水晶)"
-      }, {
-        "is_default": 0,
-        "id": 1220,
-        "code": "Z5DEDBE0656D745437",
-        "value": "无配料"
-      }, {
-        "is_default": 0,
-        "id": 1257,
-        "code": "Z5DEDBE06570D57681",
-        "value": "去水晶"
-      }, {
-        "is_default": 0,
-        "id": 2066,
-        "code": "Z5DEDBE06574555671",
-        "value": "去冰淇淋"
-      }],
-      "name": "配料",
-      "id": 347
-    }, {
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1167,
-        "code": "Z5D5BAB4B698953798",
-        "value": "标准（冰沙）"
-      }],
-      "name": "温度",
-      "id": 190
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD78368657E92731",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD7836865B8F3442",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD7836865F2D5309",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳"
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1313010004",
-      "id": "73e2eab6e586fe0c",
-      "stock": "1001521.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/07/14/b38864bce8685c4dcd.png",
-      "num": 1,
-      "price": 33,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 100,
-    "price": 33,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/07/14/b38864bce8685c4dcd.png?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "来自墨西哥的珍稀食材牛油果，制成绵细冰沙口感，与招牌茉莉毛尖结合，加入椰子冰淇淋及水晶冻，丰盛呈现，喝前搅一搅，味道更好。",
-    "use_spec": false,
-    "stock": "1001521.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气冰淇淋牛油果",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/07/14/b38864bce8685c4dcd.png?imageView2/2/w/400/h/400"
-  }],
-  "name": "霸气冰淇淋鲜果茶",
-  "is_show_backstage": 0
-}, {
-  "sort": 7,
-  "icon": "https://img-shop.qmimg.cn/s23107/2019/04/28/edd969e6c892853667.png?imageView2/0/w/200/h/200",
-  "id": 2575,
-  "goods_list": [{
-    "sell_time_status": 0,
-    "id": 58706,
-    "pack_cost": "0.00",
-    "sales": 45890,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 347,
-      "values": [{
-        "is_default": 1,
-        "id": 1256,
-        "code": "Z5E7C5E9A166EE2215",
-        "value": "标准"
-      }, {
-        "is_default": 0,
-        "id": 2782,
-        "code": "Z5E7C5E9A16B858986",
-        "value": "奶油顶换奶盖"
-      }, {
-        "is_default": 0,
-        "id": 2783,
-        "code": "Z5E7C5E9A1723B4260",
-        "value": "去奶油顶"
-      }],
-      "name": "配料",
-      "desc": null
-    }, {
-      "is_open_checkbox": false,
-      "id": 190,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5E7C5E9A17FFF5424",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E7C5E9A1842D8160",
-        "value": "去冰"
-      }, {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E7C5E9A1882F9233",
-        "value": "热"
-      }, {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E7C5E9A18DEA8109",
-        "value": "温"
-      }, {
-        "is_default": 0,
-        "id": 1164,
-        "code": "Z5E7C5E9A191CA1920",
-        "value": "冰沙"
-      }],
-      "name": "温度",
-      "desc": null
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5E7C5E9A198D68448",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5E7C5E9A19CC31451",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5E7C5E9A1A0A76125",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": null
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010040032",
-      "id": "25c95dd4ff3ff12e",
-      "stock": "9999142.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/04/10/ddba4cf4efe4036f3a.jpg",
-      "num": 1,
-      "price": 19,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 1,
-    "price": 19,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2020/04/10/ddba4cf4efe4036f3a.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "\"吸“鲜”三部曲\n①、舀起香脆山核桃碎与进口淡奶油一起品尝\n②、插入细吸管，感受清香乌龙与醇香鲜牛乳混合的清爽\n③、搅拌淡奶油和鲜奶茶，收获不同口感体验\"",
-    "use_spec": false,
-    "stock": "9999142.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "奈雪清欢乌龙宝藏茶",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/10/ddba4cf4efe4036f3a.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 31537,
-    "pack_cost": "0.00",
-    "sales": 36724,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1215,
-        "code": "Z5D5E436D69F123375",
-        "value": "标准(奶油顶)"
-      }, {
-        "is_default": 0,
-        "id": 1216,
-        "code": "Z5D5E436D6A3C97065",
-        "value": "换奶盖"
-      }],
-      "name": "配料",
-      "id": 347
-    }, {
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 0,
-        "id": 582,
-        "code": "Z5E5E2C76E802F9971",
-        "value": "标准冰"
-      }, {
-        "is_default": 1,
-        "id": 584,
-        "code": "Z5E5E2C76E79148820",
-        "value": "热"
-      }, {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2C76E7CB97862",
-        "value": "温"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2C76E839C6537",
-        "value": "去冰"
-      }],
-      "name": "温度",
-      "id": 190
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DB24D584C3643652",
-        "value": "标准糖"
-      }],
-      "name": "糖度",
-      "desc": null
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010040017",
-      "id": "acb74a29da52f86a",
-      "stock": "1000086.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/10/28/74ae56edf6e8a8a2ea.jpg",
-      "num": 1,
-      "price": 21,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 2,
-    "price": 21,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/10/28/74ae56edf6e8a8a2ea.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "以鲜牛奶为底，不含茶，加入手工熬煮Q弹黑糖珍珠。全新升级顶部加盖法国总统稀奶油，撒上香脆烤椰条，一勺加一吸管的装备，等你探索味蕾宝藏（本产品的甜度来源于食材本身，没有额外加糖，不能调整糖度）",
-    "use_spec": false,
-    "stock": "1000086.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "黑糖宝藏茶",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/10/28/74ae56edf6e8a8a2ea.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 31539,
-    "pack_cost": "0.00",
-    "sales": 63462,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1215,
-        "code": "Z5D5E4694899BF3397",
-        "value": "标准(奶油顶)"
-      }, {
-        "is_default": 0,
-        "id": 1216,
-        "code": "Z5D5E469489E271743",
-        "value": "换奶盖"
-      }],
-      "name": "配料",
-      "id": 347
-    }, {
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 584,
-        "code": "Z5E5E2CBDC1DA03229",
-        "value": "热"
-      }, {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2CBDC223C5568",
-        "value": "温"
-      }, {
-        "is_default": 0,
-        "id": 582,
-        "code": "Z5E5E2CBDC2A978507",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2CBDC2EC06314",
-        "value": "去冰"
-      }],
-      "name": "温度",
-      "id": 190
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DB24DE85B7C89450",
-        "value": "标准糖"
-      }],
-      "name": "糖度",
-      "desc": null
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010040020",
-      "id": "d9bb2e315384e250",
-      "stock": "999422.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/09/10/b5b05d6c7bff587984.jpg",
-      "num": 1,
-      "price": 25,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 3,
-    "price": 25,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/09/10/b5b05d6c7bff587984.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "以鲜牛奶为底，加入升级甄选的芋泥和芋圆，从全新加盖的奶油顶开始享用，还有烤椰条的入口，让饮茶更有FUN。 （本产品的甜度来源于食材本身，没有额外加糖，不能调整糖度）",
-    "use_spec": false,
-    "stock": "999422.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "芋泥宝藏茶",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/09/10/b5b05d6c7bff587984.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 31540,
-    "pack_cost": "0.00",
-    "sales": 34770,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1215,
-        "code": "Z5D5E47A626DFD7089",
-        "value": "标准(奶油顶)"
-      }, {
-        "is_default": 0,
-        "id": 1216,
-        "code": "Z5D5E47A62728E7883",
-        "value": "换奶盖"
-      }],
-      "name": "配料",
-      "id": 347
-    }, {
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 584,
-        "code": "Z5E5E2CD29798D9088",
-        "value": "热"
-      }, {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2CD297D2C7840",
-        "value": "温"
-      }, {
-        "is_default": 0,
-        "id": 582,
-        "code": "Z5E5E2CD2980E82682",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2CD29845F7461",
-        "value": "去冰"
-      }],
-      "name": "温度",
-      "id": 190
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD782765E5D75879",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD782765E9927290",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD782765ED0A3809",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳"
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010040023",
-      "id": "ea94028944a81ad5",
-      "stock": "9902092.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/12/05/ea97748a1528cac999.jpg",
-      "num": 1,
-      "price": 25,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 4,
-    "price": 25,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/12/05/ea97748a1528cac999.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "金色山脉茶底加入香甜滑口的奶冻，甘冽的茶香搭配浓郁的奶香，还有嚼劲十足的黑糖珍珠配上Q弹滑爽的奶冻，奶油顶表面撒料的椰条，邀您在更香甜的酥脆中，感受宝藏茶的丰盛。",
-    "use_spec": false,
-    "stock": "9902092.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "金色山脉宝藏茶",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/12/05/ea97748a1528cac999.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 64563,
-    "pack_cost": "0.00",
-    "sales": 11528,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 347,
-      "values": [{
-        "is_default": 1,
-        "id": 1256,
-        "code": "Z5E8EC41DDB7994007",
-        "value": "标准"
-      }, {
-        "is_default": 0,
-        "id": 2877,
-        "code": "Z5E8EC41DDBBA71325",
-        "value": "奶油顶换酸奶"
-      }, {
-        "is_default": 0,
-        "id": 2782,
-        "code": "Z5E8EC41DDC2A01429",
-        "value": "奶油顶换奶盖"
-      }, {
-        "is_default": 0,
-        "id": 2783,
-        "code": "Z5E8EC41DDC6ED3831",
-        "value": "去奶油顶"
-      }],
-      "name": "配料",
-      "desc": null
-    }, {
-      "is_open_checkbox": false,
-      "id": 190,
-      "values": [{
-        "is_default": 1,
-        "id": 1167,
-        "code": "Z5E8EC41DDCE542183",
-        "value": "标准（冰沙）"
-      }],
-      "name": "温度",
-      "desc": null
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5E8EC41DDD6386350",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5E8EC41DDDA5D9881",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5E8EC41DDDE9E9011",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": null
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010040035",
-      "id": "766a1bdd56089a22",
-      "stock": "99999349.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/04/26/79187a01f23e6f1e66.jpg",
-      "num": 1,
-      "price": 27,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 5,
-    "price": 27,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2020/04/26/79187a01f23e6f1e66.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "①、舀：品尝入口即化进口淡奶油搭配新鲜芒果颗粒；\n②、搅：吸管搅动半杯料；\n③、吸：手工现煮水晶和奶冻、饱满进口红西柚颗粒",
-    "use_spec": false,
-    "stock": "99999349.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "杨枝甘露宝藏茶",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/26/79187a01f23e6f1e66.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 64565,
-    "pack_cost": "0.00",
-    "sales": 1312,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 190,
-      "values": [{
-        "is_default": 1,
-        "id": 1167,
-        "code": "Z5E8EC7A280B3B7217",
-        "value": "标准（冰沙）"
-      }],
-      "name": "温度",
-      "desc": null
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5E8EC7A2817EB6840",
-        "value": "标准糖"
-      }, {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5E8EC7A281CEF4540",
-        "value": "少糖"
-      }, {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5E8EC7A28213C1795",
-        "value": "不另外加糖"
-      }],
-      "name": "糖度",
-      "desc": null
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010040036",
-      "id": "54e0be7204fc75b7",
-      "stock": "99999841.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/04/26/edf9dd62faf1ef59e6.jpg",
-      "num": 1,
-      "price": 28,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 6,
-    "price": 28,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2020/04/26/edf9dd62faf1ef59e6.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "吸入手工现煮水晶和奶冻,搭配饱满进口红西柚颗粒,顶部加上一颗冰淇淋球",
-    "use_spec": false,
-    "stock": "99999841.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "杨枝甘露冰淇淋宝藏茶",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/26/edf9dd62faf1ef59e6.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 59962,
-    "pack_cost": "0.00",
-    "sales": 5928,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 347,
-      "values": [{
-        "is_default": 1,
-        "id": 1256,
-        "code": "Z5E868CFF52ECC9249",
-        "value": "标准"
-      }, {
-        "is_default": 0,
-        "id": 2782,
-        "code": "Z5E868CFF533E84000",
-        "value": "奶油顶换奶盖"
-      }, {
-        "is_default": 0,
-        "id": 2853,
-        "code": "Z5E868CFF539CB2730",
-        "value": "去红豆爆爆珠"
-      }, {
-        "is_default": 0,
-        "id": 2854,
-        "code": "Z5E868CFF53DCC3512",
-        "value": "去维他豆奶冻"
-      }, {
-        "is_default": 0,
-        "id": 2860,
-        "code": "Z5E868CFF542252778",
-        "value": "去红豆爆爆珠和维他豆奶冻"
-      }],
-      "name": "配料",
-      "desc": null
-    }, {
-      "is_open_checkbox": false,
-      "id": 190,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5E81D4FE3CC801440",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E81D4FE3D0829383",
-        "value": "去冰"
-      }, {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E81D4FE3D4744058",
-        "value": "热"
-      }, {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E81D4FE3D8859124",
-        "value": "温"
-      }],
-      "name": "温度",
-      "desc": null
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5E81D4FE3E5616034",
-        "value": "标准糖"
-      }],
-      "name": "糖度",
-      "desc": null
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010040034",
-      "id": "f177d3922c20e9ea",
-      "stock": "99999479.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/04/03/7a1e4f9543edbbb5fb.jpg",
-      "num": 1,
-      "price": 28,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 7,
-    "price": 28,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2020/04/03/7a1e4f9543edbbb5fb.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "\"春季限定产品\n①、进口淡奶油加入新鲜火龙果汁调色成粉色，搭配厚厚一层豆粉\n②、插入吸管搅拌超多底料；\n③、吸一口感受清香茉莉初雪茶、顺滑奶冻和红豆爆爆珠的口感\n（产品甜度来源于食材本身，不能调整糖度）\"",
-    "use_spec": false,
-    "stock": "99999479.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "樱花宝藏茶",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/03/7a1e4f9543edbbb5fb.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 46758,
-    "pack_cost": "0.00",
-    "sales": 9358,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 347,
-      "values": [{
-        "is_default": 1,
-        "id": 1829,
-        "code": "Z5E19DB100F8ED5977",
-        "value": "标准配料"
-      }, {
-        "is_default": 0,
-        "id": 2200,
-        "code": "Z5E19DB10102046574",
-        "value": "红豆沙换红豆爆爆珠"
-      }, {
-        "is_default": 0,
-        "id": 1216,
-        "code": "Z5E19DB101069C2680",
-        "value": "换奶盖"
-      }, {
-        "is_default": 0,
-        "id": 2197,
-        "code": "Z5E19DB1010A859752",
-        "value": "去红豆沙"
-      }, {
-        "is_default": 0,
-        "id": 2198,
-        "code": "Z5E19DB1010E9D2926",
-        "value": "去维他奶冻"
-      }, {
-        "is_default": 0,
-        "id": 2199,
-        "code": "Z5E19DB10112BF3000",
-        "value": "去红豆沙和维他奶冻"
-      }],
-      "name": "配料",
-      "desc": null
-    }, {
-      "is_open_checkbox": false,
-      "id": 190,
-      "values": [{
-        "is_default": 0,
-        "id": 582,
-        "code": "Z5E5E2C0D607C51082",
-        "value": "标准冰"
-      }, {
-        "is_default": 1,
-        "id": 584,
-        "code": "Z5E5E2C0D612ED2717",
-        "value": "热"
-      }, {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2C0D616667150",
-        "value": "温"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2C0D60BEF2246",
-        "value": "去冰"
-      }, {
-        "is_default": 0,
-        "id": 1164,
-        "code": "Z5E5E2C0D60F919911",
-        "value": "冰沙"
-      }],
-      "name": "温度",
-      "desc": null
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DFAE77C0E12C8450",
-        "value": "标准糖"
-      }],
-      "name": "糖度",
-      "desc": null
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010040031",
-      "id": "e2ba0b52b93189b7",
-      "stock": "9999213.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/12/19/cc5a2e76edcd0c8667.jpg",
-      "num": 1,
-      "price": 28,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 99,
-    "price": 28,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/12/19/cc5a2e76edcd0c8667.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "维他奶原味豆奶加入日本精选特质的抹茶粉、泥状红豆沙、入口即化，顶部是醇香奶油和厚厚豆粉",
-    "use_spec": false,
-    "stock": "9999213.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "维他奶豆奶宝藏茶",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/12/19/cc5a2e76edcd0c8667.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 37058,
-    "pack_cost": "0.00",
-    "sales": 18522,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": true,
-      "id": 347,
-      "values": [{
-        "is_default": 1,
-        "id": 1215,
-        "code": "Z5DB250C4DD1F98266",
-        "value": "标准(奶油顶)"
-      }, {
-        "is_default": 0,
-        "id": 1216,
-        "code": "Z5DB250C4DD6787331",
-        "value": "换奶盖"
-      }, {
-        "is_default": 0,
-        "id": 1794,
-        "code": "Z5DB250C4DDA063068",
-        "value": "去黑糖珍珠"
-      }, {
-        "is_default": 0,
-        "id": 1795,
-        "code": "Z5DB250C4DDDAC5510",
-        "value": "去旺仔奶冻"
-      }, {
-        "is_default": 0,
-        "id": 1796,
-        "code": "Z5DB250C4DE10C1138",
-        "value": "黑糖珍珠换旺仔奶冻"
-      }],
-      "name": "配料",
-      "desc": null
-    }, {
-      "is_open_checkbox": false,
-      "id": 190,
-      "values": [{
-        "is_default": 1,
-        "id": 584,
-        "code": "Z5E5E2C4E57CDF5900",
-        "value": "热"
-      }, {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2C4E580FC8330",
-        "value": "温"
-      }, {
-        "is_default": 0,
-        "id": 582,
-        "code": "Z5E5E2C4E584CC6352",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2C4E5889B2822",
-        "value": "去冰"
-      }, {
-        "is_default": 0,
-        "id": 1164,
-        "code": "Z5E5E2C4E58C785990",
-        "value": "冰沙"
-      }],
-      "name": "温度",
-      "desc": null
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DABF3E46547A8514",
-        "value": "标准糖"
-      }],
-      "name": "糖度",
-      "desc": null
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010040029",
-      "id": "c4a6c3501d658add",
-      "stock": "99999486.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/10/20/4b22b689015cf8dbb7.jpg",
-      "num": 1,
-      "price": 28,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 99,
-    "price": 28,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/10/20/4b22b689015cf8dbb7.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "黑色爆谷米加费列罗，低温研磨而成的黑芝麻酱混合榛子奶，酱香味浓郁(本产品的甜度来源于食材本身，没有额外加糖，不能调整糖度)",
-    "use_spec": false,
-    "stock": "99999486.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "老佛爷宝藏茶",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/10/20/4b22b689015cf8dbb7.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 37055,
-    "pack_cost": "0.00",
-    "sales": 90199,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 347,
-      "values": [{
-        "is_default": 1,
-        "id": 1215,
-        "code": "Z5DB250B32C85D6736",
-        "value": "标准(奶油顶)"
-      }, {
-        "is_default": 0,
-        "id": 1216,
-        "code": "Z5DB250B32CCB22003",
-        "value": "换奶盖"
-      }, {
-        "is_default": 0,
-        "id": 1794,
-        "code": "Z5DB250B32D1355967",
-        "value": "去黑糖珍珠"
-      }, {
-        "is_default": 0,
-        "id": 1795,
-        "code": "Z5DB250B32D7EE9440",
-        "value": "去旺仔奶冻"
-      }, {
-        "is_default": 0,
-        "id": 1796,
-        "code": "Z5DB250B32DE6A2354",
-        "value": "黑糖珍珠换旺仔奶冻"
-      }],
-      "name": "配料",
-      "desc": null
-    }, {
-      "is_open_checkbox": false,
-      "id": 190,
-      "values": [{
-        "is_default": 1,
-        "id": 584,
-        "code": "Z5E5E2C2321B238817",
-        "value": "热"
-      }, {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2C2321EF85781",
-        "value": "温"
-      }, {
-        "is_default": 0,
-        "id": 582,
-        "code": "Z5E5E2C23222EB8554",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2C23226911326",
-        "value": "去冰"
-      }, {
-        "is_default": 0,
-        "id": 1164,
-        "code": "Z5E5E2C23229FC5210",
-        "value": "冰沙"
-      }],
-      "name": "温度",
-      "desc": null
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DABF370BB8A43330",
-        "value": "标准糖"
-      }],
-      "name": "糖度",
-      "desc": null
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010040028",
-      "id": "e27d84349ef37fa9",
-      "stock": "99998959.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/10/20/9fedfc4418663d1de8.jpg",
-      "num": 1,
-      "price": 28,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 99,
-    "price": 28,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/10/20/9fedfc4418663d1de8.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "顶部酥脆山核桃碎搭配费列罗巧克力，加入榛子奶、旺仔奶冻，口感丰富(本产品的甜度来源于食材本身，没有额外加糖，不能调整糖度)",
-    "use_spec": false,
-    "stock": "99998959.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "Miss可可宝藏茶",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/10/20/9fedfc4418663d1de8.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 46756,
-    "pack_cost": "0.00",
-    "sales": 1494,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 347,
-      "values": [{
-        "is_default": 1,
-        "id": 1829,
-        "code": "Z5E19DB65BE87A9872",
-        "value": "标准配料"
-      }, {
-        "is_default": 0,
-        "id": 2200,
-        "code": "Z5E19DB65BF0B39470",
-        "value": "红豆沙换红豆爆爆珠"
-      }, {
-        "is_default": 0,
-        "id": 2197,
-        "code": "Z5E19DB65BF4566485",
-        "value": "去红豆沙"
-      }, {
-        "is_default": 0,
-        "id": 2198,
-        "code": "Z5E19DB65BF7BC1240",
-        "value": "去维他奶冻"
-      }, {
-        "is_default": 0,
-        "id": 2199,
-        "code": "Z5E19DB65BFB9D1406",
-        "value": "去红豆沙和维他奶冻"
-      }],
-      "name": "配料",
-      "desc": null
-    }, {
-      "is_open_checkbox": false,
-      "id": 190,
-      "values": [{
-        "is_default": 1,
-        "id": 1210,
-        "code": "Z5DFAE6B10829E9708",
-        "value": "标准（去冰）"
-      }],
-      "name": "温度",
-      "desc": null
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DFAE6B1089347085",
-        "value": "标准糖"
-      }],
-      "name": "糖度",
-      "desc": null
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010040030",
-      "id": "71f657723173b3dd",
-      "stock": "999999574.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/12/19/83e687b8fa13b44ee4.jpg",
-      "num": 1,
-      "price": 33,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 100,
-    "price": 33,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/12/19/83e687b8fa13b44ee4.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "奈雪以维他奶原味豆奶的经典蓝色利乐包装为创意灵感，等比打造了一个plus版的维他奶限量宝藏瓶（附赠PVC袋）",
-    "use_spec": false,
-    "stock": "999999574.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "维他奶豆奶宝藏瓶",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/12/19/83e687b8fa13b44ee4.jpg?imageView2/2/w/400/h/400"
-  }],
-  "name": "宝藏鲜奶茶",
-  "is_show_backstage": 0
-}, {
-  "sort": 13,
-  "icon": "https://img-shop.qmimg.cn/s23107/2019/04/30/458c5a14fb2f190f96.png?imageView2/0/w/200/h/200",
-  "id": 4669,
-  "goods_list": [{
-    "sell_time_status": 0,
-    "id": 31539,
-    "pack_cost": "0.00",
-    "sales": 63462,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1215,
-        "code": "Z5D5E4694899BF3397",
-        "value": "标准(奶油顶)"
-      }, {
-        "is_default": 0,
-        "id": 1216,
-        "code": "Z5D5E469489E271743",
-        "value": "换奶盖"
-      }],
-      "name": "配料",
-      "id": 347
-    }, {
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 584,
-        "code": "Z5E5E2CBDC1DA03229",
-        "value": "热"
-      }, {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2CBDC223C5568",
-        "value": "温"
-      }, {
-        "is_default": 0,
-        "id": 582,
-        "code": "Z5E5E2CBDC2A978507",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2CBDC2EC06314",
-        "value": "去冰"
-      }],
-      "name": "温度",
-      "id": 190
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DB24DE85B7C89450",
-        "value": "标准糖"
-      }],
-      "name": "糖度",
-      "desc": null
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010040020",
-      "id": "d9bb2e315384e250",
-      "stock": "999422.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/09/10/b5b05d6c7bff587984.jpg",
-      "num": 1,
-      "price": 25,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 3,
-    "price": 25,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/09/10/b5b05d6c7bff587984.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "以鲜牛奶为底，加入升级甄选的芋泥和芋圆，从全新加盖的奶油顶开始享用，还有烤椰条的入口，让饮茶更有FUN。 （本产品的甜度来源于食材本身，没有额外加糖，不能调整糖度）",
-    "use_spec": false,
-    "stock": "999422.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "芋泥宝藏茶",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/09/10/b5b05d6c7bff587984.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 37055,
-    "pack_cost": "0.00",
-    "sales": 90199,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 347,
-      "values": [{
-        "is_default": 1,
-        "id": 1215,
-        "code": "Z5DB250B32C85D6736",
-        "value": "标准(奶油顶)"
-      }, {
-        "is_default": 0,
-        "id": 1216,
-        "code": "Z5DB250B32CCB22003",
-        "value": "换奶盖"
-      }, {
-        "is_default": 0,
-        "id": 1794,
-        "code": "Z5DB250B32D1355967",
-        "value": "去黑糖珍珠"
-      }, {
-        "is_default": 0,
-        "id": 1795,
-        "code": "Z5DB250B32D7EE9440",
-        "value": "去旺仔奶冻"
-      }, {
-        "is_default": 0,
-        "id": 1796,
-        "code": "Z5DB250B32DE6A2354",
-        "value": "黑糖珍珠换旺仔奶冻"
-      }],
-      "name": "配料",
-      "desc": null
-    }, {
-      "is_open_checkbox": false,
-      "id": 190,
-      "values": [{
-        "is_default": 1,
-        "id": 584,
-        "code": "Z5E5E2C2321B238817",
-        "value": "热"
-      }, {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2C2321EF85781",
-        "value": "温"
-      }, {
-        "is_default": 0,
-        "id": 582,
-        "code": "Z5E5E2C23222EB8554",
-        "value": "标准冰"
-      }, {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2C23226911326",
-        "value": "去冰"
-      }, {
-        "is_default": 0,
-        "id": 1164,
-        "code": "Z5E5E2C23229FC5210",
-        "value": "冰沙"
-      }],
-      "name": "温度",
-      "desc": null
-    }, {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DABF370BB8A43330",
-        "value": "标准糖"
-      }],
-      "name": "糖度",
-      "desc": null
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010040028",
-      "id": "e27d84349ef37fa9",
-      "stock": "99998959.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/10/20/9fedfc4418663d1de8.jpg",
-      "num": 1,
-      "price": 28,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 99,
-    "price": 28,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/10/20/9fedfc4418663d1de8.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "顶部酥脆山核桃碎搭配费列罗巧克力，加入榛子奶、旺仔奶冻，口感丰富(本产品的甜度来源于食材本身，没有额外加糖，不能调整糖度)",
-    "use_spec": false,
-    "stock": "99998959.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "Miss可可宝藏茶",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/10/20/9fedfc4418663d1de8.jpg?imageView2/2/w/400/h/400"
-  }],
-  "name": "热饮推荐",
-  "is_show_backstage": 0
-}, {
-  "sort": 16,
-  "icon": "https://img-shop.qmimg.cn/s23107/2019/04/28/612503f0fb3cd4ca74.png?imageView2/0/w/200/h/200",
-  "id": 2924,
-  "goods_list": [{
-    "sell_time_status": 0,
-    "id": 46760,
-    "pack_cost": "0.00",
-    "sales": 1185,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 190,
-      "values": [{
-        "is_default": 1,
-        "id": 612,
-        "code": "Z5DFAE7EFE9ECD9078",
-        "value": "冷"
-      }],
-      "name": "温度",
-      "desc": null
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1313010014",
-      "id": "c54eef36afbc6949",
-      "stock": "999999903.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/12/19/e38b66de6f9521af49.jpg",
-      "num": 1,
-      "price": 15,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 99,
-    "price": 15,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/12/19/e38b66de6f9521af49.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "维他奶原味豆奶和芋圆、芝士的口味碰撞，小小一杯藏着多层惊喜",
-    "use_spec": false,
-    "stock": "999999903.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "维他奶芋圆芝士杯",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/12/19/e38b66de6f9521af49.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 31542,
-    "pack_cost": "0.00",
-    "sales": 842,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "id": 1284,
-        "code": "Z5D5E4AE5E42809400",
-        "value": "标准(奥利奥)"
-      }, {
-        "id": 1285,
-        "code": "Z5D5E4AE5E49D05653",
-        "value": "换草莓"
-      }, {
-        "id": 1282,
-        "code": "Z5D5E4AE5E50B26372",
-        "value": "换芒果"
-      }],
-      "name": "配料",
-      "id": 347
-    }, {
-      "is_open_checkbox": false,
-      "values": [{
-        "id": 612,
-        "code": "Z5D5E4AE5E581D2537",
-        "value": "冷"
-      }],
-      "name": "温度",
-      "id": 190
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1313010011",
-      "id": "6a0750fab695d833",
-      "stock": "1000040.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/06/26/665c6e9b5d26ec9050.jpg",
-      "num": 1,
-      "price": 25,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 99,
-    "price": 25,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/06/26/665c6e9b5d26ec9050.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "以芬芳绵细的香草冰淇淋雪球，搭配奥利奥饼干碎，清爽中透出深邃气质。",
-    "use_spec": false,
-    "stock": "1000040.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "金酒杯香草雪球",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/06/26/665c6e9b5d26ec9050.jpg?imageView2/2/w/400/h/400"
-  }, {
-    "sell_time_status": 0,
-    "id": 31541,
-    "pack_cost": "0.00",
-    "sales": 2417,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "id": 1281,
-        "code": "Z5D5E4A463E8055728",
-        "value": "标准(草莓)"
-      }, {
-        "id": 1282,
-        "code": "Z5D5E4A463F1912904",
-        "value": "换芒果"
-      }, {
-        "id": 1283,
-        "code": "Z5D5E4A463FABD4950",
-        "value": "换奥利奥"
-      }],
-      "name": "配料",
-      "id": 347
-    }, {
-      "is_open_checkbox": false,
-      "values": [{
-        "id": 612,
-        "code": "Z5D5E4A46406F16077",
-        "value": "冷"
-      }],
-      "name": "温度",
-      "id": 190
-    }],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1313010010",
-      "id": "a9730df9826ea5f5",
-      "stock": "1000040.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/06/27/3ba3f1ebc4f0b52882.jpg",
-      "num": 1,
-      "price": 25,
-      "membership_price": 0
-    }],
-    "stall_code": "",
-    "sort": 99,
-    "price": 25,
-    "unit": "件",
-    "imageArr": ["https://img-shop.qmimg.cn/s23107/2019/06/27/3ba3f1ebc4f0b52882.jpg?imageView2/2/w/600/h/600"],
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "以浓醇绵柔的椰子冰淇淋雪球，混搭草莓果肉与Q滑晶冻，你会被她的热烈和艳丽感染。",
-    "use_spec": false,
-    "stock": "1000040.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "金酒杯椰子雪球",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/06/27/3ba3f1ebc4f0b52882.jpg?imageView2/2/w/400/h/400"
-  }],
-  "name": "美好甜品",
+  "name": "独家排阵",
   "is_show_backstage": 0
 }];
 exports.default = _default;
 
 /***/ }),
-
-/***/ 37:
+/* 37 */
 /*!***************************************************************************************!*\
   !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/api/level-benefits.js ***!
   \***************************************************************************************/
@@ -19968,8 +12616,7 @@ var _default = [{
 exports.default = _default;
 
 /***/ }),
-
-/***/ 38:
+/* 38 */
 /*!*******************************************************************************!*\
   !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/api/member.js ***!
   \*******************************************************************************/
@@ -20025,119 +12672,7 @@ var _default = (_storeId$mobilePhone$ = {
 exports.default = _default;
 
 /***/ }),
-
-/***/ 382:
-/*!***********************************************************************************************************!*\
-  !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/components/uni-swipe-action-item/mpwxs.js ***!
-  \***********************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  data: function data() {
-    return {
-      position: [],
-      button: []
-    };
-  },
-  computed: {
-    pos: function pos() {
-      return JSON.stringify(this.position);
-    },
-    btn: function btn() {
-      return JSON.stringify(this.button);
-    }
-  },
-  watch: {
-    show: function show(newVal) {
-      if (this.autoClose) return;
-      var valueObj = this.position[0];
-      if (!valueObj) {
-        this.init();
-        return;
-      }
-      valueObj.show = newVal;
-      this.$set(this.position, 0, valueObj);
-    }
-  },
-  created: function created() {
-    if (this.swipeaction.children !== undefined) {
-      this.swipeaction.children.push(this);
-    }
-  },
-  mounted: function mounted() {
-    this.init();
-  },
-  beforeDestroy: function beforeDestroy() {
-    var _this = this;
-    this.swipeaction.children.forEach(function (item, index) {
-      if (item === _this) {
-        _this.swipeaction.children.splice(index, 1);
-      }
-    });
-  },
-  methods: {
-    init: function init() {
-      var _this2 = this;
-      setTimeout(function () {
-        _this2.getSize();
-        _this2.getButtonSize();
-      }, 50);
-    },
-    closeSwipe: function closeSwipe(e) {
-      if (!this.autoClose) return;
-      this.swipeaction.closeOther(this);
-    },
-    change: function change(e) {
-      this.$emit('change', e.open);
-      var valueObj = this.position[0];
-      if (valueObj.show !== e.open) {
-        valueObj.show = e.open;
-        this.$set(this.position, 0, valueObj);
-      }
-    },
-    onClick: function onClick(index, item) {
-      this.$emit('click', {
-        content: item,
-        index: index
-      });
-    },
-    appTouchStart: function appTouchStart() {},
-    appTouchEnd: function appTouchEnd() {},
-    getSize: function getSize() {
-      var _this3 = this;
-      var views = uni.createSelectorQuery().in(this);
-      views.selectAll('.selector-query-hock').boundingClientRect(function (data) {
-        if (_this3.autoClose) {
-          data[0].show = false;
-        } else {
-          data[0].show = _this3.show;
-        }
-        _this3.position = data;
-      }).exec();
-    },
-    getButtonSize: function getButtonSize() {
-      var _this4 = this;
-      var views = uni.createSelectorQuery().in(this);
-      views.selectAll('.button-hock').boundingClientRect(function (data) {
-        _this4.button = data;
-      }).exec();
-    }
-  }
-};
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-
-/***/ 39:
+/* 39 */
 /*!**************************************************************************************!*\
   !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/api/rechargeCards.js ***!
   \**************************************************************************************/
@@ -20263,24 +12798,7 @@ var _default = [{
 exports.default = _default;
 
 /***/ }),
-
-/***/ 4:
-/*!**********************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/interopRequireDefault.js ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : {
-    "default": obj
-  };
-}
-module.exports = _interopRequireDefault, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
-/***/ 40:
+/* 40 */
 /*!**********************************************************************************!*\
   !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/api/addresses.js ***!
   \**********************************************************************************/
@@ -20344,903 +12862,7 @@ var _default = [{
 exports.default = _default;
 
 /***/ }),
-
-/***/ 404:
-/*!*******************************************************************************************************!*\
-  !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/pages/attendance/uni-calendar/util.js ***!
-  \*******************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 4);
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _typeof2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/typeof */ 13));
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ 23));
-var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/createClass */ 24));
-var _calendar = _interopRequireDefault(__webpack_require__(/*! ./calendar.js */ 405));
-var Calendar = /*#__PURE__*/function () {
-  function Calendar() {
-    var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
-      date = _ref.date,
-      selected = _ref.selected,
-      startDate = _ref.startDate,
-      endDate = _ref.endDate,
-      range = _ref.range;
-    (0, _classCallCheck2.default)(this, Calendar);
-    // 当前日期
-    this.date = this.getDate(date); // 当前初入日期
-    // 打点信息
-    this.selected = selected || [];
-    // 范围开始
-    this.startDate = startDate;
-    // 范围结束
-    this.endDate = endDate;
-    this.range = range;
-    // 多选状态
-    this.multipleStatus = {
-      before: '',
-      after: '',
-      data: []
-    };
-    // 每周日期
-    this.weeks = {};
-    this._getWeek(this.date.fullDate);
-  }
-
-  /**
-   * 获取任意时间
-   */
-  (0, _createClass2.default)(Calendar, [{
-    key: "getDate",
-    value: function getDate(date) {
-      var AddDayCount = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
-      var str = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'day';
-      if (!date) {
-        date = new Date();
-      }
-      if ((0, _typeof2.default)(date) !== 'object') {
-        date = date.replace(/-/g, '/');
-      }
-      var dd = new Date(date);
-      switch (str) {
-        case 'day':
-          dd.setDate(dd.getDate() + AddDayCount); // 获取AddDayCount天后的日期
-          break;
-        case 'month':
-          if (dd.getDate() === 31) {
-            dd.setDate(dd.getDate() + AddDayCount);
-          } else {
-            dd.setMonth(dd.getMonth() + AddDayCount); // 获取AddDayCount天后的日期
-          }
-
-          break;
-        case 'year':
-          dd.setFullYear(dd.getFullYear() + AddDayCount); // 获取AddDayCount天后的日期
-          break;
-      }
-      var y = dd.getFullYear();
-      var m = dd.getMonth() + 1 < 10 ? '0' + (dd.getMonth() + 1) : dd.getMonth() + 1; // 获取当前月份的日期，不足10补0
-      var d = dd.getDate() < 10 ? '0' + dd.getDate() : dd.getDate(); // 获取当前几号，不足10补0
-      return {
-        fullDate: y + '-' + m + '-' + d,
-        year: y,
-        month: m,
-        date: d,
-        day: dd.getDay()
-      };
-    }
-
-    /**
-     * 获取上月剩余天数
-     */
-  }, {
-    key: "_getLastMonthDays",
-    value: function _getLastMonthDays(firstDay, full) {
-      var dateArr = [];
-      for (var i = firstDay; i > 0; i--) {
-        var beforeDate = new Date(full.year, full.month - 1, -i + 1).getDate();
-        dateArr.push({
-          date: beforeDate,
-          month: full.month - 1,
-          lunar: this.getlunar(full.year, full.month - 1, beforeDate),
-          disable: true
-        });
-      }
-      return dateArr;
-    }
-    /**
-     * 获取本月天数
-     */
-  }, {
-    key: "_currentMonthDys",
-    value: function _currentMonthDys(dateData, full) {
-      var _this = this;
-      var dateArr = [];
-      var fullDate = this.date.fullDate;
-      var _loop = function _loop(i) {
-        var isinfo = false;
-        var nowDate = full.year + '-' + (full.month < 10 ? full.month : full.month) + '-' + (i < 10 ? '0' + i : i);
-        // 是否今天
-        var isDay = fullDate === nowDate;
-        // 获取打点信息
-        var info = _this.selected && _this.selected.find(function (item) {
-          if (_this.dateEqual(nowDate, item.date)) {
-            return item;
-          }
-        });
-
-        // 日期禁用
-        var disableBefore = true;
-        var disableAfter = true;
-        if (_this.startDate) {
-          var dateCompBefore = _this.dateCompare(_this.startDate, fullDate);
-          disableBefore = _this.dateCompare(dateCompBefore ? _this.startDate : fullDate, nowDate);
-        }
-        if (_this.endDate) {
-          var dateCompAfter = _this.dateCompare(fullDate, _this.endDate);
-          disableAfter = _this.dateCompare(nowDate, dateCompAfter ? _this.endDate : fullDate);
-        }
-        var multiples = _this.multipleStatus.data;
-        var checked = false;
-        var multiplesStatus = -1;
-        if (_this.range) {
-          if (multiples) {
-            multiplesStatus = multiples.findIndex(function (item) {
-              return _this.dateEqual(item, nowDate);
-            });
-          }
-          if (multiplesStatus !== -1) {
-            checked = true;
-          }
-        }
-        var data = {
-          fullDate: nowDate,
-          year: full.year,
-          date: i,
-          multiple: _this.range ? checked : false,
-          month: full.month,
-          lunar: _this.getlunar(full.year, full.month, i),
-          disable: !disableBefore || !disableAfter,
-          isDay: isDay
-        };
-        if (info) {
-          data.extraInfo = info;
-        }
-        dateArr.push(data);
-      };
-      for (var i = 1; i <= dateData; i++) {
-        _loop(i);
-      }
-      return dateArr;
-    }
-    /**
-     * 获取下月天数
-     */
-  }, {
-    key: "_getNextMonthDays",
-    value: function _getNextMonthDays(surplus, full) {
-      var dateArr = [];
-      for (var i = 1; i < surplus + 1; i++) {
-        dateArr.push({
-          date: i,
-          month: Number(full.month) + 1,
-          lunar: this.getlunar(full.year, Number(full.month) + 1, i),
-          disable: true
-        });
-      }
-      return dateArr;
-    }
-    /**
-     * 设置日期
-     * @param {Object} date
-     */
-  }, {
-    key: "setDate",
-    value: function setDate(date) {
-      this._getWeek(date);
-    }
-    /**
-     * 获取当前日期详情
-     * @param {Object} date
-     */
-  }, {
-    key: "getInfo",
-    value: function getInfo(date) {
-      var _this2 = this;
-      if (!date) {
-        date = new Date();
-      }
-      var dateInfo = this.canlender.find(function (item) {
-        return item.fullDate === _this2.getDate(date).fullDate;
-      });
-      return dateInfo;
-    }
-
-    /**
-     * 比较时间大小
-     */
-  }, {
-    key: "dateCompare",
-    value: function dateCompare(startDate, endDate) {
-      // 计算截止时间
-      startDate = new Date(startDate.replace('-', '/').replace('-', '/'));
-      // 计算详细项的截止时间
-      endDate = new Date(endDate.replace('-', '/').replace('-', '/'));
-      if (startDate <= endDate) {
-        return true;
-      } else {
-        return false;
-      }
-    }
-
-    /**
-     * 比较时间是否相等
-     */
-  }, {
-    key: "dateEqual",
-    value: function dateEqual(before, after) {
-      // 计算截止时间
-      before = new Date(before.replace('-', '/').replace('-', '/'));
-      // 计算详细项的截止时间
-      after = new Date(after.replace('-', '/').replace('-', '/'));
-      if (before.getTime() - after.getTime() === 0) {
-        return true;
-      } else {
-        return false;
-      }
-    }
-
-    /**
-     * 获取日期范围内所有日期
-     * @param {Object} begin
-     * @param {Object} end
-     */
-  }, {
-    key: "geDateAll",
-    value: function geDateAll(begin, end) {
-      var arr = [];
-      var ab = begin.split('-');
-      var ae = end.split('-');
-      var db = new Date();
-      db.setFullYear(ab[0], ab[1] - 1, ab[2]);
-      var de = new Date();
-      de.setFullYear(ae[0], ae[1] - 1, ae[2]);
-      var unixDb = db.getTime() - 24 * 60 * 60 * 1000;
-      var unixDe = de.getTime() - 24 * 60 * 60 * 1000;
-      for (var k = unixDb; k <= unixDe;) {
-        k = k + 24 * 60 * 60 * 1000;
-        arr.push(this.getDate(new Date(parseInt(k))).fullDate);
-      }
-      return arr;
-    }
-    /**
-     * 计算阴历日期显示
-     */
-  }, {
-    key: "getlunar",
-    value: function getlunar(year, month, date) {
-      return _calendar.default.solar2lunar(year, month, date);
-    }
-    /**
-     * 设置打点
-     */
-  }, {
-    key: "setSelectInfo",
-    value: function setSelectInfo(data, value) {
-      this.selected = value;
-      this._getWeek(data);
-    }
-
-    /**
-     *  获取多选状态
-     */
-  }, {
-    key: "setMultiple",
-    value: function setMultiple(fullDate) {
-      var _this$multipleStatus = this.multipleStatus,
-        before = _this$multipleStatus.before,
-        after = _this$multipleStatus.after;
-      if (!this.range) return;
-      if (before && after) {
-        this.multipleStatus.before = '';
-        this.multipleStatus.after = '';
-        this.multipleStatus.data = [];
-        this._getWeek(fullDate);
-      } else {
-        if (!before) {
-          this.multipleStatus.before = fullDate;
-        } else {
-          this.multipleStatus.after = fullDate;
-          if (this.dateCompare(this.multipleStatus.before, this.multipleStatus.after)) {
-            this.multipleStatus.data = this.geDateAll(this.multipleStatus.before, this.multipleStatus.after);
-          } else {
-            this.multipleStatus.data = this.geDateAll(this.multipleStatus.after, this.multipleStatus.before);
-          }
-          this._getWeek(fullDate);
-        }
-      }
-    }
-
-    /**
-     * 获取每周数据
-     * @param {Object} dateData
-     */
-  }, {
-    key: "_getWeek",
-    value: function _getWeek(dateData) {
-      var _this$getDate = this.getDate(dateData),
-        fullDate = _this$getDate.fullDate,
-        year = _this$getDate.year,
-        month = _this$getDate.month,
-        date = _this$getDate.date,
-        day = _this$getDate.day;
-      var firstDay = new Date(year, month - 1, 1).getDay();
-      var currentDay = new Date(year, month, 0).getDate();
-      var dates = {
-        lastMonthDays: this._getLastMonthDays(firstDay, this.getDate(dateData)),
-        // 上个月末尾几天
-        currentMonthDys: this._currentMonthDys(currentDay, this.getDate(dateData)),
-        // 本月天数
-        nextMonthDays: [],
-        // 下个月开始几天
-        weeks: []
-      };
-      var canlender = [];
-      var surplus = 42 - (dates.lastMonthDays.length + dates.currentMonthDys.length);
-      dates.nextMonthDays = this._getNextMonthDays(surplus, this.getDate(dateData));
-      canlender = canlender.concat(dates.lastMonthDays, dates.currentMonthDys, dates.nextMonthDays);
-      var weeks = {};
-      // 拼接数组  上个月开始几天 + 本月天数+ 下个月开始几天
-      for (var i = 0; i < canlender.length; i++) {
-        if (i % 7 === 0) {
-          weeks[parseInt(i / 7)] = new Array(7);
-        }
-        weeks[parseInt(i / 7)][i % 7] = canlender[i];
-      }
-      this.canlender = canlender;
-      this.weeks = weeks;
-    }
-
-    //静态方法
-    // static init(date) {
-    // 	if (!this.instance) {
-    // 		this.instance = new Calendar(date);
-    // 	}
-    // 	return this.instance;
-    // }
-  }]);
-  return Calendar;
-}();
-var _default = Calendar;
-exports.default = _default;
-
-/***/ }),
-
-/***/ 405:
-/*!***********************************************************************************************************!*\
-  !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/pages/attendance/uni-calendar/calendar.js ***!
-  \***********************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-/**
-* @1900-2100区间内的公历、农历互转
-* @charset UTF-8
-* @github  https://github.com/jjonline/calendar.js
-* @Author  Jea杨(JJonline@JJonline.Cn)
-* @Time    2014-7-21
-* @Time    2016-8-13 Fixed 2033hex、Attribution Annals
-* @Time    2016-9-25 Fixed lunar LeapMonth Param Bug
-* @Time    2017-7-24 Fixed use getTerm Func Param Error.use solar year,NOT lunar year
-* @Version 1.0.3
-* @公历转农历：calendar.solar2lunar(1987,11,01); //[you can ignore params of prefix 0]
-* @农历转公历：calendar.lunar2solar(1987,09,10); //[you can ignore params of prefix 0]
-*/
-/* eslint-disable */
-var calendar = {
-  /**
-      * 农历1900-2100的润大小信息表
-      * @Array Of Property
-      * @return Hex
-      */
-  lunarInfo: [0x04bd8, 0x04ae0, 0x0a570, 0x054d5, 0x0d260, 0x0d950, 0x16554, 0x056a0, 0x09ad0, 0x055d2,
-  // 1900-1909
-  0x04ae0, 0x0a5b6, 0x0a4d0, 0x0d250, 0x1d255, 0x0b540, 0x0d6a0, 0x0ada2, 0x095b0, 0x14977,
-  // 1910-1919
-  0x04970, 0x0a4b0, 0x0b4b5, 0x06a50, 0x06d40, 0x1ab54, 0x02b60, 0x09570, 0x052f2, 0x04970,
-  // 1920-1929
-  0x06566, 0x0d4a0, 0x0ea50, 0x06e95, 0x05ad0, 0x02b60, 0x186e3, 0x092e0, 0x1c8d7, 0x0c950,
-  // 1930-1939
-  0x0d4a0, 0x1d8a6, 0x0b550, 0x056a0, 0x1a5b4, 0x025d0, 0x092d0, 0x0d2b2, 0x0a950, 0x0b557,
-  // 1940-1949
-  0x06ca0, 0x0b550, 0x15355, 0x04da0, 0x0a5b0, 0x14573, 0x052b0, 0x0a9a8, 0x0e950, 0x06aa0,
-  // 1950-1959
-  0x0aea6, 0x0ab50, 0x04b60, 0x0aae4, 0x0a570, 0x05260, 0x0f263, 0x0d950, 0x05b57, 0x056a0,
-  // 1960-1969
-  0x096d0, 0x04dd5, 0x04ad0, 0x0a4d0, 0x0d4d4, 0x0d250, 0x0d558, 0x0b540, 0x0b6a0, 0x195a6,
-  // 1970-1979
-  0x095b0, 0x049b0, 0x0a974, 0x0a4b0, 0x0b27a, 0x06a50, 0x06d40, 0x0af46, 0x0ab60, 0x09570,
-  // 1980-1989
-  0x04af5, 0x04970, 0x064b0, 0x074a3, 0x0ea50, 0x06b58, 0x05ac0, 0x0ab60, 0x096d5, 0x092e0,
-  // 1990-1999
-  0x0c960, 0x0d954, 0x0d4a0, 0x0da50, 0x07552, 0x056a0, 0x0abb7, 0x025d0, 0x092d0, 0x0cab5,
-  // 2000-2009
-  0x0a950, 0x0b4a0, 0x0baa4, 0x0ad50, 0x055d9, 0x04ba0, 0x0a5b0, 0x15176, 0x052b0, 0x0a930,
-  // 2010-2019
-  0x07954, 0x06aa0, 0x0ad50, 0x05b52, 0x04b60, 0x0a6e6, 0x0a4e0, 0x0d260, 0x0ea65, 0x0d530,
-  // 2020-2029
-  0x05aa0, 0x076a3, 0x096d0, 0x04afb, 0x04ad0, 0x0a4d0, 0x1d0b6, 0x0d250, 0x0d520, 0x0dd45,
-  // 2030-2039
-  0x0b5a0, 0x056d0, 0x055b2, 0x049b0, 0x0a577, 0x0a4b0, 0x0aa50, 0x1b255, 0x06d20, 0x0ada0,
-  // 2040-2049
-  /** Add By JJonline@JJonline.Cn**/
-  0x14b63, 0x09370, 0x049f8, 0x04970, 0x064b0, 0x168a6, 0x0ea50, 0x06b20, 0x1a6c4, 0x0aae0,
-  // 2050-2059
-  0x0a2e0, 0x0d2e3, 0x0c960, 0x0d557, 0x0d4a0, 0x0da50, 0x05d55, 0x056a0, 0x0a6d0, 0x055d4,
-  // 2060-2069
-  0x052d0, 0x0a9b8, 0x0a950, 0x0b4a0, 0x0b6a6, 0x0ad50, 0x055a0, 0x0aba4, 0x0a5b0, 0x052b0,
-  // 2070-2079
-  0x0b273, 0x06930, 0x07337, 0x06aa0, 0x0ad50, 0x14b55, 0x04b60, 0x0a570, 0x054e4, 0x0d160,
-  // 2080-2089
-  0x0e968, 0x0d520, 0x0daa0, 0x16aa6, 0x056d0, 0x04ae0, 0x0a9d4, 0x0a2d0, 0x0d150, 0x0f252,
-  // 2090-2099
-  0x0d520],
-  // 2100
-
-  /**
-      * 公历每个月份的天数普通表
-      * @Array Of Property
-      * @return Number
-      */
-  solarMonth: [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31],
-  /**
-      * 天干地支之天干速查表
-      * @Array Of Property trans["甲","乙","丙","丁","戊","己","庚","辛","壬","癸"]
-      * @return Cn string
-      */
-  Gan: ["\u7532", "\u4E59", "\u4E19", "\u4E01", "\u620A", "\u5DF1", "\u5E9A", "\u8F9B", "\u58EC", "\u7678"],
-  /**
-      * 天干地支之地支速查表
-      * @Array Of Property
-      * @trans["子","丑","寅","卯","辰","巳","午","未","申","酉","戌","亥"]
-      * @return Cn string
-      */
-  Zhi: ["\u5B50", "\u4E11", "\u5BC5", "\u536F", "\u8FB0", "\u5DF3", "\u5348", "\u672A", "\u7533", "\u9149", "\u620C", "\u4EA5"],
-  /**
-      * 天干地支之地支速查表<=>生肖
-      * @Array Of Property
-      * @trans["鼠","牛","虎","兔","龙","蛇","马","羊","猴","鸡","狗","猪"]
-      * @return Cn string
-      */
-  Animals: ["\u9F20", "\u725B", "\u864E", "\u5154", "\u9F99", "\u86C7", "\u9A6C", "\u7F8A", "\u7334", "\u9E21", "\u72D7", "\u732A"],
-  /**
-      * 24节气速查表
-      * @Array Of Property
-      * @trans["小寒","大寒","立春","雨水","惊蛰","春分","清明","谷雨","立夏","小满","芒种","夏至","小暑","大暑","立秋","处暑","白露","秋分","寒露","霜降","立冬","小雪","大雪","冬至"]
-      * @return Cn string
-      */
-  solarTerm: ["\u5C0F\u5BD2", "\u5927\u5BD2", "\u7ACB\u6625", "\u96E8\u6C34", "\u60CA\u86F0", "\u6625\u5206", "\u6E05\u660E", "\u8C37\u96E8", "\u7ACB\u590F", "\u5C0F\u6EE1", "\u8292\u79CD", "\u590F\u81F3", "\u5C0F\u6691", "\u5927\u6691", "\u7ACB\u79CB", "\u5904\u6691", "\u767D\u9732", "\u79CB\u5206", "\u5BD2\u9732", "\u971C\u964D", "\u7ACB\u51AC", "\u5C0F\u96EA", "\u5927\u96EA", "\u51AC\u81F3"],
-  /**
-      * 1900-2100各年的24节气日期速查表
-      * @Array Of Property
-      * @return 0x string For splice
-      */
-  sTermInfo: ['9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c3598082c95f8c965cc920f', '97bd0b06bdb0722c965ce1cfcc920f', 'b027097bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c359801ec95f8c965cc920f', '97bd0b06bdb0722c965ce1cfcc920f', 'b027097bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c359801ec95f8c965cc920f', '97bd0b06bdb0722c965ce1cfcc920f', 'b027097bd097c36b0b6fc9274c91aa', '9778397bd19801ec9210c965cc920e', '97b6b97bd19801ec95f8c965cc920f', '97bd09801d98082c95f8e1cfcc920f', '97bd097bd097c36b0b6fc9210c8dc2', '9778397bd197c36c9210c9274c91aa', '97b6b97bd19801ec95f8c965cc920e', '97bd09801d98082c95f8e1cfcc920f', '97bd097bd097c36b0b6fc9210c8dc2', '9778397bd097c36c9210c9274c91aa', '97b6b97bd19801ec95f8c965cc920e', '97bcf97c3598082c95f8e1cfcc920f', '97bd097bd097c36b0b6fc9210c8dc2', '9778397bd097c36c9210c9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c3598082c95f8c965cc920f', '97bd097bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c3598082c95f8c965cc920f', '97bd097bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c359801ec95f8c965cc920f', '97bd097bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c359801ec95f8c965cc920f', '97bd097bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c359801ec95f8c965cc920f', '97bd097bd07f595b0b6fc920fb0722', '9778397bd097c36b0b6fc9210c8dc2', '9778397bd19801ec9210c9274c920e', '97b6b97bd19801ec95f8c965cc920f', '97bd07f5307f595b0b0bc920fb0722', '7f0e397bd097c36b0b6fc9210c8dc2', '9778397bd097c36c9210c9274c920e', '97b6b97bd19801ec95f8c965cc920f', '97bd07f5307f595b0b0bc920fb0722', '7f0e397bd097c36b0b6fc9210c8dc2', '9778397bd097c36c9210c9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bd07f1487f595b0b0bc920fb0722', '7f0e397bd097c36b0b6fc9210c8dc2', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf7f1487f595b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf7f1487f595b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf7f1487f531b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf7f1487f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c9274c920e', '97bcf7f0e47f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '9778397bd097c36b0b6fc9210c91aa', '97b6b97bd197c36c9210c9274c920e', '97bcf7f0e47f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '9778397bd097c36b0b6fc9210c8dc2', '9778397bd097c36c9210c9274c920e', '97b6b7f0e47f531b0723b0b6fb0722', '7f0e37f5307f595b0b0bc920fb0722', '7f0e397bd097c36b0b6fc9210c8dc2', '9778397bd097c36b0b70c9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721', '7f0e37f1487f595b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc9210c8dc2', '9778397bd097c36b0b6fc9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721', '7f0e27f1487f595b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b7f0e47f531b0723b0787b0721', '7f0e27f0e47f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '9778397bd097c36b0b6fc9210c91aa', '97b6b7f0e47f149b0723b0787b0721', '7f0e27f0e47f531b0723b0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '9778397bd097c36b0b6fc9210c8dc2', '977837f0e37f149b0723b0787b0721', '7f07e7f0e47f531b0723b0b6fb0722', '7f0e37f5307f595b0b0bc920fb0722', '7f0e397bd097c35b0b6fc9210c8dc2', '977837f0e37f14998082b0787b0721', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e37f1487f595b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc9210c8dc2', '977837f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '977837f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '977837f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '977837f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '977837f0e37f14998082b0787b06bd', '7f07e7f0e47f149b0723b0787b0721', '7f0e27f0e47f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '977837f0e37f14998082b0723b06bd', '7f07e7f0e37f149b0723b0787b0721', '7f0e27f0e47f531b0723b0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '977837f0e37f14898082b0723b02d5', '7ec967f0e37f14998082b0787b0721', '7f07e7f0e47f531b0723b0b6fb0722', '7f0e37f1487f595b0b0bb0b6fb0722', '7f0e37f0e37f14898082b0723b02d5', '7ec967f0e37f14998082b0787b0721', '7f07e7f0e47f531b0723b0b6fb0722', '7f0e37f1487f531b0b0bb0b6fb0722', '7f0e37f0e37f14898082b0723b02d5', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e37f1487f531b0b0bb0b6fb0722', '7f0e37f0e37f14898082b072297c35', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e37f0e37f14898082b072297c35', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e37f0e366aa89801eb072297c35', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f149b0723b0787b0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e37f0e366aa89801eb072297c35', '7ec967f0e37f14998082b0723b06bd', '7f07e7f0e47f149b0723b0787b0721', '7f0e27f0e47f531b0723b0b6fb0722', '7f0e37f0e366aa89801eb072297c35', '7ec967f0e37f14998082b0723b06bd', '7f07e7f0e37f14998083b0787b0721', '7f0e27f0e47f531b0723b0b6fb0722', '7f0e37f0e366aa89801eb072297c35', '7ec967f0e37f14898082b0723b02d5', '7f07e7f0e37f14998082b0787b0721', '7f07e7f0e47f531b0723b0b6fb0722', '7f0e36665b66aa89801e9808297c35', '665f67f0e37f14898082b0723b02d5', '7ec967f0e37f14998082b0787b0721', '7f07e7f0e47f531b0723b0b6fb0722', '7f0e36665b66a449801e9808297c35', '665f67f0e37f14898082b0723b02d5', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e36665b66a449801e9808297c35', '665f67f0e37f14898082b072297c35', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e26665b66a449801e9808297c35', '665f67f0e37f1489801eb072297c35', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722'],
-  /**
-      * 数字转中文速查表
-      * @Array Of Property
-      * @trans ['日','一','二','三','四','五','六','七','八','九','十']
-      * @return Cn string
-      */
-  nStr1: ["\u65E5", "\u4E00", "\u4E8C", "\u4E09", "\u56DB", "\u4E94", "\u516D", "\u4E03", "\u516B", "\u4E5D", "\u5341"],
-  /**
-      * 日期转农历称呼速查表
-      * @Array Of Property
-      * @trans ['初','十','廿','卅']
-      * @return Cn string
-      */
-  nStr2: ["\u521D", "\u5341", "\u5EFF", "\u5345"],
-  /**
-      * 月份转农历称呼速查表
-      * @Array Of Property
-      * @trans ['正','一','二','三','四','五','六','七','八','九','十','冬','腊']
-      * @return Cn string
-      */
-  nStr3: ["\u6B63", "\u4E8C", "\u4E09", "\u56DB", "\u4E94", "\u516D", "\u4E03", "\u516B", "\u4E5D", "\u5341", "\u51AC", "\u814A"],
-  /**
-      * 返回农历y年一整年的总天数
-      * @param lunar Year
-      * @return Number
-      * @eg:var count = calendar.lYearDays(1987) ;//count=387
-      */
-  lYearDays: function lYearDays(y) {
-    var i;
-    var sum = 348;
-    for (i = 0x8000; i > 0x8; i >>= 1) {
-      sum += this.lunarInfo[y - 1900] & i ? 1 : 0;
-    }
-    return sum + this.leapDays(y);
-  },
-  /**
-      * 返回农历y年闰月是哪个月；若y年没有闰月 则返回0
-      * @param lunar Year
-      * @return Number (0-12)
-      * @eg:var leapMonth = calendar.leapMonth(1987) ;//leapMonth=6
-      */
-  leapMonth: function leapMonth(y) {
-    // 闰字编码 \u95f0
-    return this.lunarInfo[y - 1900] & 0xf;
-  },
-  /**
-      * 返回农历y年闰月的天数 若该年没有闰月则返回0
-      * @param lunar Year
-      * @return Number (0、29、30)
-      * @eg:var leapMonthDay = calendar.leapDays(1987) ;//leapMonthDay=29
-      */
-  leapDays: function leapDays(y) {
-    if (this.leapMonth(y)) {
-      return this.lunarInfo[y - 1900] & 0x10000 ? 30 : 29;
-    }
-    return 0;
-  },
-  /**
-      * 返回农历y年m月（非闰月）的总天数，计算m为闰月时的天数请使用leapDays方法
-      * @param lunar Year
-      * @return Number (-1、29、30)
-      * @eg:var MonthDay = calendar.monthDays(1987,9) ;//MonthDay=29
-      */
-  monthDays: function monthDays(y, m) {
-    if (m > 12 || m < 1) {
-      return -1;
-    } // 月份参数从1至12，参数错误返回-1
-    return this.lunarInfo[y - 1900] & 0x10000 >> m ? 30 : 29;
-  },
-  /**
-      * 返回公历(!)y年m月的天数
-      * @param solar Year
-      * @return Number (-1、28、29、30、31)
-      * @eg:var solarMonthDay = calendar.leapDays(1987) ;//solarMonthDay=30
-      */
-  solarDays: function solarDays(y, m) {
-    if (m > 12 || m < 1) {
-      return -1;
-    } // 若参数错误 返回-1
-    var ms = m - 1;
-    if (ms == 1) {
-      // 2月份的闰平规律测算后确认返回28或29
-      return y % 4 == 0 && y % 100 != 0 || y % 400 == 0 ? 29 : 28;
-    } else {
-      return this.solarMonth[ms];
-    }
-  },
-  /**
-     * 农历年份转换为干支纪年
-     * @param  lYear 农历年的年份数
-     * @return Cn string
-     */
-  toGanZhiYear: function toGanZhiYear(lYear) {
-    var ganKey = (lYear - 3) % 10;
-    var zhiKey = (lYear - 3) % 12;
-    if (ganKey == 0) ganKey = 10; // 如果余数为0则为最后一个天干
-    if (zhiKey == 0) zhiKey = 12; // 如果余数为0则为最后一个地支
-    return this.Gan[ganKey - 1] + this.Zhi[zhiKey - 1];
-  },
-  /**
-     * 公历月、日判断所属星座
-     * @param  cMonth [description]
-     * @param  cDay [description]
-     * @return Cn string
-     */
-  toAstro: function toAstro(cMonth, cDay) {
-    var s = "\u9B54\u7FAF\u6C34\u74F6\u53CC\u9C7C\u767D\u7F8A\u91D1\u725B\u53CC\u5B50\u5DE8\u87F9\u72EE\u5B50\u5904\u5973\u5929\u79E4\u5929\u874E\u5C04\u624B\u9B54\u7FAF";
-    var arr = [20, 19, 21, 21, 21, 22, 23, 23, 23, 23, 22, 22];
-    return s.substr(cMonth * 2 - (cDay < arr[cMonth - 1] ? 2 : 0), 2) + "\u5EA7"; // 座
-  },
-
-  /**
-      * 传入offset偏移量返回干支
-      * @param offset 相对甲子的偏移量
-      * @return Cn string
-      */
-  toGanZhi: function toGanZhi(offset) {
-    return this.Gan[offset % 10] + this.Zhi[offset % 12];
-  },
-  /**
-      * 传入公历(!)y年获得该年第n个节气的公历日期
-      * @param y公历年(1900-2100)；n二十四节气中的第几个节气(1~24)；从n=1(小寒)算起
-      * @return day Number
-      * @eg:var _24 = calendar.getTerm(1987,3) ;//_24=4;意即1987年2月4日立春
-      */
-  getTerm: function getTerm(y, n) {
-    if (y < 1900 || y > 2100) {
-      return -1;
-    }
-    if (n < 1 || n > 24) {
-      return -1;
-    }
-    var _table = this.sTermInfo[y - 1900];
-    var _info = [parseInt('0x' + _table.substr(0, 5)).toString(), parseInt('0x' + _table.substr(5, 5)).toString(), parseInt('0x' + _table.substr(10, 5)).toString(), parseInt('0x' + _table.substr(15, 5)).toString(), parseInt('0x' + _table.substr(20, 5)).toString(), parseInt('0x' + _table.substr(25, 5)).toString()];
-    var _calday = [_info[0].substr(0, 1), _info[0].substr(1, 2), _info[0].substr(3, 1), _info[0].substr(4, 2), _info[1].substr(0, 1), _info[1].substr(1, 2), _info[1].substr(3, 1), _info[1].substr(4, 2), _info[2].substr(0, 1), _info[2].substr(1, 2), _info[2].substr(3, 1), _info[2].substr(4, 2), _info[3].substr(0, 1), _info[3].substr(1, 2), _info[3].substr(3, 1), _info[3].substr(4, 2), _info[4].substr(0, 1), _info[4].substr(1, 2), _info[4].substr(3, 1), _info[4].substr(4, 2), _info[5].substr(0, 1), _info[5].substr(1, 2), _info[5].substr(3, 1), _info[5].substr(4, 2)];
-    return parseInt(_calday[n - 1]);
-  },
-  /**
-      * 传入农历数字月份返回汉语通俗表示法
-      * @param lunar month
-      * @return Cn string
-      * @eg:var cnMonth = calendar.toChinaMonth(12) ;//cnMonth='腊月'
-      */
-  toChinaMonth: function toChinaMonth(m) {
-    // 月 => \u6708
-    if (m > 12 || m < 1) {
-      return -1;
-    } // 若参数错误 返回-1
-    var s = this.nStr3[m - 1];
-    s += "\u6708"; // 加上月字
-    return s;
-  },
-  /**
-      * 传入农历日期数字返回汉字表示法
-      * @param lunar day
-      * @return Cn string
-      * @eg:var cnDay = calendar.toChinaDay(21) ;//cnMonth='廿一'
-      */
-  toChinaDay: function toChinaDay(d) {
-    // 日 => \u65e5
-    var s;
-    switch (d) {
-      case 10:
-        s = "\u521D\u5341";
-        break;
-      case 20:
-        s = "\u4E8C\u5341";
-        break;
-        break;
-      case 30:
-        s = "\u4E09\u5341";
-        break;
-        break;
-      default:
-        s = this.nStr2[Math.floor(d / 10)];
-        s += this.nStr1[d % 10];
-    }
-    return s;
-  },
-  /**
-      * 年份转生肖[!仅能大致转换] => 精确划分生肖分界线是“立春”
-      * @param y year
-      * @return Cn string
-      * @eg:var animal = calendar.getAnimal(1987) ;//animal='兔'
-      */
-  getAnimal: function getAnimal(y) {
-    return this.Animals[(y - 4) % 12];
-  },
-  /**
-      * 传入阳历年月日获得详细的公历、农历object信息 <=>JSON
-      * @param y  solar year
-      * @param m  solar month
-      * @param d  solar day
-      * @return JSON object
-      * @eg:console.log(calendar.solar2lunar(1987,11,01));
-      */
-  solar2lunar: function solar2lunar(y, m, d) {
-    // 参数区间1900.1.31~2100.12.31
-    // 年份限定、上限
-    if (y < 1900 || y > 2100) {
-      return -1; // undefined转换为数字变为NaN
-    }
-    // 公历传参最下限
-    if (y == 1900 && m == 1 && d < 31) {
-      return -1;
-    }
-    // 未传参  获得当天
-    if (!y) {
-      var objDate = new Date();
-    } else {
-      var objDate = new Date(y, parseInt(m) - 1, d);
-    }
-    var i;
-    var leap = 0;
-    var temp = 0;
-    // 修正ymd参数
-    var y = objDate.getFullYear();
-    var m = objDate.getMonth() + 1;
-    var d = objDate.getDate();
-    var offset = (Date.UTC(objDate.getFullYear(), objDate.getMonth(), objDate.getDate()) - Date.UTC(1900, 0, 31)) / 86400000;
-    for (i = 1900; i < 2101 && offset > 0; i++) {
-      temp = this.lYearDays(i);
-      offset -= temp;
-    }
-    if (offset < 0) {
-      offset += temp;
-      i--;
-    }
-
-    // 是否今天
-    var isTodayObj = new Date();
-    var isToday = false;
-    if (isTodayObj.getFullYear() == y && isTodayObj.getMonth() + 1 == m && isTodayObj.getDate() == d) {
-      isToday = true;
-    }
-    // 星期几
-    var nWeek = objDate.getDay();
-    var cWeek = this.nStr1[nWeek];
-    // 数字表示周几顺应天朝周一开始的惯例
-    if (nWeek == 0) {
-      nWeek = 7;
-    }
-    // 农历年
-    var year = i;
-    var leap = this.leapMonth(i); // 闰哪个月
-    var isLeap = false;
-
-    // 效验闰月
-    for (i = 1; i < 13 && offset > 0; i++) {
-      // 闰月
-      if (leap > 0 && i == leap + 1 && isLeap == false) {
-        --i;
-        isLeap = true;
-        temp = this.leapDays(year); // 计算农历闰月天数
-      } else {
-        temp = this.monthDays(year, i); // 计算农历普通月天数
-      }
-      // 解除闰月
-      if (isLeap == true && i == leap + 1) {
-        isLeap = false;
-      }
-      offset -= temp;
-    }
-    // 闰月导致数组下标重叠取反
-    if (offset == 0 && leap > 0 && i == leap + 1) {
-      if (isLeap) {
-        isLeap = false;
-      } else {
-        isLeap = true;
-        --i;
-      }
-    }
-    if (offset < 0) {
-      offset += temp;
-      --i;
-    }
-    // 农历月
-    var month = i;
-    // 农历日
-    var day = offset + 1;
-    // 天干地支处理
-    var sm = m - 1;
-    var gzY = this.toGanZhiYear(year);
-
-    // 当月的两个节气
-    // bugfix-2017-7-24 11:03:38 use lunar Year Param `y` Not `year`
-    var firstNode = this.getTerm(y, m * 2 - 1); // 返回当月「节」为几日开始
-    var secondNode = this.getTerm(y, m * 2); // 返回当月「节」为几日开始
-
-    // 依据12节气修正干支月
-    var gzM = this.toGanZhi((y - 1900) * 12 + m + 11);
-    if (d >= firstNode) {
-      gzM = this.toGanZhi((y - 1900) * 12 + m + 12);
-    }
-
-    // 传入的日期的节气与否
-    var isTerm = false;
-    var Term = null;
-    if (firstNode == d) {
-      isTerm = true;
-      Term = this.solarTerm[m * 2 - 2];
-    }
-    if (secondNode == d) {
-      isTerm = true;
-      Term = this.solarTerm[m * 2 - 1];
-    }
-    // 日柱 当月一日与 1900/1/1 相差天数
-    var dayCyclical = Date.UTC(y, sm, 1, 0, 0, 0, 0) / 86400000 + 25567 + 10;
-    var gzD = this.toGanZhi(dayCyclical + d - 1);
-    // 该日期所属的星座
-    var astro = this.toAstro(m, d);
-    return {
-      'lYear': year,
-      'lMonth': month,
-      'lDay': day,
-      'Animal': this.getAnimal(year),
-      'IMonthCn': (isLeap ? "\u95F0" : '') + this.toChinaMonth(month),
-      'IDayCn': this.toChinaDay(day),
-      'cYear': y,
-      'cMonth': m,
-      'cDay': d,
-      'gzYear': gzY,
-      'gzMonth': gzM,
-      'gzDay': gzD,
-      'isToday': isToday,
-      'isLeap': isLeap,
-      'nWeek': nWeek,
-      'ncWeek': "\u661F\u671F" + cWeek,
-      'isTerm': isTerm,
-      'Term': Term,
-      'astro': astro
-    };
-  },
-  /**
-      * 传入农历年月日以及传入的月份是否闰月获得详细的公历、农历object信息 <=>JSON
-      * @param y  lunar year
-      * @param m  lunar month
-      * @param d  lunar day
-      * @param isLeapMonth  lunar month is leap or not.[如果是农历闰月第四个参数赋值true即可]
-      * @return JSON object
-      * @eg:console.log(calendar.lunar2solar(1987,9,10));
-      */
-  lunar2solar: function lunar2solar(y, m, d, isLeapMonth) {
-    // 参数区间1900.1.31~2100.12.1
-    var isLeapMonth = !!isLeapMonth;
-    var leapOffset = 0;
-    var leapMonth = this.leapMonth(y);
-    var leapDay = this.leapDays(y);
-    if (isLeapMonth && leapMonth != m) {
-      return -1;
-    } // 传参要求计算该闰月公历 但该年得出的闰月与传参的月份并不同
-    if (y == 2100 && m == 12 && d > 1 || y == 1900 && m == 1 && d < 31) {
-      return -1;
-    } // 超出了最大极限值
-    var day = this.monthDays(y, m);
-    var _day = day;
-    // bugFix 2016-9-25
-    // if month is leap, _day use leapDays method
-    if (isLeapMonth) {
-      _day = this.leapDays(y, m);
-    }
-    if (y < 1900 || y > 2100 || d > _day) {
-      return -1;
-    } // 参数合法性效验
-
-    // 计算农历的时间差
-    var offset = 0;
-    for (var i = 1900; i < y; i++) {
-      offset += this.lYearDays(i);
-    }
-    var leap = 0;
-    var isAdd = false;
-    for (var i = 1; i < m; i++) {
-      leap = this.leapMonth(y);
-      if (!isAdd) {
-        // 处理闰月
-        if (leap <= i && leap > 0) {
-          offset += this.leapDays(y);
-          isAdd = true;
-        }
-      }
-      offset += this.monthDays(y, i);
-    }
-    // 转换闰月农历 需补充该年闰月的前一个月的时差
-    if (isLeapMonth) {
-      offset += day;
-    }
-    // 1900年农历正月一日的公历时间为1900年1月30日0时0分0秒(该时间也是本农历的最开始起始点)
-    var stmap = Date.UTC(1900, 1, 30, 0, 0, 0);
-    var calObj = new Date((offset + d - 31) * 86400000 + stmap);
-    var cY = calObj.getUTCFullYear();
-    var cM = calObj.getUTCMonth() + 1;
-    var cD = calObj.getUTCDate();
-    return this.solar2lunar(cY, cM, cD);
-  }
-};
-var _default = calendar;
-exports.default = _default;
-
-/***/ }),
-
-/***/ 41:
+/* 41 */
 /*!***********************************************************************************!*\
   !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/api/attendance.js ***!
   \***********************************************************************************/
@@ -21286,798 +12908,7 @@ var _default = [{
 exports.default = _default;
 
 /***/ }),
-
-/***/ 413:
-/*!************************************************************************************************************!*\
-  !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/components/jyf-parser/libs/MpHtmlParser.js ***!
-  \************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(wx) {var _classCallCheck = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ 23);
-var _createClass = __webpack_require__(/*! @babel/runtime/helpers/createClass */ 24);
-var _defineProperty = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11);
-/*
-  将 html 解析为适用于小程序 rich-text 的 DOM 结构
-  github：https://github.com/jin-yufeng/Parser
-  docs：https://jin-yufeng.github.io/Parser
-  author：JinYufeng
-  update：2020/05/08
-*/
-var cfg = __webpack_require__(/*! ./config.js */ 414),
-  blankChar = cfg.blankChar,
-  CssHandler = __webpack_require__(/*! ./CssHandler.js */ 415),
-  screenWidth = wx.getSystemInfoSync().screenWidth;
-var emoji; // emoji 补丁包 https://jin-yufeng.github.io/Parser/#/instructions?id=emoji
-var MpHtmlParser = /*#__PURE__*/function () {
-  "use strict";
-
-  function MpHtmlParser(data) {
-    var _this = this;
-    var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-    _classCallCheck(this, MpHtmlParser);
-    _defineProperty(this, "isClose", function () {
-      return _this.data[_this.i] == '>' || _this.data[_this.i] == '/' && _this.data[_this.i + 1] == '>';
-    });
-    _defineProperty(this, "section", function () {
-      return _this.data.substring(_this.start, _this.i);
-    });
-    _defineProperty(this, "parent", function () {
-      return _this.STACK[_this.STACK.length - 1];
-    });
-    _defineProperty(this, "siblings", function () {
-      return _this.STACK.length ? _this.parent().children : _this.DOM;
-    });
-    this.attrs = {};
-    this.compress = options.compress;
-    this.CssHandler = new CssHandler(options.tagStyle, screenWidth);
-    this.data = data;
-    this.domain = options.domain;
-    this.DOM = [];
-    this.i = this.start = this.audioNum = this.imgNum = this.videoNum = 0;
-    this.protocol = this.domain && this.domain.includes('://') ? this.domain.split('://')[0] : '';
-    this.state = this.Text;
-    this.STACK = [];
-    this.useAnchor = options.useAnchor;
-  }
-  _createClass(MpHtmlParser, [{
-    key: "parse",
-    value: function parse() {
-      if (emoji) this.data = emoji.parseEmoji(this.data);
-      for (var c; c = this.data[this.i]; this.i++) {
-        this.state(c);
-      }
-      if (this.state == this.Text) this.setText();
-      while (this.STACK.length) {
-        this.popNode(this.STACK.pop());
-      }
-      if (this.DOM.length) {
-        this.DOM[0].PoweredBy = 'Parser';
-        if (this.title) this.DOM[0].title = this.title;
-      }
-      return this.DOM;
-    }
-    // 设置属性
-  }, {
-    key: "setAttr",
-    value: function setAttr() {
-      var name = this.attrName.toLowerCase();
-      if (cfg.trustAttrs[name]) {
-        var val = this.attrVal;
-        if (val) {
-          if (name == 'src') this.attrs[name] = this.getUrl(this.decode(val, 'amp'));else if (name == 'href' || name == 'style') this.attrs[name] = this.decode(val, 'amp');else this.attrs[name] = val;
-        } else if (cfg.boolAttrs[name]) this.attrs[name] = 'T';
-      }
-      this.attrVal = '';
-      while (blankChar[this.data[this.i]]) {
-        this.i++;
-      }
-      if (this.isClose()) this.setNode();else {
-        this.start = this.i;
-        this.state = this.AttrName;
-      }
-    }
-    // 设置文本节点
-  }, {
-    key: "setText",
-    value: function setText() {
-      var back,
-        text = this.section();
-      if (!text) return;
-      text = cfg.onText && cfg.onText(text, function () {
-        return back = true;
-      }) || text;
-      if (back) {
-        this.data = this.data.substr(0, this.start) + text + this.data.substr(this.i);
-        var j = this.start + text.length;
-        for (this.i = this.start; this.i < j; this.i++) {
-          this.state(this.data[this.i]);
-        }
-        return;
-      }
-      if (!this.pre) {
-        // 合并空白符
-        var tmp = [];
-        for (var i = text.length, c; c = text[--i];) {
-          if (!blankChar[c] || !blankChar[tmp[0]] && (c = ' ')) tmp.unshift(c);
-        }
-        text = tmp.join('');
-      }
-      this.siblings().push({
-        type: 'text',
-        text: this.decode(text)
-      });
-    }
-    // 设置元素节点
-  }, {
-    key: "setNode",
-    value: function setNode() {
-      var node = {
-          name: this.tagName.toLowerCase(),
-          attrs: this.attrs
-        },
-        close = cfg.selfClosingTags[node.name];
-      this.attrs = {};
-      if (!cfg.ignoreTags[node.name]) {
-        this.matchAttr(node);
-        if (!close) {
-          node.children = [];
-          if (node.name == 'pre' && cfg.highlight) {
-            this.remove(node);
-            this.pre = node.pre = true;
-          }
-          this.siblings().push(node);
-          this.STACK.push(node);
-        } else if (!cfg.filter || cfg.filter(node, this) != false) this.siblings().push(node);
-      } else {
-        if (!close) this.remove(node);else if (node.name == 'source') {
-          var parent = this.parent();
-          if (parent && (parent.name == 'video' || parent.name == 'audio') && node.attrs.src) parent.attrs.source.push(node.attrs.src);
-        } else if (node.name == 'base' && !this.domain) this.domain = node.attrs.href;
-      }
-      if (this.data[this.i] == '/') this.i++;
-      this.start = this.i + 1;
-      this.state = this.Text;
-    }
-    // 移除标签
-  }, {
-    key: "remove",
-    value: function remove(node) {
-      var _this2 = this;
-      var name = node.name,
-        j = this.i;
-      // 处理 svg
-      var handleSvg = function handleSvg() {
-        var src = _this2.data.substring(j, _this2.i + 1);
-        if (!node.attrs.xmlns) src = ' xmlns="http://www.w3.org/2000/svg"' + src;
-        var i = j;
-        while (_this2.data[j] != '<') {
-          j--;
-        }
-        src = _this2.data.substring(j, i) + src;
-        var parent = _this2.parent();
-        if (node.attrs.width == '100%' && parent && (parent.attrs.style || '').includes('inline')) parent.attrs.style = 'width:300px;max-width:100%;' + parent.attrs.style;
-        _this2.siblings().push({
-          name: 'img',
-          attrs: {
-            src: 'data:image/svg+xml;utf8,' + src.replace(/#/g, '%23'),
-            ignore: 'T'
-          }
-        });
-      };
-      if (node.name == 'svg' && this.data[j] == '/') return handleSvg(this.i++);
-      while (1) {
-        if ((this.i = this.data.indexOf('</', this.i + 1)) == -1) {
-          if (name == 'pre' || name == 'svg') this.i = j;else this.i = this.data.length;
-          return;
-        }
-        this.start = this.i += 2;
-        while (!blankChar[this.data[this.i]] && !this.isClose()) {
-          this.i++;
-        }
-        if (this.section().toLowerCase() == name) {
-          // 代码块高亮
-          if (name == 'pre') {
-            this.data = this.data.substr(0, j + 1) + cfg.highlight(this.data.substring(j + 1, this.i - 5), node.attrs) + this.data.substr(this.i - 5);
-            return this.i = j;
-          } else if (name == 'style') this.CssHandler.getStyle(this.data.substring(j + 1, this.i - 7));else if (name == 'title') this.title = this.data.substring(j + 1, this.i - 7);
-          if ((this.i = this.data.indexOf('>', this.i)) == -1) this.i = this.data.length;
-          if (name == 'svg') handleSvg();
-          return;
-        }
-      }
-    }
-    // 处理属性
-  }, {
-    key: "matchAttr",
-    value: function matchAttr(node) {
-      var attrs = node.attrs,
-        style = this.CssHandler.match(node.name, attrs, node) + (attrs.style || ''),
-        styleObj = {};
-      if (attrs.id) {
-        if (this.compress & 1) attrs.id = void 0;else if (this.useAnchor) this.bubble();
-      }
-      if (this.compress & 2 && attrs.class) attrs.class = void 0;
-      switch (node.name) {
-        case 'a':
-        case 'ad':
-          this.bubble();
-          break;
-        case 'font':
-          if (attrs.color) {
-            styleObj['color'] = attrs.color;
-            attrs.color = void 0;
-          }
-          if (attrs.face) {
-            styleObj['font-family'] = attrs.face;
-            attrs.face = void 0;
-          }
-          if (attrs.size) {
-            var size = parseInt(attrs.size);
-            if (size < 1) size = 1;else if (size > 7) size = 7;
-            var map = ['xx-small', 'x-small', 'small', 'medium', 'large', 'x-large', 'xx-large'];
-            styleObj['font-size'] = map[size - 1];
-            attrs.size = void 0;
-          }
-          break;
-        case 'video':
-        case 'audio':
-          if (!attrs.id) attrs.id = node.name + ++this["".concat(node.name, "Num")];else this["".concat(node.name, "Num")]++;
-          if (node.name == 'video') {
-            if (this.videoNum > 3) node.lazyLoad = 1;
-            if (attrs.width) {
-              styleObj.width = parseFloat(attrs.width) + (attrs.width.includes('%') ? '%' : 'px');
-              attrs.width = void 0;
-            }
-            if (attrs.height) {
-              styleObj.height = parseFloat(attrs.height) + (attrs.height.includes('%') ? '%' : 'px');
-              attrs.height = void 0;
-            }
-          }
-          attrs.source = [];
-          if (attrs.src) attrs.source.push(attrs.src);
-          if (!attrs.controls && !attrs.autoplay) console.warn("\u5B58\u5728\u6CA1\u6709 controls \u5C5E\u6027\u7684 ".concat(node.name, " \u6807\u7B7E\uFF0C\u53EF\u80FD\u5BFC\u81F4\u65E0\u6CD5\u64AD\u653E"), node);
-          this.bubble();
-          break;
-        case 'td':
-        case 'th':
-          if (attrs.colspan || attrs.rowspan) for (var k = this.STACK.length, item; item = this.STACK[--k];) {
-            if (item.name == 'table') {
-              item.c = void 0;
-              break;
-            }
-          }
-      }
-      if (attrs.align) {
-        styleObj['text-align'] = attrs.align;
-        attrs.align = void 0;
-      }
-      // 压缩 style
-      var styles = style.split(';');
-      style = '';
-      for (var i = 0, len = styles.length; i < len; i++) {
-        var info = styles[i].split(':');
-        if (info.length < 2) continue;
-        var _key = info[0].trim().toLowerCase(),
-          _value = info.slice(1).join(':').trim();
-        if (_value.includes('-webkit') || _value.includes('-moz') || _value.includes('-ms') || _value.includes('-o') || _value.includes('safe')) style += ";".concat(_key, ":").concat(_value);else if (!styleObj[_key] || _value.includes('import') || !styleObj[_key].includes('import')) styleObj[_key] = _value;
-      }
-      if (node.name == 'img') {
-        if (attrs['data-src']) {
-          attrs.src = attrs.src || attrs['data-src'];
-          attrs['data-src'] = void 0;
-        }
-        if (attrs.src && !attrs.ignore) {
-          if (this.bubble()) attrs.i = (this.imgNum++).toString();else attrs.ignore = 'T';
-        }
-        if (attrs.ignore) styleObj['max-width'] = '100%';
-        var width;
-        if (styleObj.width) width = styleObj.width;else if (attrs.width) width = attrs.width.includes('%') ? attrs.width : attrs.width + 'px';
-        if (width) {
-          styleObj.width = width;
-          attrs.width = '100%';
-          if (parseInt(width) > screenWidth) {
-            styleObj.height = '';
-            if (attrs.height) attrs.height = void 0;
-          }
-        }
-        if (styleObj.height) {
-          attrs.height = styleObj.height;
-          styleObj.height = '';
-        } else if (attrs.height && !attrs.height.includes('%')) attrs.height += 'px';
-      }
-      for (var key in styleObj) {
-        var value = styleObj[key];
-        if (key.includes('flex') || key == 'order' || key == 'self-align') node.c = 1;
-        // 填充链接
-        if (value.includes('url')) {
-          var j = value.indexOf('(');
-          if (j++ != -1) {
-            while (value[j] == '"' || value[j] == "'" || blankChar[value[j]]) {
-              j++;
-            }
-            value = value.substr(0, j) + this.getUrl(value.substr(j));
-          }
-        }
-        // 转换 rpx
-        else if (value.includes('rpx')) value = value.replace(/[0-9.]+\s*rpx/g, function ($) {
-          return parseFloat($) * screenWidth / 750 + 'px';
-        });else if (key == 'white-space' && value.includes('pre')) this.pre = node.pre = true;
-        style += ";".concat(key, ":").concat(value);
-      }
-      style = style.substr(1);
-      if (style) attrs.style = style;
-    }
-    // 节点出栈处理
-  }, {
-    key: "popNode",
-    value: function popNode(node) {
-      // 空白符处理
-      if (node.pre) {
-        node.pre = this.pre = void 0;
-        for (var i = this.STACK.length; i--;) {
-          if (this.STACK[i].pre) this.pre = true;
-        }
-      }
-      var siblings = this.siblings(),
-        len = siblings.length,
-        childs = node.children.length;
-      if (node.name == 'head' || cfg.filter && cfg.filter(node, this) == false) return siblings.pop();
-      var attrs = node.attrs;
-      // 替换一些标签名
-      if (cfg.blockTags[node.name]) node.name = 'div';else if (!cfg.trustTags[node.name]) node.name = 'span';
-      // 去除块标签前后空串
-      if (node.name == 'div' || node.name == 'p' || node.name[0] == 't') {
-        if (len > 1 && siblings[len - 2].text == ' ') siblings.splice(--len - 1, 1);
-        if (childs && node.children[childs - 1].text == ' ') node.children.pop();
-      }
-      // 处理列表
-      if (node.c && (node.name == 'ul' || node.name == 'ol')) {
-        if ((node.attrs.style || '').includes('list-style:none')) {
-          for (var _i = 0, child; child = node.children[_i++];) {
-            if (child.name == 'li') child.name = 'div';
-          }
-        } else if (node.name == 'ul') {
-          var floor = 1;
-          for (var _i2 = this.STACK.length; _i2--;) {
-            if (this.STACK[_i2].name == 'ul') floor++;
-          }
-          if (floor != 1) for (var _i3 = childs; _i3--;) {
-            node.children[_i3].floor = floor;
-          }
-        } else {
-          for (var _i4 = 0, num = 1, _child; _child = node.children[_i4++];) {
-            if (_child.name == 'li') {
-              _child.type = 'ol';
-              _child.num = function (num, type) {
-                if (type == 'a') return String.fromCharCode(97 + (num - 1) % 26);
-                if (type == 'A') return String.fromCharCode(65 + (num - 1) % 26);
-                if (type == 'i' || type == 'I') {
-                  num = (num - 1) % 99 + 1;
-                  var one = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX'],
-                    ten = ['X', 'XX', 'XXX', 'XL', 'L', 'LX', 'LXX', 'LXXX', 'XC'],
-                    res = (ten[Math.floor(num / 10) - 1] || '') + (one[num % 10 - 1] || '');
-                  if (type == 'i') return res.toLowerCase();
-                  return res;
-                }
-                return num;
-              }(num++, attrs.type) + '.';
-            }
-          }
-        }
-      }
-      // 处理表格的边框
-      if (node.name == 'table') {
-        var padding = attrs.cellpadding,
-          spacing = attrs.cellspacing,
-          border = attrs.border;
-        if (node.c) {
-          this.bubble();
-          if (!padding) padding = 2;
-          if (!spacing) spacing = 2;
-        }
-        if (border) attrs.style = "border:".concat(border, "px solid gray;").concat(attrs.style || '');
-        if (spacing) attrs.style = "border-spacing:".concat(spacing, "px;").concat(attrs.style || '');
-        if (border || padding) (function f(ns) {
-          for (var i = 0, n; n = ns[i]; i++) {
-            if (n.name == 'th' || n.name == 'td') {
-              if (border) n.attrs.style = "border:".concat(border, "px solid gray;").concat(n.attrs.style);
-              if (padding) n.attrs.style = "padding:".concat(padding, "px;").concat(n.attrs.style);
-            } else f(n.children || []);
-          }
-        })(node.children);
-      }
-      this.CssHandler.pop && this.CssHandler.pop(node);
-      // 自动压缩
-      if (node.name == 'div' && !Object.keys(attrs).length && childs == 1 && node.children[0].name == 'div') siblings[len - 1] = node.children[0];
-    }
-    // 工具函数
-  }, {
-    key: "bubble",
-    value: function bubble() {
-      for (var i = this.STACK.length, item; item = this.STACK[--i];) {
-        if (cfg.richOnlyTags[item.name]) {
-          if (item.name == 'table' && !Object.hasOwnProperty.call(item, 'c')) item.c = 1;
-          return false;
-        }
-        item.c = 1;
-      }
-      return true;
-    }
-  }, {
-    key: "decode",
-    value: function decode(val, amp) {
-      var i = -1,
-        j,
-        en;
-      while (1) {
-        if ((i = val.indexOf('&', i + 1)) == -1) break;
-        if ((j = val.indexOf(';', i + 2)) == -1) break;
-        if (val[i + 1] == '#') {
-          en = parseInt((val[i + 2] == 'x' ? '0' : '') + val.substring(i + 2, j));
-          if (!isNaN(en)) val = val.substr(0, i) + String.fromCharCode(en) + val.substr(j + 1);
-        } else {
-          en = val.substring(i + 1, j);
-          if (cfg.entities[en] || en == amp) val = val.substr(0, i) + (cfg.entities[en] || '&') + val.substr(j + 1);
-        }
-      }
-      return val;
-    }
-  }, {
-    key: "getUrl",
-    value: function getUrl(url) {
-      if (url[0] == '/') {
-        if (url[1] == '/') url = this.protocol + ':' + url;else if (this.domain) url = this.domain + url;
-      } else if (this.domain && url.indexOf('data:') != 0 && !url.includes('://')) url = this.domain + '/' + url;
-      return url;
-    }
-  }, {
-    key: "Text",
-    value:
-    // 状态机
-    function Text(c) {
-      if (c == '<') {
-        var next = this.data[this.i + 1],
-          isLetter = function isLetter(c) {
-            return c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z';
-          };
-        if (isLetter(next)) {
-          this.setText();
-          this.start = this.i + 1;
-          this.state = this.TagName;
-        } else if (next == '/') {
-          this.setText();
-          if (isLetter(this.data[++this.i + 1])) {
-            this.start = this.i + 1;
-            this.state = this.EndTag;
-          } else this.Comment();
-        } else if (next == '!') {
-          this.setText();
-          this.Comment();
-        }
-      }
-    }
-  }, {
-    key: "Comment",
-    value: function Comment() {
-      var key;
-      if (this.data.substring(this.i + 2, this.i + 4) == '--') key = '-->';else if (this.data.substring(this.i + 2, this.i + 9) == '[CDATA[') key = ']]>';else key = '>';
-      if ((this.i = this.data.indexOf(key, this.i + 2)) == -1) this.i = this.data.length;else this.i += key.length - 1;
-      this.start = this.i + 1;
-      this.state = this.Text;
-    }
-  }, {
-    key: "TagName",
-    value: function TagName(c) {
-      if (blankChar[c]) {
-        this.tagName = this.section();
-        while (blankChar[this.data[this.i]]) {
-          this.i++;
-        }
-        if (this.isClose()) this.setNode();else {
-          this.start = this.i;
-          this.state = this.AttrName;
-        }
-      } else if (this.isClose()) {
-        this.tagName = this.section();
-        this.setNode();
-      }
-    }
-  }, {
-    key: "AttrName",
-    value: function AttrName(c) {
-      var blank = blankChar[c];
-      if (blank) {
-        this.attrName = this.section();
-        c = this.data[this.i];
-      }
-      if (c == '=') {
-        if (!blank) this.attrName = this.section();
-        while (blankChar[this.data[++this.i]]) {
-          ;
-        }
-        this.start = this.i--;
-        this.state = this.AttrValue;
-      } else if (blank) this.setAttr();else if (this.isClose()) {
-        this.attrName = this.section();
-        this.setAttr();
-      }
-    }
-  }, {
-    key: "AttrValue",
-    value: function AttrValue(c) {
-      if (c == '"' || c == "'") {
-        this.start++;
-        if ((this.i = this.data.indexOf(c, this.i + 1)) == -1) return this.i = this.data.length;
-        this.attrVal = this.section();
-        this.i++;
-      } else {
-        for (; !blankChar[this.data[this.i]] && !this.isClose(); this.i++) {
-          ;
-        }
-        this.attrVal = this.section();
-      }
-      this.setAttr();
-    }
-  }, {
-    key: "EndTag",
-    value: function EndTag(c) {
-      if (blankChar[c] || c == '>' || c == '/') {
-        var name = this.section().toLowerCase();
-        for (var i = this.STACK.length; i--;) {
-          if (this.STACK[i].name == name) break;
-        }
-        if (i != -1) {
-          var node;
-          while ((node = this.STACK.pop()).name != name) {
-            ;
-          }
-          this.popNode(node);
-        } else if (name == 'p' || name == 'br') this.siblings().push({
-          name: name,
-          attrs: {}
-        });
-        this.i = this.data.indexOf('>', this.i);
-        this.start = this.i + 1;
-        if (this.i == -1) this.i = this.data.length;else this.state = this.Text;
-      }
-    }
-  }]);
-  return MpHtmlParser;
-}();
-module.exports = MpHtmlParser;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/wx.js */ 1)["default"]))
-
-/***/ }),
-
-/***/ 414:
-/*!******************************************************************************************************!*\
-  !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/components/jyf-parser/libs/config.js ***!
-  \******************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(wx) {/* 配置文件 */
-
-var canIUse = wx.canIUse('editor'); // 高基础库标识，用于兼容
-
-module.exports = {
-  // 过滤器函数
-  filter: null,
-  // 代码高亮函数
-  highlight: null,
-  // 文本处理函数
-  onText: null,
-  // 实体编码列表
-  entities: {
-    quot: '"',
-    apos: "'",
-    semi: ';',
-    nbsp: '\xA0',
-    ensp: "\u2002",
-    emsp: "\u2003",
-    ndash: '–',
-    mdash: '—',
-    middot: '·',
-    lsquo: '‘',
-    rsquo: '’',
-    ldquo: '“',
-    rdquo: '”',
-    bull: '•',
-    hellip: '…'
-  },
-  blankChar: makeMap(' ,\xA0,\t,\r,\n,\f'),
-  // 块级标签，将被转为 div
-  blockTags: makeMap('address,article,aside,body,caption,center,cite,footer,header,html,nav,section' + (canIUse ? '' : ',pre')),
-  // 将被移除的标签
-  ignoreTags: makeMap('area,base,basefont,canvas,command,frame,input,isindex,keygen,link,map,meta,param,script,source,style,svg,textarea,title,track,use,wbr' + (canIUse ? ',rp' : '') + ',embed,iframe'),
-  // 只能被 rich-text 显示的标签
-  richOnlyTags: makeMap('a,colgroup,fieldset,legend,picture,table' + (canIUse ? ',bdi,bdo,caption,rt,ruby' : '')),
-  // 自闭合的标签
-  selfClosingTags: makeMap('area,base,basefont,br,col,circle,ellipse,embed,frame,hr,img,input,isindex,keygen,line,link,meta,param,path,polygon,rect,source,track,use,wbr'),
-  // 信任的属性
-  trustAttrs: makeMap('align,alt,app-id,author,autoplay,border,cellpadding,cellspacing,class,color,colspan,controls,data-src,dir,face,height,href,id,ignore,loop,media,muted,name,path,poster,rowspan,size,span,src,start,style,type,unit-id,width,xmlns'),
-  // bool 型的属性
-  boolAttrs: makeMap('autoplay,controls,ignore,loop,muted'),
-  // 信任的标签
-  trustTags: makeMap('a,abbr,ad,audio,b,blockquote,br,code,col,colgroup,dd,del,dl,dt,div,em,fieldset,h1,h2,h3,h4,h5,h6,hr,i,img,ins,label,legend,li,ol,p,q,source,span,strong,sub,sup,table,tbody,td,tfoot,th,thead,tr,title,ul,video' + (canIUse ? ',bdi,bdo,caption,pre,rt,ruby' : '')),
-  // 默认的标签样式
-  userAgentStyles: {
-    address: 'font-style:italic',
-    big: 'display:inline;font-size:1.2em',
-    blockquote: 'background-color:#f6f6f6;border-left:3px solid #dbdbdb;color:#6c6c6c;padding:5px 0 5px 10px',
-    caption: 'display:table-caption;text-align:center',
-    center: 'text-align:center',
-    cite: 'font-style:italic',
-    dd: 'margin-left:40px',
-    mark: 'background-color:yellow',
-    pre: 'font-family:monospace;white-space:pre;overflow:scroll',
-    s: 'text-decoration:line-through',
-    small: 'display:inline;font-size:0.8em',
-    u: 'text-decoration:underline'
-  }
-};
-function makeMap(str) {
-  var map = {},
-    list = str.split(',');
-  for (var i = list.length; i--;) {
-    map[list[i]] = true;
-  }
-  return map;
-}
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/wx.js */ 1)["default"]))
-
-/***/ }),
-
-/***/ 415:
-/*!**********************************************************************************************************!*\
-  !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/components/jyf-parser/libs/CssHandler.js ***!
-  \**********************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var _classCallCheck = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ 23);
-var _createClass = __webpack_require__(/*! @babel/runtime/helpers/createClass */ 24);
-var _defineProperty = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11);
-/*
-  解析和匹配 Css 的选择器
-  github：https://github.com/jin-yufeng/Parser
-  docs：https://jin-yufeng.github.io/Parser
-  author：JinYufeng
-  update：2020/03/15
-*/
-var cfg = __webpack_require__(/*! ./config.js */ 414);
-var CssHandler = /*#__PURE__*/function () {
-  "use strict";
-
-  function CssHandler(tagStyle) {
-    var _this = this;
-    _classCallCheck(this, CssHandler);
-    _defineProperty(this, "getStyle", function (data) {
-      return _this.styles = new CssParser(data, _this.styles).parse();
-    });
-    var styles = Object.assign({}, cfg.userAgentStyles);
-    for (var item in tagStyle) {
-      styles[item] = (styles[item] ? styles[item] + ';' : '') + tagStyle[item];
-    }
-    this.styles = styles;
-  }
-  _createClass(CssHandler, [{
-    key: "match",
-    value: function match(name, attrs) {
-      var tmp,
-        matched = (tmp = this.styles[name]) ? tmp + ';' : '';
-      if (attrs.class) {
-        var items = attrs.class.split(' ');
-        for (var i = 0, item; item = items[i]; i++) {
-          if (tmp = this.styles['.' + item]) matched += tmp + ';';
-        }
-      }
-      if (tmp = this.styles['#' + attrs.id]) matched += tmp + ';';
-      return matched;
-    }
-  }]);
-  return CssHandler;
-}();
-module.exports = CssHandler;
-var CssParser = /*#__PURE__*/function () {
-  "use strict";
-
-  function CssParser(data, init) {
-    var _this2 = this;
-    _classCallCheck(this, CssParser);
-    _defineProperty(this, "section", function () {
-      return _this2.data.substring(_this2.start, _this2.i);
-    });
-    _defineProperty(this, "isLetter", function (c) {
-      return c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z';
-    });
-    this.data = data;
-    this.floor = 0;
-    this.i = 0;
-    this.list = [];
-    this.res = init;
-    this.state = this.Space;
-  }
-  _createClass(CssParser, [{
-    key: "parse",
-    value: function parse() {
-      for (var c; c = this.data[this.i]; this.i++) {
-        this.state(c);
-      }
-      return this.res;
-    }
-  }, {
-    key: "Space",
-    value:
-    // 状态机
-    function Space(c) {
-      if (c == '.' || c == '#' || this.isLetter(c)) {
-        this.start = this.i;
-        this.state = this.Name;
-      } else if (c == '/' && this.data[this.i + 1] == '*') this.Comment();else if (!cfg.blankChar[c] && c != ';') this.state = this.Ignore;
-    }
-  }, {
-    key: "Comment",
-    value: function Comment() {
-      this.i = this.data.indexOf('*/', this.i) + 1;
-      if (!this.i) this.i = this.data.length;
-      this.state = this.Space;
-    }
-  }, {
-    key: "Ignore",
-    value: function Ignore(c) {
-      if (c == '{') this.floor++;else if (c == '}' && ! --this.floor) this.state = this.Space;
-    }
-  }, {
-    key: "Name",
-    value: function Name(c) {
-      if (cfg.blankChar[c]) {
-        this.list.push(this.section());
-        this.state = this.NameSpace;
-      } else if (c == '{') {
-        this.list.push(this.section());
-        this.Content();
-      } else if (c == ',') {
-        this.list.push(this.section());
-        this.Comma();
-      } else if (!this.isLetter(c) && (c < '0' || c > '9') && c != '-' && c != '_') this.state = this.Ignore;
-    }
-  }, {
-    key: "NameSpace",
-    value: function NameSpace(c) {
-      if (c == '{') this.Content();else if (c == ',') this.Comma();else if (!cfg.blankChar[c]) this.state = this.Ignore;
-    }
-  }, {
-    key: "Comma",
-    value: function Comma() {
-      while (cfg.blankChar[this.data[++this.i]]) {
-        ;
-      }
-      if (this.data[this.i] == '{') this.Content();else {
-        this.start = this.i--;
-        this.state = this.Name;
-      }
-    }
-  }, {
-    key: "Content",
-    value: function Content() {
-      this.start = ++this.i;
-      if ((this.i = this.data.indexOf('}', this.i)) == -1) this.i = this.data.length;
-      var content = this.section();
-      for (var i = 0, item; item = this.list[i++];) {
-        if (this.res[item]) this.res[item] += ';' + content;else this.res[item] = content;
-      }
-      this.list = [];
-      this.state = this.Space;
-    }
-  }]);
-  return CssParser;
-}();
-
-/***/ }),
-
-/***/ 42:
+/* 42 */
 /*!**************************************************************************************!*\
   !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/api/custom-points.js ***!
   \**************************************************************************************/
@@ -22100,8 +12931,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-
-/***/ 43:
+/* 43 */
 /*!************************************************************************************!*\
   !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/api/points-mall.js ***!
   \************************************************************************************/
@@ -22852,8 +13682,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-
-/***/ 44:
+/* 44 */
 /*!****************************************************************************************!*\
   !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/api/attendance-list.js ***!
   \****************************************************************************************/
@@ -22923,8 +13752,7 @@ var _default = [{
 exports.default = _default;
 
 /***/ }),
-
-/***/ 45:
+/* 45 */
 /*!*****************************************************************************************!*\
   !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/api/today-attendance.js ***!
   \*****************************************************************************************/
@@ -22963,8 +13791,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-
-/***/ 46:
+/* 46 */
 /*!*******************************************************************************!*\
   !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/api/orders.js ***!
   \*******************************************************************************/
@@ -23710,8 +14537,7 @@ var _default = [{
 exports.default = _default;
 
 /***/ }),
-
-/***/ 47:
+/* 47 */
 /*!*****************************************************************************************!*\
   !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/api/customer-coupons.js ***!
   \*****************************************************************************************/
@@ -23824,168 +14650,7 @@ var _default = [{
 exports.default = _default;
 
 /***/ }),
-
-/***/ 48:
-/*!***********************************************************************************!*\
-  !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/api/gift-cards.js ***!
-  \***********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  "banner_activity_id": 38,
-  "content": "<p style=\"text-align: center;\"><br></p><p><span>&nbsp;</span>1.发售渠道：奈雪の茶心意卡券在“奈雪点单”小程序内独立发售，适用独立的价格体系（奈雪の茶心意卡券为电子卡，非实体卡）。</p><p><span>2.兑换产品：凭借奈雪の茶心意卡券，可在中国境内（香港、台湾、澳门地区除外）各适用门店免费兑换相应卡券上载明的产品。</span></p><p><span>3.&nbsp;转赠功能：购买卡券后可直接放入购卡人礼品卡列表，或在24小时内将卡券转赠给好友，仅可转赠一次；如您送出的心意卡券未在转赠后24小时内被您的好友领取，则未领取的卡券将自动退回到您的礼品卡列表且无法再次转赠，届时您可自行使用。如购买多张卡券后需赠送给不同好友，需进入礼品卡列表，查看单个礼品卡详情时进行赠送。</span></p><p><span>4.有效期限：奈雪の茶心意卡券自购买之日起三年内有效。</span></p><p>5.适用范围：奈雪の茶心意卡券可在中国境内（香港、台湾、澳门地区除外）奈雪の茶门店内的柜台与小程序使用，受限于具体可兑换的产品及其相应的销售渠道。</p><p><span>6.下单限制：奈雪の茶心意卡券可在奈雪の茶门店出示会员码后使用，或在“奈雪点单”小程序内使用，小程序堂食与小程序外送订单均支持；不适用与第三方在线点餐平台的外送业务等渠道订单。</span></p><p><span>7.优惠并用：奈雪の茶心意卡券可以和其他优惠券同时使用。</span></p><p><span>8.扫码核销：请在点单前向服务员明示，奈雪の茶心意卡券不可兑换现金，不设找零。</span></p><p><span>9.售罄预案：如奈雪の茶心意卡券可兑换的产品临时售罄，可根据服务员的指引为您替换类似价格的产品。</span></p><p><span>10.&nbsp;留言功能：您在转赠奈雪の茶心意卡券时，您可在留言栏里为好友填写留言。好友在打开您所赠送的心意卡券的同时，也能收到并查阅您的留言。需注意的是，您在使用上述留言功能时，应遵守所适用的中国法律法规及平台协议与规范，可见《微信公众平台服务协议》、《微信公众平台运营规范》、《腾讯服务协议》以及微信公众平台运营方制定并不时修订的其他规则和规定，并承担与此相关的所有法律责任。</span></p><p><span>11.退款处理：</span><span>在购买卡券之日起15日内，如卡券未经激活、绑定或使用的，购卡人方可申请退卡。对于符合退卡条件的预付卡，发卡企业将扣取卡内资金余额的2%作为退卡手续费。如退卡人要求退还其在购买时享受过任何折扣或优惠的卡券，发卡企业或售卡企业在计算退款时将按退卡人在购买时实际支付的金额或按该卡券全额扣除上述优惠后的金额办理退款。如退卡人购买卡券可按其年度累计购卡金额享有任何折扣或优惠的，发卡企业在办理退卡后会将退卡金额从其年度累计购卡金额中扣除。</span><span>前述“符合退卡条件”的具体情况如下：</span></p><p><span>(1)退款人必须是奈雪の茶心意卡券的购买人，若转赠成功，则奈雪の茶心意卡券不接受退款；在任何情况下，获得心意卡券的受赠人不予进行退款处理。</span></p><p><span>(2)上述“成功转赠”仅包括受赠人点击领取接受所转赠的心意卡券的情况，而不包括超过转赠后的24小时内受赠人未接受而该心意卡券将自动退还并添加到赠送人礼品卡列表的情况。</span></p><p><span>12.开具发票：您在购买奈雪の茶心意卡券后可在“奈雪点单”小程序-我的-我的订单内，找到对应的礼品卡购买记录，点击“开发票”。&nbsp;</span></p><p><span>13.其他问题：如有其他疑问，请致电奈雪の茶客服热线电话4008-3099-56。</span></p><p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n</p><p>&nbsp;</p><style>\n@font-face{\nfont-family:\"Times New Roman\";\n}\n\n@font-face{\nfont-family:\"宋体\";\n}\n\n@font-face{\nfont-family:\"Calibri\";\n}\n\n@font-face{\nfont-family:\"Microsoft YaHei UI\";\n}\n\n@list l0:level1{\nmso-level-start-at:3;\nmso-level-number-format:decimal;\nmso-level-suffix:tab;\nmso-level-text:\"%1.\";\nmso-level-tab-stop:15.6000pt;\nmso-level-number-position:left;\nmargin-left:0.0000pt;\ntext-indent:0.0000pt;\nfont-family:'Times New Roman';}\n\n@list l1:level1{\nmso-level-start-at:10;\nmso-level-number-format:decimal;\nmso-level-suffix:tab;\nmso-level-text:\"%1.\";\nmso-level-tab-stop:15.6000pt;\nmso-level-number-position:left;\nmargin-left:0.0000pt;\ntext-indent:0.0000pt;\nfont-family:'Times New Roman';}\n\np.MsoNormal{\nmso-style-name:正文;\nmso-style-parent:\"\";\nmargin:0pt;\nmargin-bottom:.0001pt;\nmso-pagination:none;\ntext-align:justify;\ntext-justify:inter-ideograph;\nfont-family:Calibri;\nmso-fareast-font-family:宋体;\nmso-bidi-font-family:'Times New Roman';\nfont-size:10.5000pt;\nmso-font-kerning:1.0000pt;\n}\n\np.p{\nmso-style-name:\"普通\\(网站\\)\";\nmargin-top:5.0000pt;\nmargin-right:0.0000pt;\nmargin-bottom:5.0000pt;\nmargin-left:0.0000pt;\nmso-margin-top-alt:auto;\nmso-margin-bottom-alt:auto;\nmso-pagination:none;\ntext-align:left;\nfont-family:Calibri;\nmso-fareast-font-family:宋体;\nmso-bidi-font-family:'Times New Roman';\nfont-size:12.0000pt;\n}\n\nspan.msoIns{\nmso-style-type:export-only;\nmso-style-name:\"\";\ntext-decoration:underline;\ntext-underline:single;\ncolor:blue;\n}\n\nspan.msoDel{\nmso-style-type:export-only;\nmso-style-name:\"\";\ntext-decoration:line-through;\ncolor:red;\n}\n@page{mso-page-border-surround-header:no;\n\tmso-page-border-surround-footer:no;}@page Section0{\nmargin-top:72.0000pt;\nmargin-bottom:72.0000pt;\nmargin-left:90.0000pt;\nmargin-right:90.0000pt;\nsize:595.3000pt 841.9000pt;\nlayout-grid:15.6000pt;\n}\ndiv.Section0{page:Section0;}</style><style>\n@font-face{\nfont-family:\"Times New Roman\";\n}\n\n@font-face{\nfont-family:\"宋体\";\n}\n\n@font-face{\nfont-family:\"Calibri\";\n}\n\n@font-face{\nfont-family:\"Microsoft YaHei UI\";\n}\n\np.MsoNormal{\nmso-style-name:正文;\nmso-style-parent:\"\";\nmargin:0pt;\nmargin-bottom:.0001pt;\nmso-pagination:none;\ntext-align:justify;\ntext-justify:inter-ideograph;\nfont-family:Calibri;\nmso-fareast-font-family:宋体;\nmso-bidi-font-family:'Times New Roman';\nfont-size:10.5000pt;\nmso-font-kerning:1.0000pt;\n}\n\np.p{\nmso-style-name:\"普通\\(网站\\)\";\nmargin-top:5.0000pt;\nmargin-right:0.0000pt;\nmargin-bottom:5.0000pt;\nmargin-left:0.0000pt;\nmso-margin-top-alt:auto;\nmso-margin-bottom-alt:auto;\nmso-pagination:none;\ntext-align:left;\nfont-family:Calibri;\nmso-fareast-font-family:宋体;\nmso-bidi-font-family:'Times New Roman';\nfont-size:12.0000pt;\n}\n\nspan.msoIns{\nmso-style-type:export-only;\nmso-style-name:\"\";\ntext-decoration:underline;\ntext-underline:single;\ncolor:blue;\n}\n\nspan.msoDel{\nmso-style-type:export-only;\nmso-style-name:\"\";\ntext-decoration:line-through;\ncolor:red;\n}\n@page{mso-page-border-surround-header:no;\n\tmso-page-border-surround-footer:no;}@page Section0{\nmargin-top:72.0000pt;\nmargin-bottom:72.0000pt;\nmargin-left:90.0000pt;\nmargin-right:90.0000pt;\nsize:595.3000pt 841.9000pt;\nlayout-grid:15.6000pt;\n}\ndiv.Section0{page:Section0;}</style>",
-  "category_list": [{
-    "id": 41,
-    "themesList": [{
-      "activityId": 41,
-      "activityName": "梦回童年六一玩趣",
-      "activityCode": "474613760767721473",
-      "cardShelvesCategoryId": 41,
-      "imageUrls": "https://img-shop.qmimg.cn/s36192/2020/06/02/feb01bdc9e018d7a22.jpg"
-    }, {
-      "activityId": 42,
-      "activityName": "“大宝宝”通行证",
-      "activityCode": "474613956256256001",
-      "cardShelvesCategoryId": 41,
-      "imageUrls": "https://img-shop.qmimg.cn/s36192/2020/06/02/c58ae1b6c7af70ace3.jpg"
-    }],
-    "name": "送TA六一限定卡，陪TA一口回到童年",
-    "activityIds": "41,42"
-  }, {
-    "id": 42,
-    "themesList": [{
-      "activityId": 40,
-      "activityName": "拥抱我的小宇宙",
-      "activityCode": "474613468311351298",
-      "cardShelvesCategoryId": 42,
-      "imageUrls": "https://img-shop.qmimg.cn/s36192/2020/05/29/610a53aa1d08c04e0c.jpg"
-    }, {
-      "activityId": 35,
-      "activityName": "给生活一个拥抱",
-      "activityCode": "474611855417462785",
-      "cardShelvesCategoryId": 42,
-      "imageUrls": "https://img-shop.qmimg.cn/s36192/2020/05/29/a359015f2be252f3b7.jpg"
-    }, {
-      "activityId": 37,
-      "activityName": "拥抱所爱",
-      "activityCode": "474612252873490433",
-      "cardShelvesCategoryId": 42,
-      "imageUrls": "https://img-shop.qmimg.cn/s36192/2020/05/29/b1544272ccbdc1daf4.jpg"
-    }, {
-      "activityId": 38,
-      "activityName": "拥抱同一份热爱",
-      "activityCode": "474612560090124288",
-      "cardShelvesCategoryId": 42,
-      "imageUrls": "https://img-shop.qmimg.cn/s36192/2020/05/29/d5c19896bd99edb39f.jpg"
-    }, {
-      "activityId": 39,
-      "activityName": "拥抱真实的自我",
-      "activityCode": "474613118988877825",
-      "cardShelvesCategoryId": 42,
-      "imageUrls": "https://img-shop.qmimg.cn/s36192/2020/05/29/c7c47682df8d342975.jpg"
-    }, {
-      "activityId": 36,
-      "activityName": "拥抱一样的爱",
-      "activityCode": "474612060032389121",
-      "cardShelvesCategoryId": 42,
-      "imageUrls": "https://img-shop.qmimg.cn/s36192/2020/05/29/a63b3c9f27821c0f81.jpg"
-    }],
-    "name": "送TA抱抱治愈卡，用心意卡说出爱",
-    "activityIds": "40,35,37,38,39,36"
-  }, {
-    "id": 43,
-    "themesList": [{
-      "activityId": 33,
-      "activityName": "霸气入夏",
-      "activityCode": "474611160824172545",
-      "cardShelvesCategoryId": 43,
-      "imageUrls": "https://img-shop.qmimg.cn/s36192/2020/06/02/93d2e5e3e768c04581.jpg"
-    }, {
-      "activityId": 34,
-      "activityName": "梅“你”不行",
-      "activityCode": "474611484393525248",
-      "cardShelvesCategoryId": 43,
-      "imageUrls": "https://img-shop.qmimg.cn/s36192/2020/06/02/79ba8839a547c49835.jpg"
-    }],
-    "name": "送TA“梅你不行”卡，美好如期而至",
-    "activityIds": "33,34"
-  }, {
-    "id": 44,
-    "themesList": [{
-      "activityId": 31,
-      "activityName": "夏日宝藏派对",
-      "activityCode": "474609071208693761",
-      "cardShelvesCategoryId": 44,
-      "imageUrls": "https://img-shop.qmimg.cn/s36192/2020/06/02/5f174643c17873cccc.jpg"
-    }, {
-      "activityId": 32,
-      "activityName": "开启肆意狂欢",
-      "activityCode": "474610542633451521",
-      "cardShelvesCategoryId": 44,
-      "imageUrls": "https://img-shop.qmimg.cn/s36192/2020/06/02/fcc00dd039b1853b23.jpg"
-    }],
-    "name": "送TA夏日宝藏卡，一起肆意狂欢",
-    "activityIds": "31,32"
-  }, {
-    "id": 45,
-    "themesList": [{
-      "activityId": 43,
-      "activityName": "立刻暴富",
-      "activityCode": "474615349960560640",
-      "cardShelvesCategoryId": 45,
-      "imageUrls": "https://img-shop.qmimg.cn/s36192/2020/06/02/c4354f1e3b3b1e5d6d.png"
-    }, {
-      "activityId": 47,
-      "activityName": "事事顺心",
-      "activityCode": "474616223470092289",
-      "cardShelvesCategoryId": 45,
-      "imageUrls": "https://img-shop.qmimg.cn/s36192/2020/06/02/19e4fc54f333831bbe.png"
-    }, {
-      "activityId": 46,
-      "activityName": "梦想成真",
-      "activityCode": "474615973796401152",
-      "cardShelvesCategoryId": 45,
-      "imageUrls": "https://img-shop.qmimg.cn/s36192/2020/06/02/7fa43b1e30f0cfa14d.png"
-    }, {
-      "activityId": 48,
-      "activityName": "身体健康",
-      "activityCode": "474616428856770561",
-      "cardShelvesCategoryId": 45,
-      "imageUrls": "https://img-shop.qmimg.cn/s36192/2020/06/02/13a85c1197ff272c27.png"
-    }, {
-      "activityId": 44,
-      "activityName": "升职加薪",
-      "activityCode": "474615521536954369",
-      "cardShelvesCategoryId": 45,
-      "imageUrls": "https://img-shop.qmimg.cn/s36192/2020/06/02/ea436b65137034f7e9.png"
-    }, {
-      "activityId": 45,
-      "activityName": "顺利脱单",
-      "activityCode": "474615674981601280",
-      "cardShelvesCategoryId": 45,
-      "imageUrls": "https://img-shop.qmimg.cn/s36192/2020/06/02/f211fdd453b4c22917.png"
-    }],
-    "name": "送TA瑞兽祝福卡，守护美好心意",
-    "activityIds": "43,47,46,48,44,45"
-  }],
-  "banner_activity_name": "拥抱同一份热爱",
-  "img": "https://img-shop.qmimg.cn/s36192/2020/06/03/a95139a2af23330d93.jpg",
-  "show_type": 1,
-  "title": "奈雪の茶心意卡券购买及使用规则"
-};
-exports.default = _default;
-
-/***/ }),
-
-/***/ 49:
+/* 48 */
 /*!********************************************************************************!*\
   !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/common/util.js ***!
   \********************************************************************************/
@@ -24092,26 +14757,7 @@ module.exports = {
 };
 
 /***/ }),
-
-/***/ 5:
-/*!**************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/slicedToArray.js ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var arrayWithHoles = __webpack_require__(/*! ./arrayWithHoles.js */ 6);
-var iterableToArrayLimit = __webpack_require__(/*! ./iterableToArrayLimit.js */ 7);
-var unsupportedIterableToArray = __webpack_require__(/*! ./unsupportedIterableToArray.js */ 8);
-var nonIterableRest = __webpack_require__(/*! ./nonIterableRest.js */ 10);
-function _slicedToArray(arr, i) {
-  return arrayWithHoles(arr) || iterableToArrayLimit(arr, i) || unsupportedIterableToArray(arr, i) || nonIterableRest();
-}
-module.exports = _slicedToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
-/***/ 50:
+/* 49 */
 /*!********************************************************************************!*\
   !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/store/index.js ***!
   \********************************************************************************/
@@ -24126,10 +14772,10 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 51));
-var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 53));
+var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 50));
+var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 52));
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 25));
-var _vuex = _interopRequireDefault(__webpack_require__(/*! vuex */ 54));
+var _vuex = _interopRequireDefault(__webpack_require__(/*! vuex */ 53));
 var _api = _interopRequireDefault(__webpack_require__(/*! @/api */ 33));
 var _addresses = _interopRequireDefault(__webpack_require__(/*! @/api/addresses */ 40));
 _vue.default.use(_vuex.default);
@@ -24203,8 +14849,7 @@ var _default = store;
 exports.default = _default;
 
 /***/ }),
-
-/***/ 51:
+/* 50 */
 /*!************************************************************************************************!*\
   !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/@babel/runtime/regenerator/index.js ***!
   \************************************************************************************************/
@@ -24213,12 +14858,11 @@ exports.default = _default;
 
 // TODO(Babel 8): Remove this file.
 
-var runtime = __webpack_require__(/*! @babel/runtime/helpers/regeneratorRuntime */ 52)();
+var runtime = __webpack_require__(/*! @babel/runtime/helpers/regeneratorRuntime */ 51)();
 module.exports = runtime;
 
 /***/ }),
-
-/***/ 52:
+/* 51 */
 /*!*******************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/regeneratorRuntime.js ***!
   \*******************************************************************/
@@ -24539,8 +15183,7 @@ function _regeneratorRuntime() {
 module.exports = _regeneratorRuntime, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
-
-/***/ 53:
+/* 52 */
 /*!*****************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/asyncToGenerator.js ***!
   \*****************************************************************/
@@ -24580,8 +15223,7 @@ function _asyncToGenerator(fn) {
 module.exports = _asyncToGenerator, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
-
-/***/ 54:
+/* 53 */
 /*!**************************************************************************************!*\
   !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vuex3/dist/vuex.common.js ***!
   \**************************************************************************************/
@@ -25837,8 +16479,7 @@ module.exports = index_cjs;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../webpack/buildin/global.js */ 3)))
 
 /***/ }),
-
-/***/ 55:
+/* 54 */
 /*!************************************************************************************!*\
   !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/common/js/utils.js ***!
   \************************************************************************************/
@@ -25846,7 +16487,7 @@ module.exports = index_cjs;
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(uni) {var _typeof = __webpack_require__(/*! @babel/runtime/helpers/typeof */ 13);
-var app_info = __webpack_require__(/*! @/static/app_info.js */ 56);
+var app_info = __webpack_require__(/*! @/static/app_info.js */ 55);
 var api_host = app_info.api_host;
 var version = app_info.version;
 var api_prefix = api_host;
@@ -26188,8 +16829,7 @@ module.exports = {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-
-/***/ 56:
+/* 55 */
 /*!************************************************************************************!*\
   !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/static/app_info.js ***!
   \************************************************************************************/
@@ -26203,8 +16843,7 @@ var app_info = {
 module.exports = app_info;
 
 /***/ }),
-
-/***/ 57:
+/* 56 */
 /*!*********************************************************************************!*\
   !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/common/js/ad.js ***!
   \*********************************************************************************/
@@ -26305,8 +16944,7 @@ module.exports = {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-
-/***/ 58:
+/* 57 */
 /*!************************************************************************************************!*\
   !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/node_modules/js-md5/src/md5.js ***!
   \************************************************************************************************/
@@ -26340,7 +16978,7 @@ module.exports = {
     root = self;
   }
   var COMMON_JS = !root.JS_MD5_NO_COMMON_JS && ( false ? undefined : _typeof(module)) === 'object' && module.exports;
-  var AMD =  true && __webpack_require__(/*! !webpack amd options */ 62);
+  var AMD =  true && __webpack_require__(/*! !webpack amd options */ 61);
   var ARRAY_BUFFER = !root.JS_MD5_NO_ARRAY_BUFFER && typeof ArrayBuffer !== 'undefined';
   var HEX_CHARS = '0123456789abcdef'.split('');
   var EXTRA = [128, 32768, 8388608, -2147483648];
@@ -26968,11 +17606,10 @@ module.exports = {
     }
   }
 })();
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../../../../HBuilderX/plugins/uniapp-cli/node_modules/node-libs-browser/mock/process.js */ 59), __webpack_require__(/*! ./../../../../../../../../../HBuilderX/plugins/uniapp-cli/node_modules/webpack/buildin/global.js */ 3), __webpack_require__(/*! ./../../../../../../../../../HBuilderX/plugins/uniapp-cli/node_modules/webpack/buildin/module.js */ 61)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../../../../HBuilderX/plugins/uniapp-cli/node_modules/node-libs-browser/mock/process.js */ 58), __webpack_require__(/*! ./../../../../../../../../../HBuilderX/plugins/uniapp-cli/node_modules/webpack/buildin/global.js */ 3), __webpack_require__(/*! ./../../../../../../../../../HBuilderX/plugins/uniapp-cli/node_modules/webpack/buildin/module.js */ 60)(module)))
 
 /***/ }),
-
-/***/ 59:
+/* 58 */
 /*!********************************************************!*\
   !*** ./node_modules/node-libs-browser/mock/process.js ***!
   \********************************************************/
@@ -27003,7 +17640,7 @@ exports.binding = function (name) {
     var path;
     exports.cwd = function () { return cwd };
     exports.chdir = function (dir) {
-        if (!path) path = __webpack_require__(/*! path */ 60);
+        if (!path) path = __webpack_require__(/*! path */ 59);
         cwd = path.resolve(dir, cwd);
     };
 })();
@@ -27016,22 +17653,7 @@ exports.features = {};
 
 
 /***/ }),
-
-/***/ 6:
-/*!***************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/arrayWithHoles.js ***!
-  \***************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _arrayWithHoles(arr) {
-  if (Array.isArray(arr)) return arr;
-}
-module.exports = _arrayWithHoles, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
-/***/ 60:
+/* 59 */
 /*!***********************************************!*\
   !*** ./node_modules/path-browserify/index.js ***!
   \***********************************************/
@@ -27341,11 +17963,10 @@ var substr = 'ab'.substr(-1) === 'b'
     }
 ;
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node-libs-browser/mock/process.js */ 59)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node-libs-browser/mock/process.js */ 58)))
 
 /***/ }),
-
-/***/ 61:
+/* 60 */
 /*!***********************************!*\
   !*** (webpack)/buildin/module.js ***!
   \***********************************/
@@ -27377,8 +17998,7 @@ module.exports = function(module) {
 
 
 /***/ }),
-
-/***/ 62:
+/* 61 */
 /*!****************************************!*\
   !*** (webpack)/buildin/amd-options.js ***!
   \****************************************/
@@ -27391,8 +18011,7 @@ module.exports = __webpack_amd_options__;
 /* WEBPACK VAR INJECTION */}.call(this, {}))
 
 /***/ }),
-
-/***/ 63:
+/* 62 */
 /*!****************************************************************************************!*\
   !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/common/mixins/share.js ***!
   \****************************************************************************************/
@@ -27470,8 +18089,7 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-
-/***/ 64:
+/* 63 */
 /*!***************************************************************************************************!*\
   !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/components/uniapp-zaudio/index.js ***!
   \***************************************************************************************************/
@@ -27486,13 +18104,12 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _zaudio = _interopRequireDefault(__webpack_require__(/*! ./dist/zaudio.js */ 65));
+var _zaudio = _interopRequireDefault(__webpack_require__(/*! ./dist/zaudio.js */ 64));
 var _default = _zaudio.default;
 exports.default = _default;
 
 /***/ }),
-
-/***/ 65:
+/* 64 */
 /*!*********************************************************************************************************!*\
   !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/components/uniapp-zaudio/dist/zaudio.js ***!
   \*********************************************************************************************************/
@@ -27503,14 +18120,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */(function(uni) {
 
 var _toConsumableArray = __webpack_require__(/*! @babel/runtime/helpers/toConsumableArray */ 18);
-var _regeneratorRuntime = __webpack_require__(/*! @babel/runtime/regenerator */ 51);
+var _regeneratorRuntime = __webpack_require__(/*! @babel/runtime/regenerator */ 50);
 var _typeof = __webpack_require__(/*! @babel/runtime/helpers/typeof */ 13);
 var _classCallCheck = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ 23);
 var _createClass = __webpack_require__(/*! @babel/runtime/helpers/createClass */ 24);
-var _get = __webpack_require__(/*! @babel/runtime/helpers/get */ 66);
-var _inherits = __webpack_require__(/*! @babel/runtime/helpers/inherits */ 69);
-var _possibleConstructorReturn = __webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ 70);
-var _getPrototypeOf = __webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ 68);
+var _get = __webpack_require__(/*! @babel/runtime/helpers/get */ 65);
+var _inherits = __webpack_require__(/*! @babel/runtime/helpers/inherits */ 68);
+var _possibleConstructorReturn = __webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ 69);
+var _getPrototypeOf = __webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ 67);
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 var __awaiter = this && this.__awaiter || function (thisArg, _arguments, P, generator) {
@@ -27564,7 +18181,7 @@ for (var key in zaudioCbName) {
     zaudioCbNameArr.push(item);
   }
 }
-var util_1 = __webpack_require__(/*! ./util */ 72);
+var util_1 = __webpack_require__(/*! ./util */ 71);
 /**
  * ZAudio类
  * @class ZAudio
@@ -28141,15 +18758,14 @@ ZAudio.version = "2.2.51";
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-
-/***/ 66:
+/* 65 */
 /*!****************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/get.js ***!
   \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var superPropBase = __webpack_require__(/*! ./superPropBase.js */ 67);
+var superPropBase = __webpack_require__(/*! ./superPropBase.js */ 66);
 function _get() {
   if (typeof Reflect !== "undefined" && Reflect.get) {
     module.exports = _get = Reflect.get.bind(), module.exports.__esModule = true, module.exports["default"] = module.exports;
@@ -28169,15 +18785,14 @@ function _get() {
 module.exports = _get, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
-
-/***/ 67:
+/* 66 */
 /*!**************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/superPropBase.js ***!
   \**************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var getPrototypeOf = __webpack_require__(/*! ./getPrototypeOf.js */ 68);
+var getPrototypeOf = __webpack_require__(/*! ./getPrototypeOf.js */ 67);
 function _superPropBase(object, property) {
   while (!Object.prototype.hasOwnProperty.call(object, property)) {
     object = getPrototypeOf(object);
@@ -28188,8 +18803,7 @@ function _superPropBase(object, property) {
 module.exports = _superPropBase, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
-
-/***/ 68:
+/* 67 */
 /*!***************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/getPrototypeOf.js ***!
   \***************************************************************/
@@ -28205,8 +18819,7 @@ function _getPrototypeOf(o) {
 module.exports = _getPrototypeOf, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
-
-/***/ 69:
+/* 68 */
 /*!*********************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/inherits.js ***!
   \*********************************************************/
@@ -28233,48 +18846,7 @@ function _inherits(subClass, superClass) {
 module.exports = _inherits, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
-
-/***/ 7:
-/*!*********************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/iterableToArrayLimit.js ***!
-  \*********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _iterableToArrayLimit(r, l) {
-  var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"];
-  if (null != t) {
-    var e,
-      n,
-      i,
-      u,
-      a = [],
-      f = !0,
-      o = !1;
-    try {
-      if (i = (t = t.call(r)).next, 0 === l) {
-        if (Object(t) !== t) return;
-        f = !1;
-      } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0) {
-        ;
-      }
-    } catch (r) {
-      o = !0, n = r;
-    } finally {
-      try {
-        if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return;
-      } finally {
-        if (o) throw n;
-      }
-    }
-    return a;
-  }
-}
-module.exports = _iterableToArrayLimit, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
-/***/ 70:
+/* 69 */
 /*!**************************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js ***!
   \**************************************************************************/
@@ -28282,7 +18854,7 @@ module.exports = _iterableToArrayLimit, module.exports.__esModule = true, module
 /***/ (function(module, exports, __webpack_require__) {
 
 var _typeof = __webpack_require__(/*! ./typeof.js */ 13)["default"];
-var assertThisInitialized = __webpack_require__(/*! ./assertThisInitialized.js */ 71);
+var assertThisInitialized = __webpack_require__(/*! ./assertThisInitialized.js */ 70);
 function _possibleConstructorReturn(self, call) {
   if (call && (_typeof(call) === "object" || typeof call === "function")) {
     return call;
@@ -28294,8 +18866,7 @@ function _possibleConstructorReturn(self, call) {
 module.exports = _possibleConstructorReturn, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
-
-/***/ 71:
+/* 70 */
 /*!**********************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/assertThisInitialized.js ***!
   \**********************************************************************/
@@ -28311,8 +18882,7 @@ function _assertThisInitialized(self) {
 module.exports = _assertThisInitialized, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
-
-/***/ 72:
+/* 71 */
 /*!*******************************************************************************************************!*\
   !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/components/uniapp-zaudio/dist/util.js ***!
   \*******************************************************************************************************/
@@ -28408,44 +18978,2138 @@ var EventBus = /*#__PURE__*/function () {
 exports.EventBus = EventBus;
 
 /***/ }),
-
-/***/ 8:
-/*!***************************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js ***!
-  \***************************************************************************/
+/* 72 */,
+/* 73 */,
+/* 74 */,
+/* 75 */,
+/* 76 */,
+/* 77 */,
+/* 78 */,
+/* 79 */,
+/* 80 */,
+/* 81 */,
+/* 82 */,
+/* 83 */,
+/* 84 */,
+/* 85 */,
+/* 86 */,
+/* 87 */,
+/* 88 */,
+/* 89 */,
+/* 90 */,
+/* 91 */,
+/* 92 */,
+/* 93 */,
+/* 94 */,
+/* 95 */,
+/* 96 */,
+/* 97 */,
+/* 98 */,
+/* 99 */,
+/* 100 */,
+/* 101 */,
+/* 102 */,
+/* 103 */,
+/* 104 */,
+/* 105 */,
+/* 106 */,
+/* 107 */,
+/* 108 */,
+/* 109 */,
+/* 110 */,
+/* 111 */,
+/* 112 */,
+/* 113 */,
+/* 114 */,
+/* 115 */,
+/* 116 */,
+/* 117 */,
+/* 118 */,
+/* 119 */,
+/* 120 */,
+/* 121 */,
+/* 122 */,
+/* 123 */,
+/* 124 */,
+/* 125 */,
+/* 126 */,
+/* 127 */,
+/* 128 */,
+/* 129 */,
+/* 130 */,
+/* 131 */,
+/* 132 */,
+/* 133 */,
+/* 134 */,
+/* 135 */,
+/* 136 */,
+/* 137 */,
+/* 138 */,
+/* 139 */,
+/* 140 */,
+/* 141 */,
+/* 142 */,
+/* 143 */,
+/* 144 */,
+/* 145 */,
+/* 146 */,
+/* 147 */,
+/* 148 */,
+/* 149 */,
+/* 150 */,
+/* 151 */,
+/* 152 */,
+/* 153 */,
+/* 154 */,
+/* 155 */,
+/* 156 */,
+/* 157 */,
+/* 158 */,
+/* 159 */,
+/* 160 */,
+/* 161 */,
+/* 162 */,
+/* 163 */,
+/* 164 */,
+/* 165 */,
+/* 166 */,
+/* 167 */,
+/* 168 */,
+/* 169 */,
+/* 170 */,
+/* 171 */,
+/* 172 */,
+/* 173 */,
+/* 174 */,
+/* 175 */,
+/* 176 */,
+/* 177 */,
+/* 178 */,
+/* 179 */,
+/* 180 */,
+/* 181 */,
+/* 182 */,
+/* 183 */,
+/* 184 */,
+/* 185 */,
+/* 186 */,
+/* 187 */,
+/* 188 */
+/*!************************************************************************************!*\
+  !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/api/points-flow.js ***!
+  \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayLikeToArray = __webpack_require__(/*! ./arrayLikeToArray.js */ 9);
-function _unsupportedIterableToArray(o, minLen) {
-  if (!o) return;
-  if (typeof o === "string") return arrayLikeToArray(o, minLen);
-  var n = Object.prototype.toString.call(o).slice(8, -1);
-  if (n === "Object" && o.constructor) n = o.constructor.name;
-  if (n === "Map" || n === "Set") return Array.from(o);
-  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return arrayLikeToArray(o, minLen);
-}
-module.exports = _unsupportedIterableToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = [{
+  "happenedDate": "2020-05-11",
+  "sourceType": 5,
+  "sellerName": "奈雪の茶",
+  "changeNum": 1,
+  "changeType": 1,
+  "reason": "积分签到奖励",
+  "createdAt": "2020-05-11 00:17:47",
+  "id": 1
+}, {
+  "happenedDate": "2020-05-10",
+  "sourceType": 5,
+  "sellerName": "奈雪の茶",
+  "changeNum": 1,
+  "changeType": 1,
+  "reason": "积分签到奖励",
+  "createdAt": "2020-05-10 22:23:36",
+  "id": 2
+}, {
+  "happenedDate": "2020-05-09",
+  "sourceType": 5,
+  "sellerName": "奈雪の茶",
+  "changeNum": 1,
+  "changeType": 1,
+  "reason": "积分签到奖励",
+  "createdAt": "2020-05-09 02:14:24",
+  "id": 3
+}, {
+  "happenedDate": "2020-05-08",
+  "sourceType": 1,
+  "sellerName": "奈雪の茶",
+  "changeNum": 50,
+  "changeType": 1,
+  "reason": "消费增加",
+  "createdAt": "2020-05-08 19:25:40",
+  "id": 4
+}, {
+  "happenedDate": "2020-05-08",
+  "sourceType": 5,
+  "sellerName": "奈雪の茶",
+  "changeNum": 1,
+  "changeType": 1,
+  "reason": "积分签到奖励",
+  "createdAt": "2020-05-08 18:43:14",
+  "id": 5
+}, {
+  "happenedDate": "2020-05-07",
+  "sourceType": 5,
+  "sellerName": "奈雪の茶",
+  "changeNum": 1,
+  "changeType": 1,
+  "reason": "积分签到奖励",
+  "createdAt": "2020-05-07 16:25:46",
+  "id": 6
+}, {
+  "happenedDate": "2020-05-06",
+  "sourceType": 5,
+  "sellerName": "奈雪の茶",
+  "changeNum": 1,
+  "changeType": 1,
+  "reason": "积分签到奖励",
+  "createdAt": "2020-05-06 10:38:42",
+  "id": 7
+}, {
+  "happenedDate": "2020-05-05",
+  "sourceType": 1,
+  "sellerName": "奈雪の茶",
+  "changeNum": 73,
+  "changeType": 1,
+  "reason": "消费增加",
+  "createdAt": "2020-05-05 20:42:47",
+  "id": 8
+}, {
+  "happenedDate": "2020-05-03",
+  "sourceType": 5,
+  "sellerName": "奈雪の茶",
+  "changeNum": 1,
+  "changeType": 1,
+  "reason": "积分签到奖励",
+  "createdAt": "2020-05-03 19:37:12",
+  "id": 9
+}, {
+  "happenedDate": "2020-05-02",
+  "sourceType": 5,
+  "sellerName": "奈雪の茶",
+  "changeNum": 1,
+  "changeType": 1,
+  "reason": "积分签到奖励",
+  "createdAt": "2020-05-02 03:30:42",
+  "id": 10
+}, {
+  "happenedDate": "2020-04-25",
+  "sourceType": 1,
+  "sellerName": "奈雪の茶",
+  "changeNum": 43,
+  "changeType": 1,
+  "reason": "消费增加",
+  "createdAt": "2020-04-25 20:48:26",
+  "id": 11
+}, {
+  "happenedDate": "2020-04-25",
+  "sourceType": 5,
+  "sellerName": "奈雪の茶",
+  "changeNum": 1,
+  "changeType": 1,
+  "reason": "积分签到奖励",
+  "createdAt": "2020-04-25 02:46:36",
+  "id": 12
+}, {
+  "happenedDate": "2020-04-24",
+  "sourceType": 1,
+  "sellerName": "奈雪の茶",
+  "changeNum": 57,
+  "changeType": 1,
+  "reason": "消费增加",
+  "createdAt": "2020-04-24 20:23:45",
+  "id": 13
+}, {
+  "happenedDate": "2020-04-18",
+  "sourceType": 1,
+  "sellerName": "奈雪の茶",
+  "changeNum": 56,
+  "changeType": 1,
+  "reason": "消费增加",
+  "createdAt": "2020-04-18 20:20:08",
+  "id": 14
+}, {
+  "happenedDate": "2020-04-10",
+  "sourceType": 1,
+  "sellerName": "奈雪の茶",
+  "changeNum": 33,
+  "changeType": 1,
+  "reason": "消费增加",
+  "createdAt": "2020-04-10 20:40:44",
+  "id": 15
+}];
+exports.default = _default;
 
 /***/ }),
-
-/***/ 9:
-/*!*****************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/arrayLikeToArray.js ***!
-  \*****************************************************************/
+/* 189 */,
+/* 190 */,
+/* 191 */,
+/* 192 */,
+/* 193 */,
+/* 194 */,
+/* 195 */,
+/* 196 */,
+/* 197 */,
+/* 198 */,
+/* 199 */,
+/* 200 */,
+/* 201 */,
+/* 202 */,
+/* 203 */,
+/* 204 */,
+/* 205 */,
+/* 206 */,
+/* 207 */,
+/* 208 */,
+/* 209 */,
+/* 210 */,
+/* 211 */,
+/* 212 */,
+/* 213 */,
+/* 214 */,
+/* 215 */,
+/* 216 */,
+/* 217 */,
+/* 218 */,
+/* 219 */,
+/* 220 */
+/*!***********************************************************************************************!*\
+  !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/components/uni-icons/icons.js ***!
+  \***********************************************************************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-function _arrayLikeToArray(arr, len) {
-  if (len == null || len > arr.length) len = arr.length;
-  for (var i = 0, arr2 = new Array(len); i < len; i++) {
-    arr2[i] = arr[i];
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  'contact': "\uE100",
+  'person': "\uE101",
+  'personadd': "\uE102",
+  'contact-filled': "\uE130",
+  'person-filled': "\uE131",
+  'personadd-filled': "\uE132",
+  'phone': "\uE200",
+  'email': "\uE201",
+  'chatbubble': "\uE202",
+  'chatboxes': "\uE203",
+  'phone-filled': "\uE230",
+  'email-filled': "\uE231",
+  'chatbubble-filled': "\uE232",
+  'chatboxes-filled': "\uE233",
+  'weibo': "\uE260",
+  'weixin': "\uE261",
+  'pengyouquan': "\uE262",
+  'chat': "\uE263",
+  'qq': "\uE264",
+  'videocam': "\uE300",
+  'camera': "\uE301",
+  'mic': "\uE302",
+  'location': "\uE303",
+  'mic-filled': "\uE332",
+  'speech': "\uE332",
+  'location-filled': "\uE333",
+  'micoff': "\uE360",
+  'image': "\uE363",
+  'map': "\uE364",
+  'compose': "\uE400",
+  'trash': "\uE401",
+  'upload': "\uE402",
+  'download': "\uE403",
+  'close': "\uE404",
+  'redo': "\uE405",
+  'undo': "\uE406",
+  'refresh': "\uE407",
+  'star': "\uE408",
+  'plus': "\uE409",
+  'minus': "\uE410",
+  'circle': "\uE411",
+  'checkbox': "\uE411",
+  'close-filled': "\uE434",
+  'clear': "\uE434",
+  'refresh-filled': "\uE437",
+  'star-filled': "\uE438",
+  'plus-filled': "\uE439",
+  'minus-filled': "\uE440",
+  'circle-filled': "\uE441",
+  'checkbox-filled': "\uE442",
+  'closeempty': "\uE460",
+  'refreshempty': "\uE461",
+  'reload': "\uE462",
+  'starhalf': "\uE463",
+  'spinner': "\uE464",
+  'spinner-cycle': "\uE465",
+  'search': "\uE466",
+  'plusempty': "\uE468",
+  'forward': "\uE470",
+  'back': "\uE471",
+  'left-nav': "\uE471",
+  'checkmarkempty': "\uE472",
+  'home': "\uE500",
+  'navigate': "\uE501",
+  'gear': "\uE502",
+  'paperplane': "\uE503",
+  'info': "\uE504",
+  'help': "\uE505",
+  'locked': "\uE506",
+  'more': "\uE507",
+  'flag': "\uE508",
+  'home-filled': "\uE530",
+  'gear-filled': "\uE532",
+  'info-filled': "\uE534",
+  'help-filled': "\uE535",
+  'more-filled': "\uE537",
+  'settings': "\uE560",
+  'list': "\uE562",
+  'bars': "\uE563",
+  'loop': "\uE565",
+  'paperclip': "\uE567",
+  'eye': "\uE568",
+  'arrowup': "\uE580",
+  'arrowdown': "\uE581",
+  'arrowleft': "\uE582",
+  'arrowright': "\uE583",
+  'arrowthinup': "\uE584",
+  'arrowthindown': "\uE585",
+  'arrowthinleft': "\uE586",
+  'arrowthinright': "\uE587",
+  'pulldown': "\uE588",
+  'closefill': "\uE589",
+  'sound': "\uE590",
+  'scan': "\uE612"
+};
+exports.default = _default;
+
+/***/ }),
+/* 221 */,
+/* 222 */,
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */,
+/* 238 */,
+/* 239 */,
+/* 240 */,
+/* 241 */,
+/* 242 */,
+/* 243 */,
+/* 244 */,
+/* 245 */,
+/* 246 */,
+/* 247 */
+/*!*******************************************************************************************************!*\
+  !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/pages/attendance/uni-calendar/util.js ***!
+  \*******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 4);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _typeof2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/typeof */ 13));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ 23));
+var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/createClass */ 24));
+var _calendar = _interopRequireDefault(__webpack_require__(/*! ./calendar.js */ 248));
+var Calendar = /*#__PURE__*/function () {
+  function Calendar() {
+    var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+      date = _ref.date,
+      selected = _ref.selected,
+      startDate = _ref.startDate,
+      endDate = _ref.endDate,
+      range = _ref.range;
+    (0, _classCallCheck2.default)(this, Calendar);
+    // 当前日期
+    this.date = this.getDate(date); // 当前初入日期
+    // 打点信息
+    this.selected = selected || [];
+    // 范围开始
+    this.startDate = startDate;
+    // 范围结束
+    this.endDate = endDate;
+    this.range = range;
+    // 多选状态
+    this.multipleStatus = {
+      before: '',
+      after: '',
+      data: []
+    };
+    // 每周日期
+    this.weeks = {};
+    this._getWeek(this.date.fullDate);
   }
-  return arr2;
+
+  /**
+   * 获取任意时间
+   */
+  (0, _createClass2.default)(Calendar, [{
+    key: "getDate",
+    value: function getDate(date) {
+      var AddDayCount = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+      var str = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'day';
+      if (!date) {
+        date = new Date();
+      }
+      if ((0, _typeof2.default)(date) !== 'object') {
+        date = date.replace(/-/g, '/');
+      }
+      var dd = new Date(date);
+      switch (str) {
+        case 'day':
+          dd.setDate(dd.getDate() + AddDayCount); // 获取AddDayCount天后的日期
+          break;
+        case 'month':
+          if (dd.getDate() === 31) {
+            dd.setDate(dd.getDate() + AddDayCount);
+          } else {
+            dd.setMonth(dd.getMonth() + AddDayCount); // 获取AddDayCount天后的日期
+          }
+
+          break;
+        case 'year':
+          dd.setFullYear(dd.getFullYear() + AddDayCount); // 获取AddDayCount天后的日期
+          break;
+      }
+      var y = dd.getFullYear();
+      var m = dd.getMonth() + 1 < 10 ? '0' + (dd.getMonth() + 1) : dd.getMonth() + 1; // 获取当前月份的日期，不足10补0
+      var d = dd.getDate() < 10 ? '0' + dd.getDate() : dd.getDate(); // 获取当前几号，不足10补0
+      return {
+        fullDate: y + '-' + m + '-' + d,
+        year: y,
+        month: m,
+        date: d,
+        day: dd.getDay()
+      };
+    }
+
+    /**
+     * 获取上月剩余天数
+     */
+  }, {
+    key: "_getLastMonthDays",
+    value: function _getLastMonthDays(firstDay, full) {
+      var dateArr = [];
+      for (var i = firstDay; i > 0; i--) {
+        var beforeDate = new Date(full.year, full.month - 1, -i + 1).getDate();
+        dateArr.push({
+          date: beforeDate,
+          month: full.month - 1,
+          lunar: this.getlunar(full.year, full.month - 1, beforeDate),
+          disable: true
+        });
+      }
+      return dateArr;
+    }
+    /**
+     * 获取本月天数
+     */
+  }, {
+    key: "_currentMonthDys",
+    value: function _currentMonthDys(dateData, full) {
+      var _this = this;
+      var dateArr = [];
+      var fullDate = this.date.fullDate;
+      var _loop = function _loop(i) {
+        var isinfo = false;
+        var nowDate = full.year + '-' + (full.month < 10 ? full.month : full.month) + '-' + (i < 10 ? '0' + i : i);
+        // 是否今天
+        var isDay = fullDate === nowDate;
+        // 获取打点信息
+        var info = _this.selected && _this.selected.find(function (item) {
+          if (_this.dateEqual(nowDate, item.date)) {
+            return item;
+          }
+        });
+
+        // 日期禁用
+        var disableBefore = true;
+        var disableAfter = true;
+        if (_this.startDate) {
+          var dateCompBefore = _this.dateCompare(_this.startDate, fullDate);
+          disableBefore = _this.dateCompare(dateCompBefore ? _this.startDate : fullDate, nowDate);
+        }
+        if (_this.endDate) {
+          var dateCompAfter = _this.dateCompare(fullDate, _this.endDate);
+          disableAfter = _this.dateCompare(nowDate, dateCompAfter ? _this.endDate : fullDate);
+        }
+        var multiples = _this.multipleStatus.data;
+        var checked = false;
+        var multiplesStatus = -1;
+        if (_this.range) {
+          if (multiples) {
+            multiplesStatus = multiples.findIndex(function (item) {
+              return _this.dateEqual(item, nowDate);
+            });
+          }
+          if (multiplesStatus !== -1) {
+            checked = true;
+          }
+        }
+        var data = {
+          fullDate: nowDate,
+          year: full.year,
+          date: i,
+          multiple: _this.range ? checked : false,
+          month: full.month,
+          lunar: _this.getlunar(full.year, full.month, i),
+          disable: !disableBefore || !disableAfter,
+          isDay: isDay
+        };
+        if (info) {
+          data.extraInfo = info;
+        }
+        dateArr.push(data);
+      };
+      for (var i = 1; i <= dateData; i++) {
+        _loop(i);
+      }
+      return dateArr;
+    }
+    /**
+     * 获取下月天数
+     */
+  }, {
+    key: "_getNextMonthDays",
+    value: function _getNextMonthDays(surplus, full) {
+      var dateArr = [];
+      for (var i = 1; i < surplus + 1; i++) {
+        dateArr.push({
+          date: i,
+          month: Number(full.month) + 1,
+          lunar: this.getlunar(full.year, Number(full.month) + 1, i),
+          disable: true
+        });
+      }
+      return dateArr;
+    }
+    /**
+     * 设置日期
+     * @param {Object} date
+     */
+  }, {
+    key: "setDate",
+    value: function setDate(date) {
+      this._getWeek(date);
+    }
+    /**
+     * 获取当前日期详情
+     * @param {Object} date
+     */
+  }, {
+    key: "getInfo",
+    value: function getInfo(date) {
+      var _this2 = this;
+      if (!date) {
+        date = new Date();
+      }
+      var dateInfo = this.canlender.find(function (item) {
+        return item.fullDate === _this2.getDate(date).fullDate;
+      });
+      return dateInfo;
+    }
+
+    /**
+     * 比较时间大小
+     */
+  }, {
+    key: "dateCompare",
+    value: function dateCompare(startDate, endDate) {
+      // 计算截止时间
+      startDate = new Date(startDate.replace('-', '/').replace('-', '/'));
+      // 计算详细项的截止时间
+      endDate = new Date(endDate.replace('-', '/').replace('-', '/'));
+      if (startDate <= endDate) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+    /**
+     * 比较时间是否相等
+     */
+  }, {
+    key: "dateEqual",
+    value: function dateEqual(before, after) {
+      // 计算截止时间
+      before = new Date(before.replace('-', '/').replace('-', '/'));
+      // 计算详细项的截止时间
+      after = new Date(after.replace('-', '/').replace('-', '/'));
+      if (before.getTime() - after.getTime() === 0) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+    /**
+     * 获取日期范围内所有日期
+     * @param {Object} begin
+     * @param {Object} end
+     */
+  }, {
+    key: "geDateAll",
+    value: function geDateAll(begin, end) {
+      var arr = [];
+      var ab = begin.split('-');
+      var ae = end.split('-');
+      var db = new Date();
+      db.setFullYear(ab[0], ab[1] - 1, ab[2]);
+      var de = new Date();
+      de.setFullYear(ae[0], ae[1] - 1, ae[2]);
+      var unixDb = db.getTime() - 24 * 60 * 60 * 1000;
+      var unixDe = de.getTime() - 24 * 60 * 60 * 1000;
+      for (var k = unixDb; k <= unixDe;) {
+        k = k + 24 * 60 * 60 * 1000;
+        arr.push(this.getDate(new Date(parseInt(k))).fullDate);
+      }
+      return arr;
+    }
+    /**
+     * 计算阴历日期显示
+     */
+  }, {
+    key: "getlunar",
+    value: function getlunar(year, month, date) {
+      return _calendar.default.solar2lunar(year, month, date);
+    }
+    /**
+     * 设置打点
+     */
+  }, {
+    key: "setSelectInfo",
+    value: function setSelectInfo(data, value) {
+      this.selected = value;
+      this._getWeek(data);
+    }
+
+    /**
+     *  获取多选状态
+     */
+  }, {
+    key: "setMultiple",
+    value: function setMultiple(fullDate) {
+      var _this$multipleStatus = this.multipleStatus,
+        before = _this$multipleStatus.before,
+        after = _this$multipleStatus.after;
+      if (!this.range) return;
+      if (before && after) {
+        this.multipleStatus.before = '';
+        this.multipleStatus.after = '';
+        this.multipleStatus.data = [];
+        this._getWeek(fullDate);
+      } else {
+        if (!before) {
+          this.multipleStatus.before = fullDate;
+        } else {
+          this.multipleStatus.after = fullDate;
+          if (this.dateCompare(this.multipleStatus.before, this.multipleStatus.after)) {
+            this.multipleStatus.data = this.geDateAll(this.multipleStatus.before, this.multipleStatus.after);
+          } else {
+            this.multipleStatus.data = this.geDateAll(this.multipleStatus.after, this.multipleStatus.before);
+          }
+          this._getWeek(fullDate);
+        }
+      }
+    }
+
+    /**
+     * 获取每周数据
+     * @param {Object} dateData
+     */
+  }, {
+    key: "_getWeek",
+    value: function _getWeek(dateData) {
+      var _this$getDate = this.getDate(dateData),
+        fullDate = _this$getDate.fullDate,
+        year = _this$getDate.year,
+        month = _this$getDate.month,
+        date = _this$getDate.date,
+        day = _this$getDate.day;
+      var firstDay = new Date(year, month - 1, 1).getDay();
+      var currentDay = new Date(year, month, 0).getDate();
+      var dates = {
+        lastMonthDays: this._getLastMonthDays(firstDay, this.getDate(dateData)),
+        // 上个月末尾几天
+        currentMonthDys: this._currentMonthDys(currentDay, this.getDate(dateData)),
+        // 本月天数
+        nextMonthDays: [],
+        // 下个月开始几天
+        weeks: []
+      };
+      var canlender = [];
+      var surplus = 42 - (dates.lastMonthDays.length + dates.currentMonthDys.length);
+      dates.nextMonthDays = this._getNextMonthDays(surplus, this.getDate(dateData));
+      canlender = canlender.concat(dates.lastMonthDays, dates.currentMonthDys, dates.nextMonthDays);
+      var weeks = {};
+      // 拼接数组  上个月开始几天 + 本月天数+ 下个月开始几天
+      for (var i = 0; i < canlender.length; i++) {
+        if (i % 7 === 0) {
+          weeks[parseInt(i / 7)] = new Array(7);
+        }
+        weeks[parseInt(i / 7)][i % 7] = canlender[i];
+      }
+      this.canlender = canlender;
+      this.weeks = weeks;
+    }
+
+    //静态方法
+    // static init(date) {
+    // 	if (!this.instance) {
+    // 		this.instance = new Calendar(date);
+    // 	}
+    // 	return this.instance;
+    // }
+  }]);
+  return Calendar;
+}();
+var _default = Calendar;
+exports.default = _default;
+
+/***/ }),
+/* 248 */
+/*!***********************************************************************************************************!*\
+  !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/pages/attendance/uni-calendar/calendar.js ***!
+  \***********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+/**
+* @1900-2100区间内的公历、农历互转
+* @charset UTF-8
+* @github  https://github.com/jjonline/calendar.js
+* @Author  Jea杨(JJonline@JJonline.Cn)
+* @Time    2014-7-21
+* @Time    2016-8-13 Fixed 2033hex、Attribution Annals
+* @Time    2016-9-25 Fixed lunar LeapMonth Param Bug
+* @Time    2017-7-24 Fixed use getTerm Func Param Error.use solar year,NOT lunar year
+* @Version 1.0.3
+* @公历转农历：calendar.solar2lunar(1987,11,01); //[you can ignore params of prefix 0]
+* @农历转公历：calendar.lunar2solar(1987,09,10); //[you can ignore params of prefix 0]
+*/
+/* eslint-disable */
+var calendar = {
+  /**
+      * 农历1900-2100的润大小信息表
+      * @Array Of Property
+      * @return Hex
+      */
+  lunarInfo: [0x04bd8, 0x04ae0, 0x0a570, 0x054d5, 0x0d260, 0x0d950, 0x16554, 0x056a0, 0x09ad0, 0x055d2,
+  // 1900-1909
+  0x04ae0, 0x0a5b6, 0x0a4d0, 0x0d250, 0x1d255, 0x0b540, 0x0d6a0, 0x0ada2, 0x095b0, 0x14977,
+  // 1910-1919
+  0x04970, 0x0a4b0, 0x0b4b5, 0x06a50, 0x06d40, 0x1ab54, 0x02b60, 0x09570, 0x052f2, 0x04970,
+  // 1920-1929
+  0x06566, 0x0d4a0, 0x0ea50, 0x06e95, 0x05ad0, 0x02b60, 0x186e3, 0x092e0, 0x1c8d7, 0x0c950,
+  // 1930-1939
+  0x0d4a0, 0x1d8a6, 0x0b550, 0x056a0, 0x1a5b4, 0x025d0, 0x092d0, 0x0d2b2, 0x0a950, 0x0b557,
+  // 1940-1949
+  0x06ca0, 0x0b550, 0x15355, 0x04da0, 0x0a5b0, 0x14573, 0x052b0, 0x0a9a8, 0x0e950, 0x06aa0,
+  // 1950-1959
+  0x0aea6, 0x0ab50, 0x04b60, 0x0aae4, 0x0a570, 0x05260, 0x0f263, 0x0d950, 0x05b57, 0x056a0,
+  // 1960-1969
+  0x096d0, 0x04dd5, 0x04ad0, 0x0a4d0, 0x0d4d4, 0x0d250, 0x0d558, 0x0b540, 0x0b6a0, 0x195a6,
+  // 1970-1979
+  0x095b0, 0x049b0, 0x0a974, 0x0a4b0, 0x0b27a, 0x06a50, 0x06d40, 0x0af46, 0x0ab60, 0x09570,
+  // 1980-1989
+  0x04af5, 0x04970, 0x064b0, 0x074a3, 0x0ea50, 0x06b58, 0x05ac0, 0x0ab60, 0x096d5, 0x092e0,
+  // 1990-1999
+  0x0c960, 0x0d954, 0x0d4a0, 0x0da50, 0x07552, 0x056a0, 0x0abb7, 0x025d0, 0x092d0, 0x0cab5,
+  // 2000-2009
+  0x0a950, 0x0b4a0, 0x0baa4, 0x0ad50, 0x055d9, 0x04ba0, 0x0a5b0, 0x15176, 0x052b0, 0x0a930,
+  // 2010-2019
+  0x07954, 0x06aa0, 0x0ad50, 0x05b52, 0x04b60, 0x0a6e6, 0x0a4e0, 0x0d260, 0x0ea65, 0x0d530,
+  // 2020-2029
+  0x05aa0, 0x076a3, 0x096d0, 0x04afb, 0x04ad0, 0x0a4d0, 0x1d0b6, 0x0d250, 0x0d520, 0x0dd45,
+  // 2030-2039
+  0x0b5a0, 0x056d0, 0x055b2, 0x049b0, 0x0a577, 0x0a4b0, 0x0aa50, 0x1b255, 0x06d20, 0x0ada0,
+  // 2040-2049
+  /** Add By JJonline@JJonline.Cn**/
+  0x14b63, 0x09370, 0x049f8, 0x04970, 0x064b0, 0x168a6, 0x0ea50, 0x06b20, 0x1a6c4, 0x0aae0,
+  // 2050-2059
+  0x0a2e0, 0x0d2e3, 0x0c960, 0x0d557, 0x0d4a0, 0x0da50, 0x05d55, 0x056a0, 0x0a6d0, 0x055d4,
+  // 2060-2069
+  0x052d0, 0x0a9b8, 0x0a950, 0x0b4a0, 0x0b6a6, 0x0ad50, 0x055a0, 0x0aba4, 0x0a5b0, 0x052b0,
+  // 2070-2079
+  0x0b273, 0x06930, 0x07337, 0x06aa0, 0x0ad50, 0x14b55, 0x04b60, 0x0a570, 0x054e4, 0x0d160,
+  // 2080-2089
+  0x0e968, 0x0d520, 0x0daa0, 0x16aa6, 0x056d0, 0x04ae0, 0x0a9d4, 0x0a2d0, 0x0d150, 0x0f252,
+  // 2090-2099
+  0x0d520],
+  // 2100
+
+  /**
+      * 公历每个月份的天数普通表
+      * @Array Of Property
+      * @return Number
+      */
+  solarMonth: [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31],
+  /**
+      * 天干地支之天干速查表
+      * @Array Of Property trans["甲","乙","丙","丁","戊","己","庚","辛","壬","癸"]
+      * @return Cn string
+      */
+  Gan: ["\u7532", "\u4E59", "\u4E19", "\u4E01", "\u620A", "\u5DF1", "\u5E9A", "\u8F9B", "\u58EC", "\u7678"],
+  /**
+      * 天干地支之地支速查表
+      * @Array Of Property
+      * @trans["子","丑","寅","卯","辰","巳","午","未","申","酉","戌","亥"]
+      * @return Cn string
+      */
+  Zhi: ["\u5B50", "\u4E11", "\u5BC5", "\u536F", "\u8FB0", "\u5DF3", "\u5348", "\u672A", "\u7533", "\u9149", "\u620C", "\u4EA5"],
+  /**
+      * 天干地支之地支速查表<=>生肖
+      * @Array Of Property
+      * @trans["鼠","牛","虎","兔","龙","蛇","马","羊","猴","鸡","狗","猪"]
+      * @return Cn string
+      */
+  Animals: ["\u9F20", "\u725B", "\u864E", "\u5154", "\u9F99", "\u86C7", "\u9A6C", "\u7F8A", "\u7334", "\u9E21", "\u72D7", "\u732A"],
+  /**
+      * 24节气速查表
+      * @Array Of Property
+      * @trans["小寒","大寒","立春","雨水","惊蛰","春分","清明","谷雨","立夏","小满","芒种","夏至","小暑","大暑","立秋","处暑","白露","秋分","寒露","霜降","立冬","小雪","大雪","冬至"]
+      * @return Cn string
+      */
+  solarTerm: ["\u5C0F\u5BD2", "\u5927\u5BD2", "\u7ACB\u6625", "\u96E8\u6C34", "\u60CA\u86F0", "\u6625\u5206", "\u6E05\u660E", "\u8C37\u96E8", "\u7ACB\u590F", "\u5C0F\u6EE1", "\u8292\u79CD", "\u590F\u81F3", "\u5C0F\u6691", "\u5927\u6691", "\u7ACB\u79CB", "\u5904\u6691", "\u767D\u9732", "\u79CB\u5206", "\u5BD2\u9732", "\u971C\u964D", "\u7ACB\u51AC", "\u5C0F\u96EA", "\u5927\u96EA", "\u51AC\u81F3"],
+  /**
+      * 1900-2100各年的24节气日期速查表
+      * @Array Of Property
+      * @return 0x string For splice
+      */
+  sTermInfo: ['9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c3598082c95f8c965cc920f', '97bd0b06bdb0722c965ce1cfcc920f', 'b027097bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c359801ec95f8c965cc920f', '97bd0b06bdb0722c965ce1cfcc920f', 'b027097bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c359801ec95f8c965cc920f', '97bd0b06bdb0722c965ce1cfcc920f', 'b027097bd097c36b0b6fc9274c91aa', '9778397bd19801ec9210c965cc920e', '97b6b97bd19801ec95f8c965cc920f', '97bd09801d98082c95f8e1cfcc920f', '97bd097bd097c36b0b6fc9210c8dc2', '9778397bd197c36c9210c9274c91aa', '97b6b97bd19801ec95f8c965cc920e', '97bd09801d98082c95f8e1cfcc920f', '97bd097bd097c36b0b6fc9210c8dc2', '9778397bd097c36c9210c9274c91aa', '97b6b97bd19801ec95f8c965cc920e', '97bcf97c3598082c95f8e1cfcc920f', '97bd097bd097c36b0b6fc9210c8dc2', '9778397bd097c36c9210c9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c3598082c95f8c965cc920f', '97bd097bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c3598082c95f8c965cc920f', '97bd097bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c359801ec95f8c965cc920f', '97bd097bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c359801ec95f8c965cc920f', '97bd097bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c359801ec95f8c965cc920f', '97bd097bd07f595b0b6fc920fb0722', '9778397bd097c36b0b6fc9210c8dc2', '9778397bd19801ec9210c9274c920e', '97b6b97bd19801ec95f8c965cc920f', '97bd07f5307f595b0b0bc920fb0722', '7f0e397bd097c36b0b6fc9210c8dc2', '9778397bd097c36c9210c9274c920e', '97b6b97bd19801ec95f8c965cc920f', '97bd07f5307f595b0b0bc920fb0722', '7f0e397bd097c36b0b6fc9210c8dc2', '9778397bd097c36c9210c9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bd07f1487f595b0b0bc920fb0722', '7f0e397bd097c36b0b6fc9210c8dc2', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf7f1487f595b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf7f1487f595b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf7f1487f531b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf7f1487f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c9274c920e', '97bcf7f0e47f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '9778397bd097c36b0b6fc9210c91aa', '97b6b97bd197c36c9210c9274c920e', '97bcf7f0e47f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '9778397bd097c36b0b6fc9210c8dc2', '9778397bd097c36c9210c9274c920e', '97b6b7f0e47f531b0723b0b6fb0722', '7f0e37f5307f595b0b0bc920fb0722', '7f0e397bd097c36b0b6fc9210c8dc2', '9778397bd097c36b0b70c9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721', '7f0e37f1487f595b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc9210c8dc2', '9778397bd097c36b0b6fc9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721', '7f0e27f1487f595b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b7f0e47f531b0723b0787b0721', '7f0e27f0e47f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '9778397bd097c36b0b6fc9210c91aa', '97b6b7f0e47f149b0723b0787b0721', '7f0e27f0e47f531b0723b0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '9778397bd097c36b0b6fc9210c8dc2', '977837f0e37f149b0723b0787b0721', '7f07e7f0e47f531b0723b0b6fb0722', '7f0e37f5307f595b0b0bc920fb0722', '7f0e397bd097c35b0b6fc9210c8dc2', '977837f0e37f14998082b0787b0721', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e37f1487f595b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc9210c8dc2', '977837f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '977837f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '977837f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '977837f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '977837f0e37f14998082b0787b06bd', '7f07e7f0e47f149b0723b0787b0721', '7f0e27f0e47f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '977837f0e37f14998082b0723b06bd', '7f07e7f0e37f149b0723b0787b0721', '7f0e27f0e47f531b0723b0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '977837f0e37f14898082b0723b02d5', '7ec967f0e37f14998082b0787b0721', '7f07e7f0e47f531b0723b0b6fb0722', '7f0e37f1487f595b0b0bb0b6fb0722', '7f0e37f0e37f14898082b0723b02d5', '7ec967f0e37f14998082b0787b0721', '7f07e7f0e47f531b0723b0b6fb0722', '7f0e37f1487f531b0b0bb0b6fb0722', '7f0e37f0e37f14898082b0723b02d5', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e37f1487f531b0b0bb0b6fb0722', '7f0e37f0e37f14898082b072297c35', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e37f0e37f14898082b072297c35', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e37f0e366aa89801eb072297c35', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f149b0723b0787b0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e37f0e366aa89801eb072297c35', '7ec967f0e37f14998082b0723b06bd', '7f07e7f0e47f149b0723b0787b0721', '7f0e27f0e47f531b0723b0b6fb0722', '7f0e37f0e366aa89801eb072297c35', '7ec967f0e37f14998082b0723b06bd', '7f07e7f0e37f14998083b0787b0721', '7f0e27f0e47f531b0723b0b6fb0722', '7f0e37f0e366aa89801eb072297c35', '7ec967f0e37f14898082b0723b02d5', '7f07e7f0e37f14998082b0787b0721', '7f07e7f0e47f531b0723b0b6fb0722', '7f0e36665b66aa89801e9808297c35', '665f67f0e37f14898082b0723b02d5', '7ec967f0e37f14998082b0787b0721', '7f07e7f0e47f531b0723b0b6fb0722', '7f0e36665b66a449801e9808297c35', '665f67f0e37f14898082b0723b02d5', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e36665b66a449801e9808297c35', '665f67f0e37f14898082b072297c35', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e26665b66a449801e9808297c35', '665f67f0e37f1489801eb072297c35', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722'],
+  /**
+      * 数字转中文速查表
+      * @Array Of Property
+      * @trans ['日','一','二','三','四','五','六','七','八','九','十']
+      * @return Cn string
+      */
+  nStr1: ["\u65E5", "\u4E00", "\u4E8C", "\u4E09", "\u56DB", "\u4E94", "\u516D", "\u4E03", "\u516B", "\u4E5D", "\u5341"],
+  /**
+      * 日期转农历称呼速查表
+      * @Array Of Property
+      * @trans ['初','十','廿','卅']
+      * @return Cn string
+      */
+  nStr2: ["\u521D", "\u5341", "\u5EFF", "\u5345"],
+  /**
+      * 月份转农历称呼速查表
+      * @Array Of Property
+      * @trans ['正','一','二','三','四','五','六','七','八','九','十','冬','腊']
+      * @return Cn string
+      */
+  nStr3: ["\u6B63", "\u4E8C", "\u4E09", "\u56DB", "\u4E94", "\u516D", "\u4E03", "\u516B", "\u4E5D", "\u5341", "\u51AC", "\u814A"],
+  /**
+      * 返回农历y年一整年的总天数
+      * @param lunar Year
+      * @return Number
+      * @eg:var count = calendar.lYearDays(1987) ;//count=387
+      */
+  lYearDays: function lYearDays(y) {
+    var i;
+    var sum = 348;
+    for (i = 0x8000; i > 0x8; i >>= 1) {
+      sum += this.lunarInfo[y - 1900] & i ? 1 : 0;
+    }
+    return sum + this.leapDays(y);
+  },
+  /**
+      * 返回农历y年闰月是哪个月；若y年没有闰月 则返回0
+      * @param lunar Year
+      * @return Number (0-12)
+      * @eg:var leapMonth = calendar.leapMonth(1987) ;//leapMonth=6
+      */
+  leapMonth: function leapMonth(y) {
+    // 闰字编码 \u95f0
+    return this.lunarInfo[y - 1900] & 0xf;
+  },
+  /**
+      * 返回农历y年闰月的天数 若该年没有闰月则返回0
+      * @param lunar Year
+      * @return Number (0、29、30)
+      * @eg:var leapMonthDay = calendar.leapDays(1987) ;//leapMonthDay=29
+      */
+  leapDays: function leapDays(y) {
+    if (this.leapMonth(y)) {
+      return this.lunarInfo[y - 1900] & 0x10000 ? 30 : 29;
+    }
+    return 0;
+  },
+  /**
+      * 返回农历y年m月（非闰月）的总天数，计算m为闰月时的天数请使用leapDays方法
+      * @param lunar Year
+      * @return Number (-1、29、30)
+      * @eg:var MonthDay = calendar.monthDays(1987,9) ;//MonthDay=29
+      */
+  monthDays: function monthDays(y, m) {
+    if (m > 12 || m < 1) {
+      return -1;
+    } // 月份参数从1至12，参数错误返回-1
+    return this.lunarInfo[y - 1900] & 0x10000 >> m ? 30 : 29;
+  },
+  /**
+      * 返回公历(!)y年m月的天数
+      * @param solar Year
+      * @return Number (-1、28、29、30、31)
+      * @eg:var solarMonthDay = calendar.leapDays(1987) ;//solarMonthDay=30
+      */
+  solarDays: function solarDays(y, m) {
+    if (m > 12 || m < 1) {
+      return -1;
+    } // 若参数错误 返回-1
+    var ms = m - 1;
+    if (ms == 1) {
+      // 2月份的闰平规律测算后确认返回28或29
+      return y % 4 == 0 && y % 100 != 0 || y % 400 == 0 ? 29 : 28;
+    } else {
+      return this.solarMonth[ms];
+    }
+  },
+  /**
+     * 农历年份转换为干支纪年
+     * @param  lYear 农历年的年份数
+     * @return Cn string
+     */
+  toGanZhiYear: function toGanZhiYear(lYear) {
+    var ganKey = (lYear - 3) % 10;
+    var zhiKey = (lYear - 3) % 12;
+    if (ganKey == 0) ganKey = 10; // 如果余数为0则为最后一个天干
+    if (zhiKey == 0) zhiKey = 12; // 如果余数为0则为最后一个地支
+    return this.Gan[ganKey - 1] + this.Zhi[zhiKey - 1];
+  },
+  /**
+     * 公历月、日判断所属星座
+     * @param  cMonth [description]
+     * @param  cDay [description]
+     * @return Cn string
+     */
+  toAstro: function toAstro(cMonth, cDay) {
+    var s = "\u9B54\u7FAF\u6C34\u74F6\u53CC\u9C7C\u767D\u7F8A\u91D1\u725B\u53CC\u5B50\u5DE8\u87F9\u72EE\u5B50\u5904\u5973\u5929\u79E4\u5929\u874E\u5C04\u624B\u9B54\u7FAF";
+    var arr = [20, 19, 21, 21, 21, 22, 23, 23, 23, 23, 22, 22];
+    return s.substr(cMonth * 2 - (cDay < arr[cMonth - 1] ? 2 : 0), 2) + "\u5EA7"; // 座
+  },
+
+  /**
+      * 传入offset偏移量返回干支
+      * @param offset 相对甲子的偏移量
+      * @return Cn string
+      */
+  toGanZhi: function toGanZhi(offset) {
+    return this.Gan[offset % 10] + this.Zhi[offset % 12];
+  },
+  /**
+      * 传入公历(!)y年获得该年第n个节气的公历日期
+      * @param y公历年(1900-2100)；n二十四节气中的第几个节气(1~24)；从n=1(小寒)算起
+      * @return day Number
+      * @eg:var _24 = calendar.getTerm(1987,3) ;//_24=4;意即1987年2月4日立春
+      */
+  getTerm: function getTerm(y, n) {
+    if (y < 1900 || y > 2100) {
+      return -1;
+    }
+    if (n < 1 || n > 24) {
+      return -1;
+    }
+    var _table = this.sTermInfo[y - 1900];
+    var _info = [parseInt('0x' + _table.substr(0, 5)).toString(), parseInt('0x' + _table.substr(5, 5)).toString(), parseInt('0x' + _table.substr(10, 5)).toString(), parseInt('0x' + _table.substr(15, 5)).toString(), parseInt('0x' + _table.substr(20, 5)).toString(), parseInt('0x' + _table.substr(25, 5)).toString()];
+    var _calday = [_info[0].substr(0, 1), _info[0].substr(1, 2), _info[0].substr(3, 1), _info[0].substr(4, 2), _info[1].substr(0, 1), _info[1].substr(1, 2), _info[1].substr(3, 1), _info[1].substr(4, 2), _info[2].substr(0, 1), _info[2].substr(1, 2), _info[2].substr(3, 1), _info[2].substr(4, 2), _info[3].substr(0, 1), _info[3].substr(1, 2), _info[3].substr(3, 1), _info[3].substr(4, 2), _info[4].substr(0, 1), _info[4].substr(1, 2), _info[4].substr(3, 1), _info[4].substr(4, 2), _info[5].substr(0, 1), _info[5].substr(1, 2), _info[5].substr(3, 1), _info[5].substr(4, 2)];
+    return parseInt(_calday[n - 1]);
+  },
+  /**
+      * 传入农历数字月份返回汉语通俗表示法
+      * @param lunar month
+      * @return Cn string
+      * @eg:var cnMonth = calendar.toChinaMonth(12) ;//cnMonth='腊月'
+      */
+  toChinaMonth: function toChinaMonth(m) {
+    // 月 => \u6708
+    if (m > 12 || m < 1) {
+      return -1;
+    } // 若参数错误 返回-1
+    var s = this.nStr3[m - 1];
+    s += "\u6708"; // 加上月字
+    return s;
+  },
+  /**
+      * 传入农历日期数字返回汉字表示法
+      * @param lunar day
+      * @return Cn string
+      * @eg:var cnDay = calendar.toChinaDay(21) ;//cnMonth='廿一'
+      */
+  toChinaDay: function toChinaDay(d) {
+    // 日 => \u65e5
+    var s;
+    switch (d) {
+      case 10:
+        s = "\u521D\u5341";
+        break;
+      case 20:
+        s = "\u4E8C\u5341";
+        break;
+        break;
+      case 30:
+        s = "\u4E09\u5341";
+        break;
+        break;
+      default:
+        s = this.nStr2[Math.floor(d / 10)];
+        s += this.nStr1[d % 10];
+    }
+    return s;
+  },
+  /**
+      * 年份转生肖[!仅能大致转换] => 精确划分生肖分界线是“立春”
+      * @param y year
+      * @return Cn string
+      * @eg:var animal = calendar.getAnimal(1987) ;//animal='兔'
+      */
+  getAnimal: function getAnimal(y) {
+    return this.Animals[(y - 4) % 12];
+  },
+  /**
+      * 传入阳历年月日获得详细的公历、农历object信息 <=>JSON
+      * @param y  solar year
+      * @param m  solar month
+      * @param d  solar day
+      * @return JSON object
+      * @eg:console.log(calendar.solar2lunar(1987,11,01));
+      */
+  solar2lunar: function solar2lunar(y, m, d) {
+    // 参数区间1900.1.31~2100.12.31
+    // 年份限定、上限
+    if (y < 1900 || y > 2100) {
+      return -1; // undefined转换为数字变为NaN
+    }
+    // 公历传参最下限
+    if (y == 1900 && m == 1 && d < 31) {
+      return -1;
+    }
+    // 未传参  获得当天
+    if (!y) {
+      var objDate = new Date();
+    } else {
+      var objDate = new Date(y, parseInt(m) - 1, d);
+    }
+    var i;
+    var leap = 0;
+    var temp = 0;
+    // 修正ymd参数
+    var y = objDate.getFullYear();
+    var m = objDate.getMonth() + 1;
+    var d = objDate.getDate();
+    var offset = (Date.UTC(objDate.getFullYear(), objDate.getMonth(), objDate.getDate()) - Date.UTC(1900, 0, 31)) / 86400000;
+    for (i = 1900; i < 2101 && offset > 0; i++) {
+      temp = this.lYearDays(i);
+      offset -= temp;
+    }
+    if (offset < 0) {
+      offset += temp;
+      i--;
+    }
+
+    // 是否今天
+    var isTodayObj = new Date();
+    var isToday = false;
+    if (isTodayObj.getFullYear() == y && isTodayObj.getMonth() + 1 == m && isTodayObj.getDate() == d) {
+      isToday = true;
+    }
+    // 星期几
+    var nWeek = objDate.getDay();
+    var cWeek = this.nStr1[nWeek];
+    // 数字表示周几顺应天朝周一开始的惯例
+    if (nWeek == 0) {
+      nWeek = 7;
+    }
+    // 农历年
+    var year = i;
+    var leap = this.leapMonth(i); // 闰哪个月
+    var isLeap = false;
+
+    // 效验闰月
+    for (i = 1; i < 13 && offset > 0; i++) {
+      // 闰月
+      if (leap > 0 && i == leap + 1 && isLeap == false) {
+        --i;
+        isLeap = true;
+        temp = this.leapDays(year); // 计算农历闰月天数
+      } else {
+        temp = this.monthDays(year, i); // 计算农历普通月天数
+      }
+      // 解除闰月
+      if (isLeap == true && i == leap + 1) {
+        isLeap = false;
+      }
+      offset -= temp;
+    }
+    // 闰月导致数组下标重叠取反
+    if (offset == 0 && leap > 0 && i == leap + 1) {
+      if (isLeap) {
+        isLeap = false;
+      } else {
+        isLeap = true;
+        --i;
+      }
+    }
+    if (offset < 0) {
+      offset += temp;
+      --i;
+    }
+    // 农历月
+    var month = i;
+    // 农历日
+    var day = offset + 1;
+    // 天干地支处理
+    var sm = m - 1;
+    var gzY = this.toGanZhiYear(year);
+
+    // 当月的两个节气
+    // bugfix-2017-7-24 11:03:38 use lunar Year Param `y` Not `year`
+    var firstNode = this.getTerm(y, m * 2 - 1); // 返回当月「节」为几日开始
+    var secondNode = this.getTerm(y, m * 2); // 返回当月「节」为几日开始
+
+    // 依据12节气修正干支月
+    var gzM = this.toGanZhi((y - 1900) * 12 + m + 11);
+    if (d >= firstNode) {
+      gzM = this.toGanZhi((y - 1900) * 12 + m + 12);
+    }
+
+    // 传入的日期的节气与否
+    var isTerm = false;
+    var Term = null;
+    if (firstNode == d) {
+      isTerm = true;
+      Term = this.solarTerm[m * 2 - 2];
+    }
+    if (secondNode == d) {
+      isTerm = true;
+      Term = this.solarTerm[m * 2 - 1];
+    }
+    // 日柱 当月一日与 1900/1/1 相差天数
+    var dayCyclical = Date.UTC(y, sm, 1, 0, 0, 0, 0) / 86400000 + 25567 + 10;
+    var gzD = this.toGanZhi(dayCyclical + d - 1);
+    // 该日期所属的星座
+    var astro = this.toAstro(m, d);
+    return {
+      'lYear': year,
+      'lMonth': month,
+      'lDay': day,
+      'Animal': this.getAnimal(year),
+      'IMonthCn': (isLeap ? "\u95F0" : '') + this.toChinaMonth(month),
+      'IDayCn': this.toChinaDay(day),
+      'cYear': y,
+      'cMonth': m,
+      'cDay': d,
+      'gzYear': gzY,
+      'gzMonth': gzM,
+      'gzDay': gzD,
+      'isToday': isToday,
+      'isLeap': isLeap,
+      'nWeek': nWeek,
+      'ncWeek': "\u661F\u671F" + cWeek,
+      'isTerm': isTerm,
+      'Term': Term,
+      'astro': astro
+    };
+  },
+  /**
+      * 传入农历年月日以及传入的月份是否闰月获得详细的公历、农历object信息 <=>JSON
+      * @param y  lunar year
+      * @param m  lunar month
+      * @param d  lunar day
+      * @param isLeapMonth  lunar month is leap or not.[如果是农历闰月第四个参数赋值true即可]
+      * @return JSON object
+      * @eg:console.log(calendar.lunar2solar(1987,9,10));
+      */
+  lunar2solar: function lunar2solar(y, m, d, isLeapMonth) {
+    // 参数区间1900.1.31~2100.12.1
+    var isLeapMonth = !!isLeapMonth;
+    var leapOffset = 0;
+    var leapMonth = this.leapMonth(y);
+    var leapDay = this.leapDays(y);
+    if (isLeapMonth && leapMonth != m) {
+      return -1;
+    } // 传参要求计算该闰月公历 但该年得出的闰月与传参的月份并不同
+    if (y == 2100 && m == 12 && d > 1 || y == 1900 && m == 1 && d < 31) {
+      return -1;
+    } // 超出了最大极限值
+    var day = this.monthDays(y, m);
+    var _day = day;
+    // bugFix 2016-9-25
+    // if month is leap, _day use leapDays method
+    if (isLeapMonth) {
+      _day = this.leapDays(y, m);
+    }
+    if (y < 1900 || y > 2100 || d > _day) {
+      return -1;
+    } // 参数合法性效验
+
+    // 计算农历的时间差
+    var offset = 0;
+    for (var i = 1900; i < y; i++) {
+      offset += this.lYearDays(i);
+    }
+    var leap = 0;
+    var isAdd = false;
+    for (var i = 1; i < m; i++) {
+      leap = this.leapMonth(y);
+      if (!isAdd) {
+        // 处理闰月
+        if (leap <= i && leap > 0) {
+          offset += this.leapDays(y);
+          isAdd = true;
+        }
+      }
+      offset += this.monthDays(y, i);
+    }
+    // 转换闰月农历 需补充该年闰月的前一个月的时差
+    if (isLeapMonth) {
+      offset += day;
+    }
+    // 1900年农历正月一日的公历时间为1900年1月30日0时0分0秒(该时间也是本农历的最开始起始点)
+    var stmap = Date.UTC(1900, 1, 30, 0, 0, 0);
+    var calObj = new Date((offset + d - 31) * 86400000 + stmap);
+    var cY = calObj.getUTCFullYear();
+    var cM = calObj.getUTCMonth() + 1;
+    var cD = calObj.getUTCDate();
+    return this.solar2lunar(cY, cM, cD);
+  }
+};
+var _default = calendar;
+exports.default = _default;
+
+/***/ }),
+/* 249 */,
+/* 250 */,
+/* 251 */,
+/* 252 */,
+/* 253 */,
+/* 254 */,
+/* 255 */,
+/* 256 */,
+/* 257 */,
+/* 258 */,
+/* 259 */,
+/* 260 */,
+/* 261 */,
+/* 262 */,
+/* 263 */
+/*!************************************************************************************************************!*\
+  !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/components/jyf-parser/libs/MpHtmlParser.js ***!
+  \************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(wx) {var _classCallCheck = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ 23);
+var _createClass = __webpack_require__(/*! @babel/runtime/helpers/createClass */ 24);
+var _defineProperty = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11);
+/*
+  将 html 解析为适用于小程序 rich-text 的 DOM 结构
+  github：https://github.com/jin-yufeng/Parser
+  docs：https://jin-yufeng.github.io/Parser
+  author：JinYufeng
+  update：2020/05/08
+*/
+var cfg = __webpack_require__(/*! ./config.js */ 264),
+  blankChar = cfg.blankChar,
+  CssHandler = __webpack_require__(/*! ./CssHandler.js */ 265),
+  screenWidth = wx.getSystemInfoSync().screenWidth;
+var emoji; // emoji 补丁包 https://jin-yufeng.github.io/Parser/#/instructions?id=emoji
+var MpHtmlParser = /*#__PURE__*/function () {
+  "use strict";
+
+  function MpHtmlParser(data) {
+    var _this = this;
+    var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+    _classCallCheck(this, MpHtmlParser);
+    _defineProperty(this, "isClose", function () {
+      return _this.data[_this.i] == '>' || _this.data[_this.i] == '/' && _this.data[_this.i + 1] == '>';
+    });
+    _defineProperty(this, "section", function () {
+      return _this.data.substring(_this.start, _this.i);
+    });
+    _defineProperty(this, "parent", function () {
+      return _this.STACK[_this.STACK.length - 1];
+    });
+    _defineProperty(this, "siblings", function () {
+      return _this.STACK.length ? _this.parent().children : _this.DOM;
+    });
+    this.attrs = {};
+    this.compress = options.compress;
+    this.CssHandler = new CssHandler(options.tagStyle, screenWidth);
+    this.data = data;
+    this.domain = options.domain;
+    this.DOM = [];
+    this.i = this.start = this.audioNum = this.imgNum = this.videoNum = 0;
+    this.protocol = this.domain && this.domain.includes('://') ? this.domain.split('://')[0] : '';
+    this.state = this.Text;
+    this.STACK = [];
+    this.useAnchor = options.useAnchor;
+  }
+  _createClass(MpHtmlParser, [{
+    key: "parse",
+    value: function parse() {
+      if (emoji) this.data = emoji.parseEmoji(this.data);
+      for (var c; c = this.data[this.i]; this.i++) {
+        this.state(c);
+      }
+      if (this.state == this.Text) this.setText();
+      while (this.STACK.length) {
+        this.popNode(this.STACK.pop());
+      }
+      if (this.DOM.length) {
+        this.DOM[0].PoweredBy = 'Parser';
+        if (this.title) this.DOM[0].title = this.title;
+      }
+      return this.DOM;
+    }
+    // 设置属性
+  }, {
+    key: "setAttr",
+    value: function setAttr() {
+      var name = this.attrName.toLowerCase();
+      if (cfg.trustAttrs[name]) {
+        var val = this.attrVal;
+        if (val) {
+          if (name == 'src') this.attrs[name] = this.getUrl(this.decode(val, 'amp'));else if (name == 'href' || name == 'style') this.attrs[name] = this.decode(val, 'amp');else this.attrs[name] = val;
+        } else if (cfg.boolAttrs[name]) this.attrs[name] = 'T';
+      }
+      this.attrVal = '';
+      while (blankChar[this.data[this.i]]) {
+        this.i++;
+      }
+      if (this.isClose()) this.setNode();else {
+        this.start = this.i;
+        this.state = this.AttrName;
+      }
+    }
+    // 设置文本节点
+  }, {
+    key: "setText",
+    value: function setText() {
+      var back,
+        text = this.section();
+      if (!text) return;
+      text = cfg.onText && cfg.onText(text, function () {
+        return back = true;
+      }) || text;
+      if (back) {
+        this.data = this.data.substr(0, this.start) + text + this.data.substr(this.i);
+        var j = this.start + text.length;
+        for (this.i = this.start; this.i < j; this.i++) {
+          this.state(this.data[this.i]);
+        }
+        return;
+      }
+      if (!this.pre) {
+        // 合并空白符
+        var tmp = [];
+        for (var i = text.length, c; c = text[--i];) {
+          if (!blankChar[c] || !blankChar[tmp[0]] && (c = ' ')) tmp.unshift(c);
+        }
+        text = tmp.join('');
+      }
+      this.siblings().push({
+        type: 'text',
+        text: this.decode(text)
+      });
+    }
+    // 设置元素节点
+  }, {
+    key: "setNode",
+    value: function setNode() {
+      var node = {
+          name: this.tagName.toLowerCase(),
+          attrs: this.attrs
+        },
+        close = cfg.selfClosingTags[node.name];
+      this.attrs = {};
+      if (!cfg.ignoreTags[node.name]) {
+        this.matchAttr(node);
+        if (!close) {
+          node.children = [];
+          if (node.name == 'pre' && cfg.highlight) {
+            this.remove(node);
+            this.pre = node.pre = true;
+          }
+          this.siblings().push(node);
+          this.STACK.push(node);
+        } else if (!cfg.filter || cfg.filter(node, this) != false) this.siblings().push(node);
+      } else {
+        if (!close) this.remove(node);else if (node.name == 'source') {
+          var parent = this.parent();
+          if (parent && (parent.name == 'video' || parent.name == 'audio') && node.attrs.src) parent.attrs.source.push(node.attrs.src);
+        } else if (node.name == 'base' && !this.domain) this.domain = node.attrs.href;
+      }
+      if (this.data[this.i] == '/') this.i++;
+      this.start = this.i + 1;
+      this.state = this.Text;
+    }
+    // 移除标签
+  }, {
+    key: "remove",
+    value: function remove(node) {
+      var _this2 = this;
+      var name = node.name,
+        j = this.i;
+      // 处理 svg
+      var handleSvg = function handleSvg() {
+        var src = _this2.data.substring(j, _this2.i + 1);
+        if (!node.attrs.xmlns) src = ' xmlns="http://www.w3.org/2000/svg"' + src;
+        var i = j;
+        while (_this2.data[j] != '<') {
+          j--;
+        }
+        src = _this2.data.substring(j, i) + src;
+        var parent = _this2.parent();
+        if (node.attrs.width == '100%' && parent && (parent.attrs.style || '').includes('inline')) parent.attrs.style = 'width:300px;max-width:100%;' + parent.attrs.style;
+        _this2.siblings().push({
+          name: 'img',
+          attrs: {
+            src: 'data:image/svg+xml;utf8,' + src.replace(/#/g, '%23'),
+            ignore: 'T'
+          }
+        });
+      };
+      if (node.name == 'svg' && this.data[j] == '/') return handleSvg(this.i++);
+      while (1) {
+        if ((this.i = this.data.indexOf('</', this.i + 1)) == -1) {
+          if (name == 'pre' || name == 'svg') this.i = j;else this.i = this.data.length;
+          return;
+        }
+        this.start = this.i += 2;
+        while (!blankChar[this.data[this.i]] && !this.isClose()) {
+          this.i++;
+        }
+        if (this.section().toLowerCase() == name) {
+          // 代码块高亮
+          if (name == 'pre') {
+            this.data = this.data.substr(0, j + 1) + cfg.highlight(this.data.substring(j + 1, this.i - 5), node.attrs) + this.data.substr(this.i - 5);
+            return this.i = j;
+          } else if (name == 'style') this.CssHandler.getStyle(this.data.substring(j + 1, this.i - 7));else if (name == 'title') this.title = this.data.substring(j + 1, this.i - 7);
+          if ((this.i = this.data.indexOf('>', this.i)) == -1) this.i = this.data.length;
+          if (name == 'svg') handleSvg();
+          return;
+        }
+      }
+    }
+    // 处理属性
+  }, {
+    key: "matchAttr",
+    value: function matchAttr(node) {
+      var attrs = node.attrs,
+        style = this.CssHandler.match(node.name, attrs, node) + (attrs.style || ''),
+        styleObj = {};
+      if (attrs.id) {
+        if (this.compress & 1) attrs.id = void 0;else if (this.useAnchor) this.bubble();
+      }
+      if (this.compress & 2 && attrs.class) attrs.class = void 0;
+      switch (node.name) {
+        case 'a':
+        case 'ad':
+          this.bubble();
+          break;
+        case 'font':
+          if (attrs.color) {
+            styleObj['color'] = attrs.color;
+            attrs.color = void 0;
+          }
+          if (attrs.face) {
+            styleObj['font-family'] = attrs.face;
+            attrs.face = void 0;
+          }
+          if (attrs.size) {
+            var size = parseInt(attrs.size);
+            if (size < 1) size = 1;else if (size > 7) size = 7;
+            var map = ['xx-small', 'x-small', 'small', 'medium', 'large', 'x-large', 'xx-large'];
+            styleObj['font-size'] = map[size - 1];
+            attrs.size = void 0;
+          }
+          break;
+        case 'video':
+        case 'audio':
+          if (!attrs.id) attrs.id = node.name + ++this["".concat(node.name, "Num")];else this["".concat(node.name, "Num")]++;
+          if (node.name == 'video') {
+            if (this.videoNum > 3) node.lazyLoad = 1;
+            if (attrs.width) {
+              styleObj.width = parseFloat(attrs.width) + (attrs.width.includes('%') ? '%' : 'px');
+              attrs.width = void 0;
+            }
+            if (attrs.height) {
+              styleObj.height = parseFloat(attrs.height) + (attrs.height.includes('%') ? '%' : 'px');
+              attrs.height = void 0;
+            }
+          }
+          attrs.source = [];
+          if (attrs.src) attrs.source.push(attrs.src);
+          if (!attrs.controls && !attrs.autoplay) console.warn("\u5B58\u5728\u6CA1\u6709 controls \u5C5E\u6027\u7684 ".concat(node.name, " \u6807\u7B7E\uFF0C\u53EF\u80FD\u5BFC\u81F4\u65E0\u6CD5\u64AD\u653E"), node);
+          this.bubble();
+          break;
+        case 'td':
+        case 'th':
+          if (attrs.colspan || attrs.rowspan) for (var k = this.STACK.length, item; item = this.STACK[--k];) {
+            if (item.name == 'table') {
+              item.c = void 0;
+              break;
+            }
+          }
+      }
+      if (attrs.align) {
+        styleObj['text-align'] = attrs.align;
+        attrs.align = void 0;
+      }
+      // 压缩 style
+      var styles = style.split(';');
+      style = '';
+      for (var i = 0, len = styles.length; i < len; i++) {
+        var info = styles[i].split(':');
+        if (info.length < 2) continue;
+        var _key = info[0].trim().toLowerCase(),
+          _value = info.slice(1).join(':').trim();
+        if (_value.includes('-webkit') || _value.includes('-moz') || _value.includes('-ms') || _value.includes('-o') || _value.includes('safe')) style += ";".concat(_key, ":").concat(_value);else if (!styleObj[_key] || _value.includes('import') || !styleObj[_key].includes('import')) styleObj[_key] = _value;
+      }
+      if (node.name == 'img') {
+        if (attrs['data-src']) {
+          attrs.src = attrs.src || attrs['data-src'];
+          attrs['data-src'] = void 0;
+        }
+        if (attrs.src && !attrs.ignore) {
+          if (this.bubble()) attrs.i = (this.imgNum++).toString();else attrs.ignore = 'T';
+        }
+        if (attrs.ignore) styleObj['max-width'] = '100%';
+        var width;
+        if (styleObj.width) width = styleObj.width;else if (attrs.width) width = attrs.width.includes('%') ? attrs.width : attrs.width + 'px';
+        if (width) {
+          styleObj.width = width;
+          attrs.width = '100%';
+          if (parseInt(width) > screenWidth) {
+            styleObj.height = '';
+            if (attrs.height) attrs.height = void 0;
+          }
+        }
+        if (styleObj.height) {
+          attrs.height = styleObj.height;
+          styleObj.height = '';
+        } else if (attrs.height && !attrs.height.includes('%')) attrs.height += 'px';
+      }
+      for (var key in styleObj) {
+        var value = styleObj[key];
+        if (key.includes('flex') || key == 'order' || key == 'self-align') node.c = 1;
+        // 填充链接
+        if (value.includes('url')) {
+          var j = value.indexOf('(');
+          if (j++ != -1) {
+            while (value[j] == '"' || value[j] == "'" || blankChar[value[j]]) {
+              j++;
+            }
+            value = value.substr(0, j) + this.getUrl(value.substr(j));
+          }
+        }
+        // 转换 rpx
+        else if (value.includes('rpx')) value = value.replace(/[0-9.]+\s*rpx/g, function ($) {
+          return parseFloat($) * screenWidth / 750 + 'px';
+        });else if (key == 'white-space' && value.includes('pre')) this.pre = node.pre = true;
+        style += ";".concat(key, ":").concat(value);
+      }
+      style = style.substr(1);
+      if (style) attrs.style = style;
+    }
+    // 节点出栈处理
+  }, {
+    key: "popNode",
+    value: function popNode(node) {
+      // 空白符处理
+      if (node.pre) {
+        node.pre = this.pre = void 0;
+        for (var i = this.STACK.length; i--;) {
+          if (this.STACK[i].pre) this.pre = true;
+        }
+      }
+      var siblings = this.siblings(),
+        len = siblings.length,
+        childs = node.children.length;
+      if (node.name == 'head' || cfg.filter && cfg.filter(node, this) == false) return siblings.pop();
+      var attrs = node.attrs;
+      // 替换一些标签名
+      if (cfg.blockTags[node.name]) node.name = 'div';else if (!cfg.trustTags[node.name]) node.name = 'span';
+      // 去除块标签前后空串
+      if (node.name == 'div' || node.name == 'p' || node.name[0] == 't') {
+        if (len > 1 && siblings[len - 2].text == ' ') siblings.splice(--len - 1, 1);
+        if (childs && node.children[childs - 1].text == ' ') node.children.pop();
+      }
+      // 处理列表
+      if (node.c && (node.name == 'ul' || node.name == 'ol')) {
+        if ((node.attrs.style || '').includes('list-style:none')) {
+          for (var _i = 0, child; child = node.children[_i++];) {
+            if (child.name == 'li') child.name = 'div';
+          }
+        } else if (node.name == 'ul') {
+          var floor = 1;
+          for (var _i2 = this.STACK.length; _i2--;) {
+            if (this.STACK[_i2].name == 'ul') floor++;
+          }
+          if (floor != 1) for (var _i3 = childs; _i3--;) {
+            node.children[_i3].floor = floor;
+          }
+        } else {
+          for (var _i4 = 0, num = 1, _child; _child = node.children[_i4++];) {
+            if (_child.name == 'li') {
+              _child.type = 'ol';
+              _child.num = function (num, type) {
+                if (type == 'a') return String.fromCharCode(97 + (num - 1) % 26);
+                if (type == 'A') return String.fromCharCode(65 + (num - 1) % 26);
+                if (type == 'i' || type == 'I') {
+                  num = (num - 1) % 99 + 1;
+                  var one = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX'],
+                    ten = ['X', 'XX', 'XXX', 'XL', 'L', 'LX', 'LXX', 'LXXX', 'XC'],
+                    res = (ten[Math.floor(num / 10) - 1] || '') + (one[num % 10 - 1] || '');
+                  if (type == 'i') return res.toLowerCase();
+                  return res;
+                }
+                return num;
+              }(num++, attrs.type) + '.';
+            }
+          }
+        }
+      }
+      // 处理表格的边框
+      if (node.name == 'table') {
+        var padding = attrs.cellpadding,
+          spacing = attrs.cellspacing,
+          border = attrs.border;
+        if (node.c) {
+          this.bubble();
+          if (!padding) padding = 2;
+          if (!spacing) spacing = 2;
+        }
+        if (border) attrs.style = "border:".concat(border, "px solid gray;").concat(attrs.style || '');
+        if (spacing) attrs.style = "border-spacing:".concat(spacing, "px;").concat(attrs.style || '');
+        if (border || padding) (function f(ns) {
+          for (var i = 0, n; n = ns[i]; i++) {
+            if (n.name == 'th' || n.name == 'td') {
+              if (border) n.attrs.style = "border:".concat(border, "px solid gray;").concat(n.attrs.style);
+              if (padding) n.attrs.style = "padding:".concat(padding, "px;").concat(n.attrs.style);
+            } else f(n.children || []);
+          }
+        })(node.children);
+      }
+      this.CssHandler.pop && this.CssHandler.pop(node);
+      // 自动压缩
+      if (node.name == 'div' && !Object.keys(attrs).length && childs == 1 && node.children[0].name == 'div') siblings[len - 1] = node.children[0];
+    }
+    // 工具函数
+  }, {
+    key: "bubble",
+    value: function bubble() {
+      for (var i = this.STACK.length, item; item = this.STACK[--i];) {
+        if (cfg.richOnlyTags[item.name]) {
+          if (item.name == 'table' && !Object.hasOwnProperty.call(item, 'c')) item.c = 1;
+          return false;
+        }
+        item.c = 1;
+      }
+      return true;
+    }
+  }, {
+    key: "decode",
+    value: function decode(val, amp) {
+      var i = -1,
+        j,
+        en;
+      while (1) {
+        if ((i = val.indexOf('&', i + 1)) == -1) break;
+        if ((j = val.indexOf(';', i + 2)) == -1) break;
+        if (val[i + 1] == '#') {
+          en = parseInt((val[i + 2] == 'x' ? '0' : '') + val.substring(i + 2, j));
+          if (!isNaN(en)) val = val.substr(0, i) + String.fromCharCode(en) + val.substr(j + 1);
+        } else {
+          en = val.substring(i + 1, j);
+          if (cfg.entities[en] || en == amp) val = val.substr(0, i) + (cfg.entities[en] || '&') + val.substr(j + 1);
+        }
+      }
+      return val;
+    }
+  }, {
+    key: "getUrl",
+    value: function getUrl(url) {
+      if (url[0] == '/') {
+        if (url[1] == '/') url = this.protocol + ':' + url;else if (this.domain) url = this.domain + url;
+      } else if (this.domain && url.indexOf('data:') != 0 && !url.includes('://')) url = this.domain + '/' + url;
+      return url;
+    }
+  }, {
+    key: "Text",
+    value:
+    // 状态机
+    function Text(c) {
+      if (c == '<') {
+        var next = this.data[this.i + 1],
+          isLetter = function isLetter(c) {
+            return c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z';
+          };
+        if (isLetter(next)) {
+          this.setText();
+          this.start = this.i + 1;
+          this.state = this.TagName;
+        } else if (next == '/') {
+          this.setText();
+          if (isLetter(this.data[++this.i + 1])) {
+            this.start = this.i + 1;
+            this.state = this.EndTag;
+          } else this.Comment();
+        } else if (next == '!') {
+          this.setText();
+          this.Comment();
+        }
+      }
+    }
+  }, {
+    key: "Comment",
+    value: function Comment() {
+      var key;
+      if (this.data.substring(this.i + 2, this.i + 4) == '--') key = '-->';else if (this.data.substring(this.i + 2, this.i + 9) == '[CDATA[') key = ']]>';else key = '>';
+      if ((this.i = this.data.indexOf(key, this.i + 2)) == -1) this.i = this.data.length;else this.i += key.length - 1;
+      this.start = this.i + 1;
+      this.state = this.Text;
+    }
+  }, {
+    key: "TagName",
+    value: function TagName(c) {
+      if (blankChar[c]) {
+        this.tagName = this.section();
+        while (blankChar[this.data[this.i]]) {
+          this.i++;
+        }
+        if (this.isClose()) this.setNode();else {
+          this.start = this.i;
+          this.state = this.AttrName;
+        }
+      } else if (this.isClose()) {
+        this.tagName = this.section();
+        this.setNode();
+      }
+    }
+  }, {
+    key: "AttrName",
+    value: function AttrName(c) {
+      var blank = blankChar[c];
+      if (blank) {
+        this.attrName = this.section();
+        c = this.data[this.i];
+      }
+      if (c == '=') {
+        if (!blank) this.attrName = this.section();
+        while (blankChar[this.data[++this.i]]) {
+          ;
+        }
+        this.start = this.i--;
+        this.state = this.AttrValue;
+      } else if (blank) this.setAttr();else if (this.isClose()) {
+        this.attrName = this.section();
+        this.setAttr();
+      }
+    }
+  }, {
+    key: "AttrValue",
+    value: function AttrValue(c) {
+      if (c == '"' || c == "'") {
+        this.start++;
+        if ((this.i = this.data.indexOf(c, this.i + 1)) == -1) return this.i = this.data.length;
+        this.attrVal = this.section();
+        this.i++;
+      } else {
+        for (; !blankChar[this.data[this.i]] && !this.isClose(); this.i++) {
+          ;
+        }
+        this.attrVal = this.section();
+      }
+      this.setAttr();
+    }
+  }, {
+    key: "EndTag",
+    value: function EndTag(c) {
+      if (blankChar[c] || c == '>' || c == '/') {
+        var name = this.section().toLowerCase();
+        for (var i = this.STACK.length; i--;) {
+          if (this.STACK[i].name == name) break;
+        }
+        if (i != -1) {
+          var node;
+          while ((node = this.STACK.pop()).name != name) {
+            ;
+          }
+          this.popNode(node);
+        } else if (name == 'p' || name == 'br') this.siblings().push({
+          name: name,
+          attrs: {}
+        });
+        this.i = this.data.indexOf('>', this.i);
+        this.start = this.i + 1;
+        if (this.i == -1) this.i = this.data.length;else this.state = this.Text;
+      }
+    }
+  }]);
+  return MpHtmlParser;
+}();
+module.exports = MpHtmlParser;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/wx.js */ 1)["default"]))
+
+/***/ }),
+/* 264 */
+/*!******************************************************************************************************!*\
+  !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/components/jyf-parser/libs/config.js ***!
+  \******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(wx) {/* 配置文件 */
+
+var canIUse = wx.canIUse('editor'); // 高基础库标识，用于兼容
+
+module.exports = {
+  // 过滤器函数
+  filter: null,
+  // 代码高亮函数
+  highlight: null,
+  // 文本处理函数
+  onText: null,
+  // 实体编码列表
+  entities: {
+    quot: '"',
+    apos: "'",
+    semi: ';',
+    nbsp: '\xA0',
+    ensp: "\u2002",
+    emsp: "\u2003",
+    ndash: '–',
+    mdash: '—',
+    middot: '·',
+    lsquo: '‘',
+    rsquo: '’',
+    ldquo: '“',
+    rdquo: '”',
+    bull: '•',
+    hellip: '…'
+  },
+  blankChar: makeMap(' ,\xA0,\t,\r,\n,\f'),
+  // 块级标签，将被转为 div
+  blockTags: makeMap('address,article,aside,body,caption,center,cite,footer,header,html,nav,section' + (canIUse ? '' : ',pre')),
+  // 将被移除的标签
+  ignoreTags: makeMap('area,base,basefont,canvas,command,frame,input,isindex,keygen,link,map,meta,param,script,source,style,svg,textarea,title,track,use,wbr' + (canIUse ? ',rp' : '') + ',embed,iframe'),
+  // 只能被 rich-text 显示的标签
+  richOnlyTags: makeMap('a,colgroup,fieldset,legend,picture,table' + (canIUse ? ',bdi,bdo,caption,rt,ruby' : '')),
+  // 自闭合的标签
+  selfClosingTags: makeMap('area,base,basefont,br,col,circle,ellipse,embed,frame,hr,img,input,isindex,keygen,line,link,meta,param,path,polygon,rect,source,track,use,wbr'),
+  // 信任的属性
+  trustAttrs: makeMap('align,alt,app-id,author,autoplay,border,cellpadding,cellspacing,class,color,colspan,controls,data-src,dir,face,height,href,id,ignore,loop,media,muted,name,path,poster,rowspan,size,span,src,start,style,type,unit-id,width,xmlns'),
+  // bool 型的属性
+  boolAttrs: makeMap('autoplay,controls,ignore,loop,muted'),
+  // 信任的标签
+  trustTags: makeMap('a,abbr,ad,audio,b,blockquote,br,code,col,colgroup,dd,del,dl,dt,div,em,fieldset,h1,h2,h3,h4,h5,h6,hr,i,img,ins,label,legend,li,ol,p,q,source,span,strong,sub,sup,table,tbody,td,tfoot,th,thead,tr,title,ul,video' + (canIUse ? ',bdi,bdo,caption,pre,rt,ruby' : '')),
+  // 默认的标签样式
+  userAgentStyles: {
+    address: 'font-style:italic',
+    big: 'display:inline;font-size:1.2em',
+    blockquote: 'background-color:#f6f6f6;border-left:3px solid #dbdbdb;color:#6c6c6c;padding:5px 0 5px 10px',
+    caption: 'display:table-caption;text-align:center',
+    center: 'text-align:center',
+    cite: 'font-style:italic',
+    dd: 'margin-left:40px',
+    mark: 'background-color:yellow',
+    pre: 'font-family:monospace;white-space:pre;overflow:scroll',
+    s: 'text-decoration:line-through',
+    small: 'display:inline;font-size:0.8em',
+    u: 'text-decoration:underline'
+  }
+};
+function makeMap(str) {
+  var map = {},
+    list = str.split(',');
+  for (var i = list.length; i--;) {
+    map[list[i]] = true;
+  }
+  return map;
 }
-module.exports = _arrayLikeToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/wx.js */ 1)["default"]))
+
+/***/ }),
+/* 265 */
+/*!**********************************************************************************************************!*\
+  !*** E:/m_study/important data/CloCoder/Code/Zhanbu/taluo-main/components/jyf-parser/libs/CssHandler.js ***!
+  \**********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _classCallCheck = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ 23);
+var _createClass = __webpack_require__(/*! @babel/runtime/helpers/createClass */ 24);
+var _defineProperty = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11);
+/*
+  解析和匹配 Css 的选择器
+  github：https://github.com/jin-yufeng/Parser
+  docs：https://jin-yufeng.github.io/Parser
+  author：JinYufeng
+  update：2020/03/15
+*/
+var cfg = __webpack_require__(/*! ./config.js */ 264);
+var CssHandler = /*#__PURE__*/function () {
+  "use strict";
+
+  function CssHandler(tagStyle) {
+    var _this = this;
+    _classCallCheck(this, CssHandler);
+    _defineProperty(this, "getStyle", function (data) {
+      return _this.styles = new CssParser(data, _this.styles).parse();
+    });
+    var styles = Object.assign({}, cfg.userAgentStyles);
+    for (var item in tagStyle) {
+      styles[item] = (styles[item] ? styles[item] + ';' : '') + tagStyle[item];
+    }
+    this.styles = styles;
+  }
+  _createClass(CssHandler, [{
+    key: "match",
+    value: function match(name, attrs) {
+      var tmp,
+        matched = (tmp = this.styles[name]) ? tmp + ';' : '';
+      if (attrs.class) {
+        var items = attrs.class.split(' ');
+        for (var i = 0, item; item = items[i]; i++) {
+          if (tmp = this.styles['.' + item]) matched += tmp + ';';
+        }
+      }
+      if (tmp = this.styles['#' + attrs.id]) matched += tmp + ';';
+      return matched;
+    }
+  }]);
+  return CssHandler;
+}();
+module.exports = CssHandler;
+var CssParser = /*#__PURE__*/function () {
+  "use strict";
+
+  function CssParser(data, init) {
+    var _this2 = this;
+    _classCallCheck(this, CssParser);
+    _defineProperty(this, "section", function () {
+      return _this2.data.substring(_this2.start, _this2.i);
+    });
+    _defineProperty(this, "isLetter", function (c) {
+      return c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z';
+    });
+    this.data = data;
+    this.floor = 0;
+    this.i = 0;
+    this.list = [];
+    this.res = init;
+    this.state = this.Space;
+  }
+  _createClass(CssParser, [{
+    key: "parse",
+    value: function parse() {
+      for (var c; c = this.data[this.i]; this.i++) {
+        this.state(c);
+      }
+      return this.res;
+    }
+  }, {
+    key: "Space",
+    value:
+    // 状态机
+    function Space(c) {
+      if (c == '.' || c == '#' || this.isLetter(c)) {
+        this.start = this.i;
+        this.state = this.Name;
+      } else if (c == '/' && this.data[this.i + 1] == '*') this.Comment();else if (!cfg.blankChar[c] && c != ';') this.state = this.Ignore;
+    }
+  }, {
+    key: "Comment",
+    value: function Comment() {
+      this.i = this.data.indexOf('*/', this.i) + 1;
+      if (!this.i) this.i = this.data.length;
+      this.state = this.Space;
+    }
+  }, {
+    key: "Ignore",
+    value: function Ignore(c) {
+      if (c == '{') this.floor++;else if (c == '}' && ! --this.floor) this.state = this.Space;
+    }
+  }, {
+    key: "Name",
+    value: function Name(c) {
+      if (cfg.blankChar[c]) {
+        this.list.push(this.section());
+        this.state = this.NameSpace;
+      } else if (c == '{') {
+        this.list.push(this.section());
+        this.Content();
+      } else if (c == ',') {
+        this.list.push(this.section());
+        this.Comma();
+      } else if (!this.isLetter(c) && (c < '0' || c > '9') && c != '-' && c != '_') this.state = this.Ignore;
+    }
+  }, {
+    key: "NameSpace",
+    value: function NameSpace(c) {
+      if (c == '{') this.Content();else if (c == ',') this.Comma();else if (!cfg.blankChar[c]) this.state = this.Ignore;
+    }
+  }, {
+    key: "Comma",
+    value: function Comma() {
+      while (cfg.blankChar[this.data[++this.i]]) {
+        ;
+      }
+      if (this.data[this.i] == '{') this.Content();else {
+        this.start = this.i--;
+        this.state = this.Name;
+      }
+    }
+  }, {
+    key: "Content",
+    value: function Content() {
+      this.start = ++this.i;
+      if ((this.i = this.data.indexOf('}', this.i)) == -1) this.i = this.data.length;
+      var content = this.section();
+      for (var i = 0, item; item = this.list[i++];) {
+        if (this.res[item]) this.res[item] += ';' + content;else this.res[item] = content;
+      }
+      this.list = [];
+      this.state = this.Space;
+    }
+  }]);
+  return CssParser;
+}();
 
 /***/ })
-
-}]);
+]]);
 //# sourceMappingURL=../../.sourcemap/mp-weixin/common/vendor.js.map
